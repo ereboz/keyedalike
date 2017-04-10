@@ -6754,4 +6754,289 @@ button.close {
     display: none !important;
   }
 }
+@media (min-width: 1200px) {
+  .container {
+    width: 1012px;
+  }
+}
+.btn {
+  color: #000;
+  background-color: #f3f5f6;
+}
+.bg-banner {
+  width: 100%;
+  height: 50px;
+  margin: -5px 0 20px 0;
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-banner.gif");
+}
+@media (max-width: 768px) {
+  .bg-banner {
+    display: none;
+  }
+}
+.banner-phone .phone-icon {
+  margin: 0 10px 0 0;
+}
+.wrapper-banner {
+  margin: 25px 0;
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 12px;
+}
+@media (max-width: 750px) {
+  #topnavbar {
+    padding: 0;
+  }
+}
+#topnavbar.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.wrapper-subnav {
+  padding-top: 20px;
+  background-color: #fff;
+}
+.wrapper-subnav .subnavall {
+  margin-bottom: 40px;
+}
+.logo {
+  height: 56px;
+  background-image: url("http://localhost:63342/keyedalike/dist/images/logo.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+.search {
+  margin-top: 15px;
+}
+.subnav-wrapper {
+  height: 30px;
+}
+.sub-nav {
+  margin-top: 20px;
+  font-size: 12px;
+}
+.sub-nav ul li {
+  margin-right: 10px;
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+}
+@media (max-width: 768px) {
+  .sub-nav {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .sub-nav {
+    float: right;
+  }
+}
+.main-nav {
+  margin-bottom: 0;
+  background-color: #f5f7f9;
+}
+.main-nav li:hover {
+  background-color: #78c4cd;
+}
+#myNavbar ul li {
+  font-family: "Myriad Pro", Verdana, sans-serif;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#myCarousel {
+  margin-bottom: 25px;
+}
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+.carousel-caption {
+  top: 10%;
+  left: 50%;
+  width: 50%;
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+  color: #000;
+}
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 26px;
+  }
+}
+.carousel-caption p {
+  font-size: 20px;
+}
+.carousel-caption p:nth-child(3) {
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .carousel-caption p {
+    font-size: 14px;
+  }
+}
+.glyphicon-chevron-right,
+.glyphicon-chevron-left {
+  color: #000;
+}
+.wrapper-category {
+  margin-bottom: 40px;
+}
+.category {
+  margin: 5px auto;
+  border: 1px solid #e0e0e0;
+}
+@media (max-width: 480px) {
+  .category {
+    width: 65%;
+    height: auto;
+  }
+}
+.carousel-divider {
+  width: 98%;
+  margin-bottom: 42px;
+}
+.product-slider {
+  margin-bottom: 50px;
+}
+.product-slider h3 {
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+}
+.product-slider {
+  margin-bottom: 50px;
+}
+.product-slider .controls {
+  margin-right: 13px;
+}
+.product-wrapper {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+}
+.product-wrapper .info {
+  margin-top: 1px;
+}
+.product-image-bg {
+  width: 90%;
+  margin: 10px auto;
+  background-color: #f3f5f6;
+}
+.product-image-bg .product-image {
+  margin: 0 auto;
+}
+.product-image-bg .product-sale {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  display: none;
+}
+.product-image-bg .product-sale.sale-on {
+  display: block;
+}
+.product-image-bg .product-sale.sale-off {
+  display: none;
+}
+.product-desc {
+  position: relative;
+  margin: 10px;
+}
+.product-footer-wrapper {
+  position: relative;
+  float: left;
+  width: 100%;
+  border-top: 1px solid #e0e0e0;
+}
+.product-footer-wrapper .prices {
+  position: relative;
+  float: left;
+  width: 40%;
+  height: 45px;
+  padding: 5px;
+  border-right: 1px solid #e0e0e0;
+}
+.product-footer-wrapper .prices .sale-price {
+  color: #47a9b4;
+}
+.product-footer-wrapper .prices .retail-price {
+  text-decoration: line-through;
+}
+.product-footer-wrapper .sort a {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 45px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg_obn.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-right: 1px solid #e0e0e0;
+}
+.product-footer-wrapper .favorite a {
+  position: relative;
+  float: left;
+  width: 20%;
+  height: 45px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg_like.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-right: 1px solid #e0e0e0;
+}
+.product-footer-wrapper .cart a {
+  position: relative;
+  display: block;
+  float: left;
+  width: 20%;
+  height: 45px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg_bay.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.product-desc-wrapper,
+.product-footer-wrapper {
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 13px;
+}
+.wrapper-info {
+  display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:         flex;
+  margin: 30px auto;
+          flex-direction: row;
+
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.info-footer {
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 15px;
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+  background: #f8f8f8;
+
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+          flex-shrink: 1;
+}
+.info-footer h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+.info-footer span,
+.info-footer p {
+  font-size: 12px;
+}
 /*# sourceMappingURL=bootstrap.css.map */

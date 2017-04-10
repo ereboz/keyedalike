@@ -1,0 +1,364 @@
+//@import "../less/bootstrap.less";
+//* Created by javaBoxer on 3/23/2017.
+// TODO: Brian - redo image paths to match that of the server when deployed
+// LESS variables for this page: hpi/dist/index.html
+@gray-background: #f5f7f9;
+@white: #fff;
+@font-subnav: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+@font-nav: "Myriad Pro", Verdana, sans-serif;
+@bg-light-gray: #f5f7f9;
+@bg-hover-blue: #78c4cd;
+@black: #000;
+@white: #fff;
+@green: #47a9b4;
+@carousel-strip: #eff8fa;
+@light-gray1: #e0e0e0;
+@light-gray2: #f8f8f8;
+@light-gray3: #f3f5f6;
+
+// Bootstrap LESS variables to reference
+// @screen-tablet         768px
+// @screen-desktop        992px
+// @screen-lg-desktop     1200px
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1012px;
+    }
+}
+
+.btn {
+    color: @black;
+    background-color: @light-gray3;
+}
+.bg-banner {
+    width: 100%;
+    height: 50px;
+    background-image: url("http://localhost:63342/keyedalike/dist/images/bg-banner.gif");
+    margin: -5px 0 20px 0;
+
+    @media (max-width: @screen-tablet) {
+        display: none;
+    }
+}
+
+.banner-phone {
+    .phone-icon {
+        margin: 0 10px 0 0;
+    }
+}
+
+.wrapper-banner {
+    margin: 25px 0;
+    font-family: @font-subnav;
+    font-size: 12px;
+}
+
+@media (max-width: @container-sm) {
+    #topnavbar {
+        padding: 0;
+    }
+}
+
+#topnavbar.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.wrapper-subnav {
+
+    .subnavall {
+      margin-bottom: 40px;
+    }
+
+    background-color: @white;
+    padding-top: 20px;
+}
+
+.logo {
+    height: 56px;
+    background-image: url("http://localhost:63342/keyedalike/dist/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+.search {
+    margin-top: 15px;
+}
+
+.subnav-wrapper {
+    height: 30px;
+}
+
+.sub-nav {
+    margin-top: 20px;
+    font-size: 12px;
+
+    ul li {
+        margin-right: 10px;
+        font-family: @font-subnav;
+    }
+
+    @media (max-width: @screen-tablet) {
+        display: none;
+    }
+
+    @media (min-width: @screen-desktop) {
+        float: right;
+
+    }
+}
+
+.main-nav {
+    margin-bottom: 0;
+    background-color: @bg-light-gray;
+
+    li {
+        &:hover {
+          background-color: @bg-hover-blue;
+        }
+    }
+}
+
+#myNavbar {
+    ul li {
+        font-family: @font-nav;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+// Carousel
+
+#myCarousel {
+    margin-bottom: 25px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+
+.carousel-caption {
+    width: 50%;
+    top: 10%;
+    left: 50%;
+    color: @black;
+    font-family: @font-subnav;
+
+    h1 {
+        @media (max-width: @screen-tablet) {
+            font-size: 26px;
+        }
+    }
+
+    p {
+        font-size: 20px;
+        &:nth-child(3){
+            color: @white;
+        }
+
+      @media (max-width: @screen-tablet) {
+        font-size: 14px;
+      }
+
+    }
+}
+
+.glyphicon-chevron-right, .glyphicon-chevron-left {
+    color: @black;
+}
+// End Carousel
+
+
+.wrapper-category {
+    margin-bottom: 40px;
+}
+
+.category {
+    border: 1px solid @light-gray1;
+    margin: 5px auto;
+
+    @media (max-width: @screen-xs) {
+        width: 65%;
+        height: auto;
+    }
+}
+
+//Start Product Slider overrides in slider.css
+
+.carousel-divider {
+    width: 98%;
+    margin-bottom: 42px;
+}
+
+.product-slider {
+    margin-bottom: 50px;
+
+    h3 {
+      font-family: @font-subnav;
+    }
+}
+
+.product-slider {
+    margin-bottom: 50px;
+
+    .controls {
+        margin-right: 13px;
+    }
+}
+
+
+
+
+.product-wrapper {
+    border: 1px solid @light-gray1;
+    border-radius: 5px;
+    background: #FFF;
+}
+
+.product-wrapper .info {
+    //padding: 10px;
+    //border-radius: 0 0 5px 5px;
+    margin-top: 1px;
+}
+
+.product-image-bg {
+    width: 90%;
+    background-color: @light-gray3;
+    margin: 10px auto;
+
+    .product-image {
+        margin: 0 auto;
+      }
+
+    .product-sale {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 12px;
+
+        &.sale-on {
+            display: block;
+        }
+
+        &.sale-off {
+            display: none;
+        }
+    }
+}
+
+.product-desc {
+    position: relative;
+    margin: 10px;
+}
+
+.product-footer-wrapper {
+    position: relative;
+    float: left;
+    width: 100%;
+    border-top: 1px solid @light-gray1;
+
+    .prices {
+        position: relative;
+        float: left;
+        width: 40%;
+        height: 45px;
+        border-right: 1px solid @light-gray1;
+        padding: 5px;
+
+        .sale-price {
+            color: @green;
+        }
+
+        .retail-price {
+            text-decoration: line-through;
+        }
+    }
+
+    .sort a {
+        position: relative;
+        float: left;
+        width: 20%;
+        height: 45px;
+        border-right: 1px solid @light-gray1;
+
+        background-image: url("http://localhost:63342/keyedalike/dist/images/bg_obn.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        overflow:hidden;
+        text-indent:100%;
+        white-space:nowrap;
+    }
+
+    .favorite a {
+        position: relative;
+        float: left;
+        width: 20%;
+        height: 45px;
+        border-right: 1px solid @light-gray1;
+
+        background-image: url("http://localhost:63342/keyedalike/dist/images/bg_like.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        overflow:hidden;
+        text-indent:100%;
+        white-space:nowrap;
+    }
+
+    .cart a {
+        display: block;
+        position: relative;
+        float: left;
+        width: 20%;
+        height: 45px;
+
+        background-image: url("http://localhost:63342/keyedalike/dist/images/bg_bay.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+
+        overflow:hidden;
+        text-indent:100%;
+        white-space:nowrap;
+    }
+
+}
+
+.product-desc-wrapper,.product-footer-wrapper {
+    font-family: @font-subnav;
+    font-size: 13px;
+}
+
+
+//End Product Slider
+
+
+
+.wrapper-info {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.info-footer {
+    background: @light-gray2;
+    padding: 20px;
+    width: 300px;
+    flex-shrink: 1;
+    font-family: @font-subnav;
+    margin-bottom: 15px;
+
+    h3 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+    span,p {
+        font-size: 12px;
+    }
+}
