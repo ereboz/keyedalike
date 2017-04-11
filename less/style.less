@@ -19,6 +19,7 @@
 // New Keyedalike vars
 
 @blue: #29ABE2;
+@cadetblue: #668bae;
 
 // Bootstrap LESS variables to reference
 // @screen-tablet         768px
@@ -53,11 +54,11 @@
 }
 
 .chat-message {
-    margin-top: -14px;
+    margin-top: -9px;
 }
 
 .wrapper-banner {
-    margin: 25px 0;
+    margin: 20px 0;
     font-family: @font-subnav;
     font-size: 12px;
     color: @white;
@@ -167,10 +168,17 @@
     }
 }
 
+.banner-text {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 17px;
+    color: @cadetblue;
+}
 // Carousel
 
 #myCarousel {
     margin-bottom: 25px;
+    border: 1px dashed @blue;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -193,7 +201,7 @@
     p {
         font-size: 20px;
         &:nth-child(3){
-            color: @white;
+            color: @blue;
         }
 
       @media (max-width: @screen-tablet) {

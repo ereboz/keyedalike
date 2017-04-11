@@ -6778,10 +6778,10 @@ button.close {
   margin: 0 10px 0 0;
 }
 .chat-message {
-  margin-top: -14px;
+  margin-top: -9px;
 }
 .wrapper-banner {
-  margin: 25px 0;
+  margin: 20px 0;
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
   font-size: 12px;
   color: #fff;
@@ -6864,8 +6864,15 @@ button.close {
   font-weight: 300;
   text-transform: uppercase;
 }
+.banner-text {
+  margin-bottom: 10px;
+  font-size: 17px;
+  color: #668bae;
+  text-align: center;
+}
 #myCarousel {
   margin-bottom: 25px;
+  border: 1px dashed #29abe2;
 }
 .carousel-control.left,
 .carousel-control.right {
@@ -6887,7 +6894,7 @@ button.close {
   font-size: 20px;
 }
 .carousel-caption p:nth-child(3) {
-  color: #fff;
+  color: #29abe2;
 }
 @media (max-width: 768px) {
   .carousel-caption p {
