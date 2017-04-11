@@ -6872,6 +6872,7 @@ button.close {
 }
 #myCarousel {
   margin-bottom: 25px;
+  background-color: #f5f3f3;
   border: 1px dashed #29abe2;
 }
 .carousel-control.left,
