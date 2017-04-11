@@ -6948,6 +6948,8 @@ button.close {
   background-color: #f3f5f6;
 }
 .product-image-bg .product-image {
+  width: 166px;
+  height: 166px;
   margin: 0 auto;
 }
 .product-image-bg .product-sale {
