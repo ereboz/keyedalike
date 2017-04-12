@@ -21,6 +21,7 @@
 @blue: #29ABE2;
 @cadetblue: #668bae;
 @light-gray-4: #f5f3f3;
+@gray-medium: #7b7a7a;
 
 // Bootstrap LESS variables to reference
 // @screen-xs             480px;
@@ -185,6 +186,13 @@
 
 .carousel-control.left, .carousel-control.right {
     background-image: none
+}
+
+.carousel-indicators .active {
+    background-color: @gray-medium;
+}
+.carousel-indicators li {
+    border: 1px solid @gray-medium;
 }
 
 .carousel-inner {
