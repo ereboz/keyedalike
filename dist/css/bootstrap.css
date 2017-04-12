@@ -6866,9 +6866,14 @@ button.close {
 }
 .banner-text {
   margin-bottom: 10px;
-  font-size: 17px;
+  font-size: 12px;
   color: #668bae;
   text-align: center;
+}
+@media (min-width: 768px) {
+  .banner-text {
+    font-size: 16px;
+  }
 }
 #myCarousel {
   margin-bottom: 25px;
@@ -6953,7 +6958,7 @@ button.close {
   margin-bottom: 50px;
 }
 .product-slider .controls {
-  margin-right: 13px;
+  margin: 30px 13px 0 0;
 }
 .product-wrapper {
   background: #fff;

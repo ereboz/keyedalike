@@ -173,8 +173,12 @@
 .banner-text {
     margin-bottom: 10px;
     text-align: center;
-    font-size: 17px;
+    font-size: 12px;
     color: @cadetblue;
+
+    @media (min-width: @screen-tablet) {
+        font-size: 16px;
+    }
 }
 // Carousel
 
@@ -247,7 +251,7 @@
 .wrapper-category {
     margin-bottom: 40px;
 }
-
+// TODO-BH: banner ads not being used. can delete if needed
 .category {
     border: 1px solid @light-gray1;
     margin: 5px auto;
@@ -277,7 +281,7 @@
     margin-bottom: 50px;
 
     .controls {
-        margin-right: 13px;
+        margin: 30px 13px 0 0;
     }
 }
 
