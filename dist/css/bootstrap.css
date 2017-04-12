@@ -6877,8 +6877,8 @@ button.close {
 }
 #myCarousel {
   margin-bottom: 25px;
-  background-color: #f5f3f3;
-  border: 1px dashed #29abe2;
+  background-color: rgba(41, 171, 226, .06);
+  border: 1px dotted #29abe2;
 }
 .carousel-control.left,
 .carousel-control.right {
