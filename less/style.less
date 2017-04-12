@@ -23,6 +23,7 @@
 @light-gray-4: #f5f3f3;
 
 // Bootstrap LESS variables to reference
+// @screen-xs             480px;
 // @screen-tablet         768px
 // @screen-desktop        992px
 // @screen-lg-desktop     1200px
@@ -140,7 +141,6 @@
 
     @media (min-width: @screen-desktop) {
         float: right;
-
     }
 }
 
@@ -187,6 +187,21 @@
     background-image: none
 }
 
+.carousel-inner {
+    .item {
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+
+        @media (max-width: @screen-tablet) {
+            max-width: 50%;
+            height: auto;
+          }
+        }
+    }
+}
+
 .carousel-caption {
     width: 50%;
     top: 10%;
@@ -195,20 +210,22 @@
     font-family: @font-subnav;
 
     h1 {
-        @media (max-width: @screen-tablet) {
-            font-size: 26px;
+        font-size: 16px;
+
+        @media (min-width: @screen-tablet) {
+            font-size: 35px;
         }
     }
 
     p {
-        font-size: 20px;
+        font-size: 12px;
         &:nth-child(3){
             color: @blue;
         }
 
-      @media (max-width: @screen-tablet) {
-        font-size: 14px;
-      }
+        @media (min-width: @screen-tablet) {
+            font-size: 20px;
+        }
 
     }
 }
@@ -255,9 +272,6 @@
         margin-right: 13px;
     }
 }
-
-
-
 
 .product-wrapper {
     border: 1px solid @light-gray1;

@@ -6879,6 +6879,17 @@ button.close {
 .carousel-control.right {
   background-image: none;
 }
+.carousel-inner .item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .carousel-inner .item img {
+    max-width: 50%;
+    height: auto;
+  }
+}
 .carousel-caption {
   top: 10%;
   left: 50%;
@@ -6886,20 +6897,23 @@ button.close {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
   color: #000;
 }
-@media (max-width: 768px) {
+.carousel-caption h1 {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
   .carousel-caption h1 {
-    font-size: 26px;
+    font-size: 35px;
   }
 }
 .carousel-caption p {
-  font-size: 20px;
+  font-size: 12px;
 }
 .carousel-caption p:nth-child(3) {
   color: #29abe2;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .carousel-caption p {
-    font-size: 14px;
+    font-size: 20px;
   }
 }
 .glyphicon-chevron-right,
