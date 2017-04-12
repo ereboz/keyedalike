@@ -19,6 +19,10 @@
 // New Keyedalike vars
 
 @blue: #29ABE2;
+@cadetblue: #668bae;
+@light-gray-4: #f5f3f3;
+@gray-medium: #7b7a7a;
+@powder-blue: rgba(41, 171, 226, 0.06);
 
 // Bootstrap LESS variables to reference
 // @screen-tablet         768px
@@ -38,7 +42,7 @@
 .bg-banner {
     width: 10%;
     height: 50px;
-    margin: -5px 0 20px 0;
+    margin: -5px 0 0 0;
     background-color: @blue;
   //background-image: url("http://localhost:63342/keyedalike/dist/images/bg-banner.gif");
     @media (max-width: @screen-tablet) {
@@ -53,11 +57,11 @@
 }
 
 .chat-message {
-    margin-top: -14px;
+    margin-top: -9px;
 }
 
 .wrapper-banner {
-    margin: 25px 0;
+    margin: 20px 0;
     font-family: @font-subnav;
     font-size: 12px;
     color: @white;
@@ -77,7 +81,7 @@
 
 .wrapper-subnav {
     background-color: @white;
-    padding-top: 20px;
+    //padding-top: 20px;
 
     .subnavall {
         //margin-bottom: 40px;
@@ -88,6 +92,7 @@
 
 .logo {
     float: left;
+    margin-top: 8px;
     //height: 56px;
     //background-image: url("http://localhost:63342/keyedalike/dist/images/logo.png");
     //background-repeat: no-repeat;
@@ -96,6 +101,7 @@
 
 .subnav-left {
     float: left;
+    margin-top: 8px;
     font-family: @font-domain;
     font-size: 24px;
     font-weight: bold;
@@ -104,7 +110,7 @@
     color: @white;
 
     @media (min-width: @screen-sm-min) {
-        font-size: 25px;
+        font-size: 24px;
     }
 }
 
@@ -136,17 +142,22 @@
 
     @media (min-width: @screen-desktop) {
         float: right;
-
     }
 }
 
 .main-nav {
     margin-bottom: 0;
     background-color: @bg-light-gray;
+    margin-left: -15px;
+    margin-right: -15px;
 
     li {
         &:hover {
-          background-color: @bg-hover-blue;
+          background-color: @blue;
+
+          a {
+              color: @white !important;
+            }
         }
     }
 }
@@ -159,14 +170,48 @@
     }
 }
 
+.banner-text {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: @cadetblue;
+
+    @media (min-width: @screen-tablet) {
+        font-size: 16px;
+    }
+}
 // Carousel
 
 #myCarousel {
     margin-bottom: 25px;
+    border: 1px dotted @blue;
+    background-color: @powder-blue;
 }
 
 .carousel-control.left, .carousel-control.right {
     background-image: none
+}
+
+.carousel-indicators .active {
+    background-color: @gray-medium;
+}
+.carousel-indicators li {
+    border: 1px solid @gray-medium;
+}
+
+.carousel-inner {
+    .item {
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+
+        @media (max-width: @screen-tablet) {
+            max-width: 50%;
+            height: auto;
+          }
+        }
+    }
 }
 
 .carousel-caption {
@@ -177,20 +222,22 @@
     font-family: @font-subnav;
 
     h1 {
-        @media (max-width: @screen-tablet) {
-            font-size: 26px;
+        font-size: 16px;
+
+        @media (min-width: @screen-tablet) {
+            font-size: 35px;
         }
     }
 
     p {
-        font-size: 20px;
+        font-size: 12px;
         &:nth-child(3){
-            color: @white;
+            color: @blue;
         }
 
-      @media (max-width: @screen-tablet) {
-        font-size: 14px;
-      }
+        @media (min-width: @screen-tablet) {
+            font-size: 20px;
+        }
 
     }
 }
@@ -204,7 +251,7 @@
 .wrapper-category {
     margin-bottom: 40px;
 }
-
+// TODO-BH: banner ads not being used. can delete if needed
 .category {
     border: 1px solid @light-gray1;
     margin: 5px auto;
@@ -234,12 +281,9 @@
     margin-bottom: 50px;
 
     .controls {
-        margin-right: 13px;
+        margin: 30px 13px 0 0;
     }
 }
-
-
-
 
 .product-wrapper {
     border: 1px solid @light-gray1;
@@ -260,6 +304,8 @@
 
     .product-image {
         margin: 0 auto;
+        width: 166px;
+        height: 166px;
       }
 
     .product-sale {
