@@ -6754,6 +6754,9 @@ button.close {
     display: none !important;
   }
 }
+body {
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif !important;
+}
 @media (min-width: 1200px) {
   .container {
     width: 1012px;
@@ -6773,6 +6776,9 @@ button.close {
   .bg-banner {
     display: none;
   }
+}
+#myCarousel .carousel-inner {
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide.jpg");
 }
 .banner-phone .phone-icon {
   margin: 0 10px 0 0;
@@ -6811,7 +6817,7 @@ button.close {
   float: left;
   margin-top: 8px;
   margin-left: 5px;
-  font-family: Roboto;
+  font-family: Roboto "Myriad Pro", Verdana, sans-serif !important;
   font-size: 24px;
   font-weight: bold;
   color: #fff;
@@ -6877,7 +6883,8 @@ button.close {
 }
 #myCarousel {
   margin-bottom: 25px;
-  border: 1px dotted #29abe2;
+  background-color: #f5f5f5;
+  border: 1px dotted #7b7a7a;
 }
 .carousel-control.left,
 .carousel-control.right {
@@ -6947,10 +6954,15 @@ button.close {
   width: 98%;
   margin-bottom: 42px;
 }
-.product-slider {
+.product-grid {
+  padding: 0;
+}
+.product-slider,
+.prod-plp {
   margin-bottom: 50px;
 }
-.product-slider h3 {
+.product-slider h3,
+.prod-plp h3 {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
 }
 .product-slider {
@@ -6963,6 +6975,14 @@ button.close {
   background: #fff;
   border: 1px solid #e0e0e0;
   border-radius: 5px;
+}
+.product-wrapper.plp {
+  border: none;
+  border-bottom: 2px solid #e0e0e0;
+  border-radius: 0;
+}
+.product-wrapper.plp:hover {
+  border-bottom: 2px solid #000;
 }
 .product-image {
   margin: 0 auto;
@@ -6995,6 +7015,23 @@ button.close {
 .product-desc {
   position: relative;
   margin: 10px;
+}
+.product-desc .prod-title {
+  font-size: 15px;
+  font-weight: bold;
+}
+.product-desc p {
+  margin-bottom: 0;
+}
+.product-desc .prod-price .price-msrp {
+  font-size: 11px;
+}
+.product-desc .prod-price .price-hpi {
+  padding-right: 8px;
+  font-weight: bold;
+}
+.product-desc .prod-models {
+  font-size: 11px;
 }
 .product-footer-wrapper {
   position: relative;
@@ -7059,6 +7096,9 @@ button.close {
 .product-footer-wrapper {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
   font-size: 13px;
+}
+.prod-plp {
+  padding-left: 0;
 }
 .wrapper-info {
   display: -webkit-flex;

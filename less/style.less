@@ -5,7 +5,9 @@
 @white: #fff;
 @font-subnav: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
 @font-nav: "Myriad Pro", Verdana, sans-serif;
-@font-domain: Roboto;
+@font-roboto: Roboto "Myriad Pro", Verdana, sans-serif;
+@font-secondary: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+@font-src-sans: "Source Sans Pro", sans-serif;
 @bg-light-gray: #f5f7f9;
 @bg-hover-blue: #78c4cd;
 @black: #000;
@@ -23,6 +25,7 @@
 @light-gray-4: #f5f3f3;
 @gray-medium: #7b7a7a;
 @powder-blue: rgba(41, 171, 226, 0.06);
+@white-smoke: #f5f5f5;
 
 // Bootstrap LESS variables to reference
 // @screen-xs             480px;
@@ -30,11 +33,47 @@
 // @screen-desktop        992px
 // @screen-lg-desktop     1200px
 
+//  TODO:bh not used yet. we can get this working if we want to customize
+//.btn-transparent() {
+//    display: inline-block;
+//    border: 2px solid #eee;
+//    padding: 7px 15px 7px 10px;
+//    height: 36px;
+//    background: transparent;
+//    font-family: @univers-57-condensed;
+//    font-size: 12px;
+//    font-weight: 700;
+//    text-decoration: none;
+//    text-transform: uppercase;
+//    letter-spacing: 0.05em;
+//    color: #000;
+//    -webkit-transition: all 0.2s ease-in-out;
+//    -moz-transition: all 0.2s ease-in-out;
+//    -o-transition: all 0.2s ease-in-out;
+//    transition: all 0.2s ease-in-out;
+//
+//        &:hover {
+//            background: #eee;
+//            color: #222;
+//        }
+//}
+
+//.view-details {
+//    .btn-transparent();
+//}
+
+body {
+    font-family: @font-secondary !important;
+    //font-family: @font-src-sans !important;
+}
+
 @media (min-width: 1200px) {
     .container {
         width: 1012px;
     }
 }
+
+
 
 .btn {
     color: @black;
@@ -48,6 +87,12 @@
   //background-image: url("http://localhost:63342/keyedalike/dist/images/bg-banner.gif");
     @media (max-width: @screen-tablet) {
         display: none;
+    }
+}
+
+#myCarousel {
+    .carousel-inner {
+        background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide.jpg");
     }
 }
 
@@ -103,7 +148,7 @@
 .subnav-left {
     float: left;
     margin-top: 8px;
-    font-family: @font-domain;
+    font-family: @font-roboto !important;
     font-size: 24px;
     font-weight: bold;
     margin-left: 5px;
@@ -185,8 +230,8 @@
 
 #myCarousel {
     margin-bottom: 25px;
-    border: 1px dotted @blue;
-    //background-color: @powder-blue;
+    border: 1px dotted @gray-medium;
+    background-color: @white-smoke;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -270,11 +315,15 @@
     margin-bottom: 42px;
 }
 
-.product-slider {
+.product-grid {
+    padding: 0;
+}
+
+.product-slider, .prod-plp {
     margin-bottom: 50px;
 
     h3 {
-      font-family: @font-subnav;
+        font-family: @font-subnav;
     }
 }
 
@@ -289,7 +338,17 @@
 .product-wrapper {
     border: 1px solid @light-gray1;
     border-radius: 5px;
-    background: #FFF;
+    background: @white;
+
+    &.plp {
+        border: none;
+        border-radius: 0;
+        border-bottom: 2px solid @light-gray1;
+
+        &:hover {
+            border-bottom: 2px solid @black;
+        }
+    }
 }
 
 .product-image {
@@ -332,6 +391,29 @@
 .product-desc {
     position: relative;
     margin: 10px;
+
+    .prod-title {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    .prod-price {
+        .price-msrp {
+          font-size: 11px;
+        }
+        .price-hpi {
+            padding-right: 8px;
+            font-weight: bold;
+        }
+    }
+
+    .prod-models {
+        font-size: 11px;
+    }
 }
 
 .product-footer-wrapper {
@@ -415,6 +497,9 @@
 
 //End Product Slider
 
+.prod-plp {
+    padding-left: 0;
+}
 
 
 .wrapper-info {
