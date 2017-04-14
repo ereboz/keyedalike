@@ -6917,6 +6917,10 @@ body {
     font-size: 16px;
   }
 }
+.page-separator {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #e0e0e0;
+}
 #myCarousel {
   margin-bottom: 25px;
   background-color: #f5f5f5;
@@ -6992,19 +6996,14 @@ body {
     height: auto;
   }
 }
-.carousel-divider {
-  width: 98%;
-  margin-bottom: 42px;
-}
 .product-grid {
   padding: 0;
 }
-.product-slider,
-.prod-plp {
+.product-slider {
   margin-bottom: 50px;
 }
-.product-slider h3,
-.prod-plp h3 {
+.product-slider h3 {
+  margin-bottom: 30px;
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
 }
 .product-slider {
@@ -7158,6 +7157,10 @@ body {
 }
 .prod-plp {
   padding-left: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+.prod-plp h3 {
+  margin-bottom: 30px;
 }
 .wrapper-info {
   display: -webkit-flex;
