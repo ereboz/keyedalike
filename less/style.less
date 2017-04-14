@@ -1,5 +1,22 @@
 //* Created by javaBoxer on 3/23/2017.
 // TODO: Brian - redo image paths to match that of the server when deployed
+
+/* ==========================================================================
+Section comment block
+========================================================================== */
+
+/* Sub-section comment block
+========================================================================== */
+
+/**
+* Short description using Doxygen-style comment format
+*
+* Long description first sentence starts here and continues on this line for a
+* while finally concluding here at the end of this paragraph.
+*/
+
+/* Basic comment */
+
 // LESS variables for this page: index.html
 @gray-background: #f5f7f9;
 @white: #fff;
@@ -26,6 +43,7 @@
 @gray-medium: #7b7a7a;
 @powder-blue: rgba(41, 171, 226, 0.06);
 @white-smoke: #f5f5f5;
+@med-gray: #616161;
 
 // Bootstrap LESS variables to reference
 // @screen-xs             480px;
@@ -62,6 +80,22 @@
 //    .btn-transparent();
 //}
 
+
+
+/* ==========================================================================
+  Mixins
+========================================================================== */
+
+.opacity (@opacity: 0.5) {
+    -webkit-opacity: 	@opacity;
+    -moz-opacity: 		@opacity;
+    opacity: 		      @opacity;
+}
+
+/* ==========================================================================
+  Overrides
+========================================================================== */
+
 body {
     font-family: @font-secondary !important;
     //font-family: @font-src-sans !important;
@@ -72,8 +106,6 @@ body {
         width: 1012px;
     }
 }
-
-
 
 .btn {
     color: @black;
@@ -340,7 +372,7 @@ body {
     border-radius: 5px;
     background: @white;
 
-    &.plp {
+    &.listing {
         border: none;
         border-radius: 0;
         border-bottom: 2px solid @light-gray1;
@@ -391,10 +423,17 @@ body {
 .product-desc {
     position: relative;
     margin: 10px;
+    text-align: center;
+
+    @media (min-width: @screen-xs) {
+        text-align: left;
+    }
 
     .prod-title {
+        margin-bottom: 5px;
         font-size: 15px;
         font-weight: bold;
+        text-transform: uppercase;
     }
 
     p {
@@ -402,17 +441,26 @@ body {
     }
 
     .prod-price {
-        .price-msrp {
-          font-size: 11px;
-        }
         .price-hpi {
-            padding-right: 8px;
+            display: inline-block;
+            margin-bottom: 8px;
+            color: @med-gray;
             font-weight: bold;
+            word-spacing: 10px;
+        }
+        .price-msrp {
+            font-size: 12px;
+            word-spacing: 10px;
         }
     }
 
     .prod-models {
-        font-size: 11px;
+        font-size: 12px;
+        margin-bottom: 7px;
+    }
+    .view-details {
+        display: block;
+        text-align: center;
     }
 }
 

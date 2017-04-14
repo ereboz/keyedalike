@@ -3050,7 +3050,10 @@ fieldset[disabled] .btn {
   filter: alpha(opacity=65);
   -webkit-box-shadow: none;
           box-shadow: none;
-  opacity: .65;
+          opacity: .65;
+
+  -webkit-opacity: .65;
+     -moz-opacity: .65;
 }
 a.btn.disabled,
 fieldset[disabled] a.btn {
@@ -5846,7 +5849,10 @@ button.list-group-item-danger.active:focus {
   color: #000;
   text-shadow: 0 1px 0 #fff;
   filter: alpha(opacity=20);
-  opacity: .2;
+          opacity: .2;
+
+  -webkit-opacity: .2;
+     -moz-opacity: .2;
 }
 .close:hover,
 .close:focus {
@@ -5854,7 +5860,10 @@ button.list-group-item-danger.active:focus {
   text-decoration: none;
   cursor: pointer;
   filter: alpha(opacity=50);
-  opacity: .5;
+          opacity: .5;
+
+  -webkit-opacity: .5;
+     -moz-opacity: .5;
 }
 button.close {
   -webkit-appearance: none;
@@ -5925,11 +5934,17 @@ button.close {
 }
 .modal-backdrop.fade {
   filter: alpha(opacity=0);
-  opacity: 0;
+          opacity: 0;
+
+  -webkit-opacity: 0;
+     -moz-opacity: 0;
 }
 .modal-backdrop.in {
   filter: alpha(opacity=50);
-  opacity: .5;
+          opacity: .5;
+
+  -webkit-opacity: .5;
+     -moz-opacity: .5;
 }
 .modal-header {
   padding: 15px;
@@ -6006,13 +6021,18 @@ button.close {
   word-wrap: normal;
   white-space: normal;
   filter: alpha(opacity=0);
-  opacity: 0;
+          opacity: 0;
 
   line-break: auto;
+  -webkit-opacity: 0;
+     -moz-opacity: 0;
 }
 .tooltip.in {
   filter: alpha(opacity=90);
-  opacity: .9;
+          opacity: .9;
+
+  -webkit-opacity: .9;
+     -moz-opacity: .9;
 }
 .tooltip.top {
   padding: 5px 0;
@@ -6326,7 +6346,10 @@ button.close {
   text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   background-color: rgba(0, 0, 0, 0);
   filter: alpha(opacity=50);
-  opacity: .5;
+          opacity: .5;
+
+  -webkit-opacity: .5;
+     -moz-opacity: .5;
 }
 .carousel-control.left {
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .0001) 100%);
@@ -6352,7 +6375,10 @@ button.close {
   text-decoration: none;
   filter: alpha(opacity=90);
   outline: 0;
-  opacity: .9;
+          opacity: .9;
+
+  -webkit-opacity: .9;
+     -moz-opacity: .9;
 }
 .carousel-control .icon-prev,
 .carousel-control .icon-next,
@@ -6754,6 +6780,24 @@ button.close {
     display: none !important;
   }
 }
+/* ==========================================================================
+Section comment block
+========================================================================== */
+/* Sub-section comment block
+========================================================================== */
+/**
+* Short description using Doxygen-style comment format
+*
+* Long description first sentence starts here and continues on this line for a
+* while finally concluding here at the end of this paragraph.
+*/
+/* Basic comment */
+/* ==========================================================================
+  Mixins
+========================================================================== */
+/* ==========================================================================
+  Overrides
+========================================================================== */
 body {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif !important;
 }
@@ -6976,12 +7020,12 @@ body {
   border: 1px solid #e0e0e0;
   border-radius: 5px;
 }
-.product-wrapper.plp {
+.product-wrapper.listing {
   border: none;
   border-bottom: 2px solid #e0e0e0;
   border-radius: 0;
 }
-.product-wrapper.plp:hover {
+.product-wrapper.listing:hover {
   border-bottom: 2px solid #000;
 }
 .product-image {
@@ -7015,23 +7059,40 @@ body {
 .product-desc {
   position: relative;
   margin: 10px;
+  text-align: center;
+}
+@media (min-width: 480px) {
+  .product-desc {
+    text-align: left;
+  }
 }
 .product-desc .prod-title {
+  margin-bottom: 5px;
   font-size: 15px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 .product-desc p {
   margin-bottom: 0;
 }
-.product-desc .prod-price .price-msrp {
-  font-size: 11px;
-}
 .product-desc .prod-price .price-hpi {
-  padding-right: 8px;
+  display: inline-block;
+  margin-bottom: 8px;
   font-weight: bold;
+  color: #616161;
+  word-spacing: 10px;
+}
+.product-desc .prod-price .price-msrp {
+  font-size: 12px;
+  word-spacing: 10px;
 }
 .product-desc .prod-models {
-  font-size: 11px;
+  margin-bottom: 7px;
+  font-size: 12px;
+}
+.product-desc .view-details {
+  display: block;
+  text-align: center;
 }
 .product-footer-wrapper {
   position: relative;
