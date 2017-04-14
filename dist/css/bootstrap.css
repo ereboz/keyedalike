@@ -6821,9 +6821,6 @@ body {
     display: none;
   }
 }
-#myCarousel .carousel-inner {
-  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide.jpg");
-}
 .banner-phone .phone-icon {
   margin: 0 10px 0 0;
 }
@@ -6836,13 +6833,8 @@ body {
   font-size: 12px;
   color: #fff;
 }
-@media (max-width: 750px) {
-  #topnavbar {
-    padding: 0;
-  }
-}
 #topnavbar.affix {
-  position: fixed;
+  position: fixed !important;
   top: 0;
   width: 100%;
 }
@@ -6930,6 +6922,49 @@ body {
   background-color: #f5f5f5;
   border: 1px dotted #7b7a7a;
 }
+#myCarousel a {
+  display: block;
+}
+#myCarousel .carousel-inner {
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide.jpg");
+}
+#myCarousel .carousel-inner .item img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  #myCarousel .carousel-inner .item img {
+    max-width: 50%;
+    height: auto;
+  }
+}
+#myCarousel .carousel-caption {
+  top: 10%;
+  left: 50%;
+  width: 50%;
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+  color: #000;
+}
+#myCarousel .carousel-caption h1 {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  #myCarousel .carousel-caption h1 {
+    font-size: 35px;
+  }
+}
+#myCarousel .carousel-caption p {
+  font-size: 12px;
+}
+#myCarousel .carousel-caption p:nth-child(3) {
+  color: #29abe2;
+}
+@media (min-width: 768px) {
+  #myCarousel .carousel-caption p {
+    font-size: 20px;
+  }
+}
 .carousel-control.left,
 .carousel-control.right {
   background-image: none;
@@ -6939,43 +6974,6 @@ body {
 }
 .carousel-indicators li {
   border: 1px solid #7b7a7a;
-}
-.carousel-inner .item img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-@media (max-width: 768px) {
-  .carousel-inner .item img {
-    max-width: 50%;
-    height: auto;
-  }
-}
-.carousel-caption {
-  top: 10%;
-  left: 50%;
-  width: 50%;
-  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
-  color: #000;
-}
-.carousel-caption h1 {
-  font-size: 16px;
-}
-@media (min-width: 768px) {
-  .carousel-caption h1 {
-    font-size: 35px;
-  }
-}
-.carousel-caption p {
-  font-size: 12px;
-}
-.carousel-caption p:nth-child(3) {
-  color: #29abe2;
-}
-@media (min-width: 768px) {
-  .carousel-caption p {
-    font-size: 20px;
-  }
 }
 .glyphicon-chevron-right,
 .glyphicon-chevron-left {

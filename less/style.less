@@ -122,12 +122,6 @@ body {
     }
 }
 
-#myCarousel {
-    .carousel-inner {
-        background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide.jpg");
-    }
-}
-
 .banner-phone {
     .phone-icon {
         margin: 0 10px 0 0;
@@ -145,17 +139,40 @@ body {
     color: @white;
 }
 
-@media (max-width: @container-sm) {
-    #topnavbar {
-        padding: 0;
-    }
-}
+//@media (max-width: @container-sm) {
+//    #topnavbar {
+//        padding: 0;
+//    }
+//}
 
 #topnavbar.affix {
-    position: fixed;
+    position: fixed !important;
     top: 0;
     width: 100%;
 }
+
+
+// TODO-BH: try TBS animation to override hard scroll. can keep #topnavbar above if needed
+// Start TBS affix patch for mobile
+
+//#topnavbar.affix {
+//    position: fixed !important;
+//    top: 19px;
+//    animation: affixFadeIn 0.24s  ease-in;
+//    -webkit-animation: affixFadeIn 0.24s;
+//}
+//
+//@keyframes affixFadeIn {
+//    from {opacity: 0;}
+//    to {opacity: 1;}
+//}
+//
+//@-webkit-keyframes affixFadeIn {
+//    from {opacity: 0;}
+//    to {opacity: 1;}
+//}
+
+// End TBS affix patch for mobile
 
 .wrapper-subnav {
     background-color: @white;
@@ -264,6 +281,60 @@ body {
     margin-bottom: 25px;
     border: 1px dotted @gray-medium;
     background-color: @white-smoke;
+
+    a {
+        display: block;
+    }
+
+    //.carousel-inner {
+    //    background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide.jpg");
+    //}
+
+  .carousel-inner {
+      background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide.jpg");
+
+      .item {
+          img {
+              display: block;
+              max-width: 100%;
+              height: auto;
+
+              @media (max-width: @screen-tablet) {
+                  max-width: 50%;
+                  height: auto;
+              }
+          }
+      }
+  }
+
+  .carousel-caption {
+    width: 50%;
+    top: 10%;
+    left: 50%;
+    color: @black;
+    font-family: @font-subnav;
+
+    h1 {
+      font-size: 16px;
+
+      @media (min-width: @screen-tablet) {
+        font-size: 35px;
+      }
+    }
+
+    p {
+      font-size: 12px;
+      &:nth-child(3){
+        color: @blue;
+      }
+
+      @media (min-width: @screen-tablet) {
+        font-size: 20px;
+      }
+
+    }
+  }
+
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -277,48 +348,7 @@ body {
     border: 1px solid @gray-medium;
 }
 
-.carousel-inner {
-    .item {
-        img {
-            display: block;
-            max-width: 100%;
-            height: auto;
 
-        @media (max-width: @screen-tablet) {
-            max-width: 50%;
-            height: auto;
-          }
-        }
-    }
-}
-
-.carousel-caption {
-    width: 50%;
-    top: 10%;
-    left: 50%;
-    color: @black;
-    font-family: @font-subnav;
-
-    h1 {
-        font-size: 16px;
-
-        @media (min-width: @screen-tablet) {
-            font-size: 35px;
-        }
-    }
-
-    p {
-        font-size: 12px;
-        &:nth-child(3){
-            color: @blue;
-        }
-
-        @media (min-width: @screen-tablet) {
-            font-size: 20px;
-        }
-
-    }
-}
 
 .glyphicon-chevron-right, .glyphicon-chevron-left {
     color: @black;
