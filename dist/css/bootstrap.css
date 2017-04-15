@@ -6853,9 +6853,8 @@ body {
   float: left;
   margin-top: 8px;
   margin-left: 5px;
-  font-family: Roboto "Myriad Pro", Verdana, sans-serif !important;
+  font-family: "Roboto Condensed", sans-serif !important;
   font-size: 24px;
-  font-weight: bold;
   color: #fff;
   text-transform: uppercase;
 }
@@ -6863,6 +6862,13 @@ body {
   .subnav-left {
     font-size: 24px;
   }
+}
+.subnav-left span:first-of-type {
+  margin-right: -6px;
+  font-weight: 300;
+}
+.subnav-left span:last-of-type {
+  font-weight: 700;
 }
 .search-wrapper {
   margin-top: 7px;
