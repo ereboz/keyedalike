@@ -99,10 +99,13 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li class=""><a href="#">Home</a></li>
-                            <li><a href="#">Shop Padlocks</a></li>
-                            <li><a href="#">Most Popular</a></li>
-                            <li><a href="#">Match Your Key</a></li>
+                            <li class=""><a href="#">Featured</a></li>
+                            <li><a href="#">Laminated Steel</a></li>
+                            <li><a href="#">Laminated Brass</a></li>
+                            <li><a href="#">Solid Brass Body</a></li>
+                            <li><a href="#">Solid Aluminum Body</a></li>
+                            <li><a href="#">Weather Proof</a></li>
+                            <li><a href="#">Warded Padlocks</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
                             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
@@ -414,13 +417,12 @@
       </div>
     </div>
 </div>
-
 <!--END FIRST PRODUCT SLIDER-->
 
 <!--START SECOND PRODUCT SLIDER-->
     <!--Decided not to use a second slider. can put here if we decide we want to later-->
     <!--<div id="carousel-example2" class="carousel slide hidden-xs" data-ride="carousel2">-->
-<!--END FIRST PRODUCT SLIDER-->
+<!--END SECOND PRODUCT SLIDER-->
 
 
 <div class="container">
@@ -438,6 +440,7 @@
     <div class="row">
 
           <div class="col-sm-3 col-xs-12">
+                <div class="product-wrapper-overlay">
                 <div class="product-wrapper listing">
                       <div class="product-image-wrapper">
                             <div class="product-image-bg-del">
@@ -457,10 +460,21 @@
                                         </span><br>
                                     <span class="price-msrp">MSRP: $9.21  $10.91  $11.31</span>
                                   </div>
-                                  <p class="prod-models">Models: 7KA - 7KALF - 7KALJ</p>
+                                  <p id="prod-models1" class="prod-models">
+                                      Models:
+                                      <a data-make="7ka"
+                                         data-url="7ka.html"
+                                         class="details 7ka"
+                                         href="#">7KA</a> -
+                                      
+                                      <a class="details 7kalf" href="#">7KALF</a> -
+                                      
+                                      <a href="#">7KALJ</a>
+                                  </p>
                                   <a class="view-details" href="#">View Details</a>
                             </div>
                       </div>
+                </div>
                 </div>
           </div>
 
@@ -488,6 +502,7 @@
                                 <a class="view-details" href="#">View Details</a>
                             </div>
                       </div>
+                    
                 </div>
           </div>
 
@@ -515,6 +530,7 @@
                                 <a class="view-details" href="#">View Details</a>
                             </div>
                       </div>
+                    
                 </div>
           </div>
 
@@ -542,6 +558,7 @@
                                 <a class="view-details" href="#">View Details</a>
                             </div>
                       </div>
+                    
                 </div>
           </div>
     </div>
@@ -580,6 +597,7 @@
                                     <a class="view-details" href="#">View Details</a>
                               </div>
                         </div>
+                      
                   </div>
             </div>
 
@@ -608,6 +626,7 @@
                                     <a class="view-details" href="#">View Details</a>
                               </div>
                         </div>
+                      
                   </div>
             </div>
 
@@ -635,6 +654,7 @@
                                     <a class="view-details" href="#">View Details</a>
                               </div>
                         </div>
+                      
                   </div>
             </div>
 
@@ -662,6 +682,7 @@
                                     <a class="view-details" href="#">View Details</a>
                               </div>
                         </div>
+                      
                   </div>
             </div>
     </div>
@@ -670,10 +691,10 @@
 
 
 <!--FOOTER-->
-<div class="container">
-    <div class="row">
-        <div class="wrapper-info">
-            <div class="info-footer">
+<div class="container-fluid container-footer">
+    <div class="row row-footer">
+        <div class="info-wrapper">
+            <div class="info-footer footer-1">
                 <h3>About Us</h3>
                 <p>Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse
                   dictum posuere elit, in congue nisl varius quis lentesque a tellus eget quam varius aliquet. Pellentesque
@@ -683,7 +704,7 @@
                 </p>
             </div>
 
-            <div class="info-footer">
+            <div class="info-footer footer2">
                 <h3>News</h3>
                 <span>3 january 2012</span>
                 <p>Fermentum parturient lacus tristique habitant nullam morbi et odio nibh mus dictum tellus erat.</p>
@@ -693,7 +714,7 @@
                 <p>Lorem ipsum, libero et luctus molestie, turpis mi sagittis nisl, a scelerisque leo nulla et lectus pendisse dictum posuere</p>
             </div>
 
-            <div class="info-footer">
+            <div class="info-footer footer3">
                 <h3>Newsletter</h3>
                 <p>Cursus in dapibus ultrices velit fusce. Felis lacus erat. Fermentum parturient lacus tristique habitant nullam morbi et odio nibh mus dictum tellus erat.</p>
                 <form>

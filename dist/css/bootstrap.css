@@ -7064,7 +7064,7 @@ body {
   margin: 10px;
   text-align: center;
 }
-@media (min-width: 480px) {
+@media (min-width: 768px) {
   .product-desc {
     text-align: left;
   }
@@ -7167,7 +7167,7 @@ body {
 .prod-plp h3 {
   margin-bottom: 30px;
 }
-.wrapper-info {
+.info-wrapper {
   display: -webkit-flex;
   display: -webkit-box;
   display: -ms-flexbox;
