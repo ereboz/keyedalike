@@ -45,12 +45,19 @@ Section comment block
 @powder-blue: rgba(41, 171, 226, 0.06);
 @white-smoke: #f5f5f5;
 @med-gray: #616161;
+@dark-gray: #333;
 
 // Bootstrap LESS variables to reference
 // @screen-xs             480px;
 // @screen-tablet         768px
 // @screen-desktop        992px
 // @screen-lg-desktop     1200px
+
+// Custom to fit footer better on Nexus 10 @800px
+// bootstrap default for tablet is 768px
+@screen-tablet-md-max: 800px;
+@screen-tablet-md-min: 780px;
+
 
 //  TODO:bh not used yet. we can get this working if we want to customize
 //.btn-transparent() {
@@ -600,23 +607,26 @@ body {
     }
 }
 
+.container-footer {
+	background-color: @dark-gray;
+}
 
 .info-wrapper {
-	
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
     margin: 30px auto;
     flex-direction: row;
-    justify-content: space-between;
-
+    justify-content: center;
 }
 
 .info-footer {
-    background: @light-gray2;
+    background: @dark-gray;
+	color: @white;
     padding: 20px;
-    width: 300px;
+    width: 400px;
     flex-shrink: 1;
+	flex-basis: auto;
     font-family: @font-subnav;
     margin-bottom: 15px;
 
@@ -624,7 +634,87 @@ body {
         font-size: 18px;
         margin-top: 0;
     }
-    span,p {
-        font-size: 12px;
-    }
+	
+	ul {
+		list-style: none;
+		margin-left: 10px;
+		margin-bottom:25px;
+		padding-left: 5px;
+		
+		li {
+			a {
+				&:link {
+					color: @white;
+					text-decoration: none;
+				}
+				&:hover {
+					color: @black;
+				}
+				&:visited {
+					color: @white;
+				}
+				&:active {
+					color: @white;
+				}
+			}
+		}
+		
+		a {
+			color: @white;
+			&:hover {
+				color: @blue;
+			}
+		}
+	}
+
+	.phone {
+		font-family: @font-roboto;
+		font-size: 35px;
+		font-weight: bold;
+	}
+		
+	&.footer1 {
+		
+	}
+	
+	&.footer2 {
+		margin-right: 0;
+		
+		.content-left {
+			float: left;
+		}
+		.content-right {
+			float: right;
+		}
+		
+		@media (min-width: @screen-lg-desktop) {
+			margin-right: 135px;
+		}
+		
+		@media screen and (max-width: @screen-tablet-md-max) and (min-width: @screen-tablet-md-min) {
+			margin-right: 20px;
+		}
+		
+	}
+	
+	&.footer3 {
+		
+		.email-wrapper {
+			p {
+				font-size: 12px;
+			}
+		}
+		
+		.social {
+			li {
+				&.fa {
+					margin: 0 6px;
+				}
+			}
+		}
+		
+		.email {
+			margin-bottom: 20px;
+		}
+	}
 }
