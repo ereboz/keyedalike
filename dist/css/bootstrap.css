@@ -6936,7 +6936,7 @@ body {
   display: block;
 }
 #myCarousel .carousel-inner {
-  background-image: url("http://a2zhardware.com/skins/skin_10//dist/images/bg-slide.jpg");
+  background-image: url("http://a2zhardware.com/skins/skin_10/dist/images/bg-slide.jpg");
 }
 #myCarousel .carousel-inner .item img {
   display: block;
@@ -7125,7 +7125,7 @@ body {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background-image: url("http://a2zhardware.com/skins/skin_10//dist/images/bg_obn.png");
+  background-image: url("http://a2zhardware.com/skins/skin_10/dist/images/bg_obn.png");
   background-repeat: no-repeat;
   background-position: center center;
   border-right: 1px solid #e0e0e0;
@@ -7138,7 +7138,7 @@ body {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background-image: url("http://a2zhardware.com/skins/skin_10//dist/images/bg_like.png");
+  background-image: url("http://a2zhardware.com/skins/skin_10/dist/images/bg_like.png");
   background-repeat: no-repeat;
   background-position: center center;
   border-right: 1px solid #e0e0e0;
@@ -7152,7 +7152,7 @@ body {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background-image: url("http://a2zhardware.com/skins/skin_10//dist/images/bg_bay.png");
+  background-image: url("http://a2zhardware.com/skins/skin_10/dist/images/bg_bay.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
