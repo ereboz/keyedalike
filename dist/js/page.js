@@ -31,3 +31,30 @@ $(document).ready(function(){
 });
 
 
+var x = $(".details-8ka").position();
+console.log("Top: " + x.top + " Left: " + x.left);
+
+$.get("7ka.html", function (data) {
+	var elem = $(data).find('.ka-product div:eq(0)');
+	$(".details-8ka").hover(function(){
+		var overlay = $('.overlay');
+		overlay.html(elem);
+		overlay.show();
+		overlay.css({
+			"position": "fixed",
+			"border": "2px dashed black",
+			"top": x.top + 50 + "px",
+			"left": x.left + 300 + "px",
+			"width": "400px",
+			"height": "400px",
+			"margin-left": "-200px;",
+			"margin-top": "-200px;",
+			"z-index": "1",
+			"background-color": "white"
+		});
+		
+	}, function(){
+		// $('.product-wrapper-overlay').html('');
+		$('.overlay').hide();
+	});
+});
