@@ -7240,6 +7240,7 @@ body {
   font-weight: bold;
 }
 .info-footer.footer2 {
+  margin-top: 13px;
   margin-right: 0;
 }
 .info-footer.footer2 .content-left {
@@ -7257,6 +7258,9 @@ body {
   .info-footer.footer2 {
     margin-right: 20px;
   }
+}
+.info-footer.footer3 {
+  margin-top: 13px;
 }
 .info-footer.footer3 .email-wrapper p {
   font-size: 12px;

@@ -30,13 +30,15 @@ $(document).ready(function(){
 
 });
 
+// On product make hover, ajax the short description for this page into a
+// overlay div
 
-var x = $(".details-8ka").position();
+var x = $(".details-7ka").position();
 console.log("Top: " + x.top + " Left: " + x.left);
 
 $.get("7ka.html", function (data) {
 	var elem = $(data).find('.ka-product div:eq(0)');
-	$(".details-8ka").hover(function(){
+	$(".details-7ka").hover(function(){
 		var overlay = $('.overlay');
 		overlay.html(elem);
 		overlay.show();
@@ -58,3 +60,5 @@ $.get("7ka.html", function (data) {
 		$('.overlay').hide();
 	});
 });
+
+
