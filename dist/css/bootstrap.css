@@ -7092,6 +7092,9 @@ body {
 .product-desc .prod-models {
   margin-bottom: 7px;
   font-size: 12px;
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-ruler.png");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 .product-desc .view-details {
   display: block;
