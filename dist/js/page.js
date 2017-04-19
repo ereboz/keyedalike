@@ -30,11 +30,11 @@ $(document).ready(function(){
 
 });
 
-// On product make hover, ajax the short description for this page into a
-// overlay div
+// **** On product make hover, ajax the short description for this page into a
+// overlay div ****
 
-var x = $(".details-7ka").position();
-console.log("Top: " + x.top + " Left: " + x.left);
+// var x = $(".details-7ka").position();
+// console.log("Top: " + x.top + " Left: " + x.left);
 
 $.get("7ka.html", function (data) {
 	var elem = $(data).find('.ka-product div:eq(0)');
@@ -43,22 +43,58 @@ $.get("7ka.html", function (data) {
 		overlay.html(elem);
 		overlay.show();
 		overlay.css({
-			"position": "fixed",
-			"border": "2px dashed black",
-			"top": x.top + 50 + "px",
-			"left": x.left + 300 + "px",
-			"width": "400px",
-			"height": "400px",
+			"position": "absolute",
+			"border": "1px dashed black",
+			// "top": x.top + -100 + "px",
+			// "left": x.left + 200 + "px",
+			"width": "300px",
+			"height": "240px",
 			"margin-left": "-200px;",
 			"margin-top": "-200px;",
 			"z-index": "1",
-			"background-color": "white"
+			"background-color": "white",
+			"overflow": "hidden",
+			// "opacity": "0.8"
 		});
-		
+
 	}, function(){
 		// $('.product-wrapper-overlay').html('');
 		$('.overlay').hide();
 	});
 });
 
+// ****** tooltiptext ******
+
+// var x = $(".tooltiptext").position();
+// console.log("Top: " + x.top + " Left: " + x.left);
+
+// $.get("7ka.html", function (data) {
+// 	var elem = $(data).find('.ka-product div:eq(0)');
+// 	$(".details-7ka").hover(function(){
+// 		var overlay = $('.overlay');
+// 		overlay.html(elem);
+// 		overlay.show();
+// 		overlay.css({
+// 			"position": "absolute",
+// 			"border": "1px dashed black",
+// 			"top": x.top + -100 + "px",
+// 			"left": x.left + 200 + "px",
+// 			"width": "300px",
+// 			"height": "240px",
+// 			"margin-left": "-200px;",
+// 			"margin-top": "-200px;",
+// 			"z-index": "1",
+// 			"background-color": "white",
+// 			"overflow": "hidden",
+// 			// "opacity": "0.8"
+// 		});
+//
+// 	}, function(){
+// 		// $('.product-wrapper-overlay').html('');
+// 		$('.overlay').hide();
+// 	});
+// });
+
+
+// ****** tooltiptext ******
 
