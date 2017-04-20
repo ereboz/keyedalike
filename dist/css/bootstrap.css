@@ -6877,6 +6877,10 @@ body {
 .search-wrapper {
   margin-top: 7px;
 }
+.search .form-control-inline.search-box {
+  float: left;
+  width: 80%;
+}
 .subnav-wrapper {
   height: 30px;
   color: #fff;
