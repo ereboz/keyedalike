@@ -6824,6 +6824,10 @@ body {
 .banner-phone .phone-icon {
   margin: 0 10px 0 0;
 }
+.banner-phone .banner-phone-text {
+  font-size: 14px;
+  font-weight: bold;
+}
 .chat-message {
   margin-top: -9px;
 }
