@@ -59,34 +59,30 @@ Section comment block
 @screen-tablet-md-min: 780px;
 
 
-//  TODO:bh not used yet. we can get this working if we want to customize
-//.btn-transparent() {
-//    display: inline-block;
-//    border: 2px solid #eee;
-//    padding: 7px 15px 7px 10px;
-//    height: 36px;
-//    background: transparent;
-//    font-family: @univers-57-condensed;
-//    font-size: 12px;
-//    font-weight: 700;
-//    text-decoration: none;
-//    text-transform: uppercase;
-//    letter-spacing: 0.05em;
-//    color: #000;
-//    -webkit-transition: all 0.2s ease-in-out;
-//    -moz-transition: all 0.2s ease-in-out;
-//    -o-transition: all 0.2s ease-in-out;
-//    transition: all 0.2s ease-in-out;
-//
-//        &:hover {
-//            background: #eee;
-//            color: #222;
-//        }
-//}
+.btn-transparent() {
+    display: inline-block;
+    border: 2px solid #eee;
+    padding: 7px 15px 7px 10px;
+    height: 36px;
+    background: white;
+    font-family: @font-roboto;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #000;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
-//.view-details {
-//    .btn-transparent();
-//}
+        &:hover {
+            background: #eee;
+            color: #222;
+        }
+}
+
 
 
 
@@ -508,12 +504,15 @@ body {
 
     .prod-models {
         font-size: 12px;
-        margin-bottom: 7px;
+        margin-bottom: 20px;
     }
 	
     .view-details {
+		.btn-transparent();
         display: block;
+		margin: 0 auto;
         text-align: center;
+		width: 125px;
     }
 }
 
