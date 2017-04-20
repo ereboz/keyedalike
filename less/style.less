@@ -59,36 +59,33 @@ Section comment block
 @screen-tablet-md-min: 780px;
 
 
-.btn-transparent() {
-    display: inline-block;
-    border: 2px solid #eee;
-    padding: 7px 15px 7px 10px;
-    height: 36px;
-    background: white;
-    font-family: @font-roboto;
-    font-size: 12px;
-    font-weight: 700;
-    text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: #000;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-
-        &:hover {
-            background: #eee;
-            color: #222;
-        }
-}
-
-
-
-
 /* ==========================================================================
   Mixins
 ========================================================================== */
+
+.btn-transparent() {
+	display: inline-block;
+	border: 2px solid #eee;
+	padding: 7px 15px 7px 10px;
+	height: 36px;
+	background: white;
+	font-family: @font-roboto;
+	font-size: 12px;
+	font-weight: 700;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+	color: #000;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	
+	&:hover {
+		background: #eee;
+		color: #222;
+	}
+}
 
 .opacity (@opacity: 0.5) {
     -webkit-opacity: 	@opacity;
