@@ -19,7 +19,7 @@
                     <span>FREE SHIPPING ON ALL ORDERS OVER $30!</span>
                 </div>
                 <div class="col-md-3 hidden-sm chat-message">
-                    <img src="https://chat.livechatinc.net/licence/1032405/button.cgi?lang=en&groups=0&d=1475094635553">
+                    <a id="LivechatButtonx" href="https://chat.livechatinc.net/licence/1032405/open_chat.cgi?lang=en&amp;groups=0" target="chat_1032405_chat.livechatinc.net" onclick="window.open('https://chat.livechatinc.net/licence/1032405/open_chat.cgi?lang=en&amp;groups=0&amp;'+'dc='+escape(document.cookie+';l='+document.location+';r='+document.referer+';s='+typeof lc_session),'Czat_1032405','width=530,height=520,resizable=yes,scrollbars=no,status=1');return false;"><img src="https://chat.livechatinc.net/licence/1032405/button.cgi?lang=en&amp;groups=0&amp;d=1475094635553" style="border: 0px;"></a>
                 </div>
             </div>
         </div>
@@ -32,7 +32,7 @@
     <div class="container-fluid wrapper-subnav">
         <div class="row subnavall">
             <div class="col-md-4 col-sm-6 col-xs-12">
-                <div class="logo"><img src="/skins/skin_10/dist/images/logo.png"></div>
+                <div class="logo"><a href="http://a2zhardware.com"><img src="/skins/skin_10/dist/images/logo.png"></a></div>
                 <div class="subnav-left">
                     <span>Keyed</span>
                     <span>alike.com</span>
@@ -52,6 +52,11 @@
             <div class="col-md-4 hidden-sm hidden-xs subnav-wrapper">
                 <div class="sub-nav">
                     <ul class="nav navbar-nav">
+                        <li>
+                            <a href="@Url.Action("Index", "Account")">
+                            @Html.StringResource("responsiveskin.accountlabel")
+                            </a>
+                        </li>
                         <li>
                             <a href="@Html.Token("SIGNINOUT_LINK")">
                             @Html.Token("SIGNINOUT_TEXT")</a>
@@ -82,7 +87,6 @@
                     </div>
                     <div class="collapse navbar-collapse" id="myNavbar">
                         <ul class="nav navbar-nav">
-                            <li class=""><a href="#">Featured</a></li>
                             <li><a href="#">Laminated Steel</a></li>
                             <li><a href="#">Laminated Brass</a></li>
                             <li><a href="#">Solid Brass Body</a></li>
@@ -93,7 +97,11 @@
                         <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
                             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                             <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Sign Up</a></li>
-                            <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+                            <li>
+                                <a href="shoppingcart.aspx"><span class="glyphicon glyphicon-shopping-cart"></span>
+                                @Html.StringResource("responsiveskin.cartcountlabel")
+                                ( @Html.Token("NUM_CART_ITEMS") items)</a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -432,7 +440,9 @@
                       <div class="product-image-wrapper">
                             <div class="product-image-bg-del">
                                 <!--<img src="/skins/skin_10/dist/images/sale.png" class="product-sale" alt="">-->
-                                <a href="#"><img src="/skins/skin_10/dist/images/prod-detail-7ka.png" class="product-image img-responsive" alt="a"/></a>
+                                <a href="/category/2/laminated-steel-padlocks">
+                                    <img src="/skins/skin_10/dist/images/prod-detail-7ka.png" class="product-image img-responsive" alt=""/>
+                                </a>
                             </div>
                       </div>
 
@@ -460,7 +470,9 @@
                       <div class="product-image-wrapper">
                             <div class="product-image-bg-del">
                                 <!--<img src="/skins/skin_10/dist/images/sale.png" class="product-sale" alt="">-->
-                                <a href="#"><img src="/skins/skin_10/dist/images/prod-detail-8ka.png" class="product-image img-responsive" alt="a"/></a>
+                                <a href="/product/227/8-laminated-brass-padlock">
+                                    <img src="/skins/skin_10/dist/images/prod-detail-8ka.png" class="product-image img-responsive" alt="a"/>
+                                </a>
                             </div>
                       </div>
 
@@ -516,7 +528,9 @@
                       <div class="product-image-wrapper">
                             <div class="product-image-bg-del">
                                 <!--<img src="/skins/skin_10/dist/images/sale.png" class="product-sale" alt="">-->
-                                <a href="#"><img src="/skins/skin_10/dist/images/prod-detail-4ka.png" class="product-image img-responsive" alt="a"/></a>
+                                <a href="/product/217/4-laminated-brass-padlock">
+                                    <img src="/skins/skin_10/dist/images/prod-detail-4ka.png" class="product-image img-responsive" alt="a"/>
+                                </a>
                             </div>
                       </div>
 
@@ -583,7 +597,9 @@
                         <div class="product-image-wrapper">
                               <div class="product-image-bg-del">
                                     <!--<img src="/skins/skin_10/dist/images/sale.png" class="product-sale" alt="">-->
-                                    <a href="#"><img src="/skins/skin_10/dist/images/prod-detail-2ka.png" class="product-image img-responsive" alt="a"/></a>
+                                    <a href="/product/208/2-laminated-brass-padlock">
+                                        <img src="/skins/skin_10/dist/images/prod-detail-2ka.png" class="product-image img-responsive" alt="a"/>
+                                    </a>
                               </div>
                         </div>
 
@@ -640,7 +656,9 @@
                         <div class="product-image-wrapper">
                               <div class="product-image-bg-del">
                                     <!--<img src="/skins/skin_10/dist/images/sale.png" class="product-sale" alt="">-->
-                                    <a href="#"><img src="/skins/skin_10/dist/images/prod-detail-6ka.png" class="product-image img-responsive" alt="a"/></a>
+                                    <a href="/product/223/6-laminated-brass-padlock">
+                                        <img src="/skins/skin_10/dist/images/prod-detail-6ka.png" class="product-image img-responsive" alt="a"/>
+                                    </a>
                               </div>
                         </div>
 

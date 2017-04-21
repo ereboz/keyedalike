@@ -6886,12 +6886,24 @@ body {
   color: #fff;
 }
 .sub-nav {
-  margin-top: 20px;
   font-size: 12px;
 }
-.sub-nav ul li {
-  margin-right: 10px;
+.sub-nav li {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+}
+.sub-nav li a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.sub-nav li a:hover {
+  color: #e0e0e0;
+  background-color: #000;
+}
+.sub-nav li a:visited {
+  color: #fff;
+}
+.sub-nav li a:active {
+  color: #fff;
 }
 @media (max-width: 768px) {
   .sub-nav {
@@ -6944,7 +6956,7 @@ body {
   display: block;
 }
 #myCarousel .carousel-inner {
-  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide.jpg");
+  background-image: url("/skins/skin_10/dist/images/bg-slide.jpg");
 }
 #myCarousel .carousel-inner .item img {
   display: block;
@@ -7154,7 +7166,7 @@ body {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background-image: url("http://localhost:63342/keyedalike/dist/images/bg_obn.png");
+  background-image: url("/skins/skin_10/dist/images/bg_obn.png");
   background-repeat: no-repeat;
   background-position: center center;
   border-right: 1px solid #e0e0e0;
@@ -7167,7 +7179,7 @@ body {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background-image: url("http://localhost:63342/keyedalike/dist/images/bg_like.png");
+  background-image: url("/skins/skin_10/dist/images/bg_like.png");
   background-repeat: no-repeat;
   background-position: center center;
   border-right: 1px solid #e0e0e0;
@@ -7181,7 +7193,7 @@ body {
   overflow: hidden;
   text-indent: 100%;
   white-space: nowrap;
-  background-image: url("http://localhost:63342/keyedalike/dist/images/bg_bay.png");
+  background-image: url("/skins/skin_10/dist/images/bg_bay.png");
   background-repeat: no-repeat;
   background-position: center center;
 }

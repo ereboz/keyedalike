@@ -118,7 +118,7 @@ body {
     height: 50px;
     margin: -5px 0 0 0;
     background-color: @blue;
-  //background-image: url("http://localhost:63342/keyedalike/dist/images/bg-banner.gif");
+  //background-image: url("/skins/skin_10/dist/images/bg-banner.gif");
     @media (max-width: @screen-tablet) {
         display: none;
     }
@@ -195,7 +195,7 @@ body {
     float: left;
     margin-top: 8px;
     //height: 56px;
-    //background-image: url("http://localhost:63342/keyedalike/dist/images/logo.png");
+    //background-image: url("/skins/skin_10/dist/images/logo.png");
     //background-repeat: no-repeat;
     //background-position: left bottom;
 }
@@ -244,13 +244,28 @@ body {
 }
 
 .sub-nav {
-    margin-top: 20px;
-    font-size: 12px;
 
-    ul li {
-        margin-right: 10px;
-        font-family: @font-subnav;
-    }
+    font-size: 12px;
+	//margin-top: 15px; // TODO-bh: SERVER uncomment to display local
+	li {
+		font-family: @font-subnav;
+		a {
+			&:link {
+				color: @white;
+				text-decoration: none;
+			}
+			&:hover {
+				color: @light-gray1;
+				background-color: @black;
+			}
+			&:visited {
+				color: @white;
+			}
+			&:active {
+				color: @white;
+			}
+		}
+	}
 
     @media (max-width: @screen-tablet) {
         display: none;
@@ -314,7 +329,7 @@ body {
     }
 
   .carousel-inner {
-      background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide.jpg");
+      background-image: url("/skins/skin_10/dist/images/bg-slide.jpg");
 
       .item {
           img {
@@ -554,7 +569,7 @@ body {
         height: 45px;
         border-right: 1px solid @light-gray1;
 
-        background-image: url("http://localhost:63342/keyedalike/dist/images/bg_obn.png");
+        background-image: url("/skins/skin_10/dist/images/bg_obn.png");
         background-repeat: no-repeat;
         background-position: center center;
 
@@ -570,7 +585,7 @@ body {
         height: 45px;
         border-right: 1px solid @light-gray1;
 
-        background-image: url("http://localhost:63342/keyedalike/dist/images/bg_like.png");
+        background-image: url("/skins/skin_10/dist/images/bg_like.png");
         background-repeat: no-repeat;
         background-position: center center;
 
@@ -586,7 +601,7 @@ body {
         width: 20%;
         height: 45px;
 
-        background-image: url("http://localhost:63342/keyedalike/dist/images/bg_bay.png");
+        background-image: url("/skins/skin_10/dist/images/bg_bay.png");
         background-repeat: no-repeat;
         background-position: center center;
 
