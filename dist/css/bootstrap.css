@@ -6874,6 +6874,19 @@ body {
 .subnav-left span:last-of-type {
   font-weight: 700;
 }
+.subnav-left a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.subnav-left a:hover {
+  color: #7b7a7a;
+}
+.subnav-left a:visited {
+  color: #fff;
+}
+.subnav-left a:active {
+  color: #fff;
+}
 .search-wrapper {
   margin-top: 7px;
 }
