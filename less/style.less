@@ -721,9 +721,17 @@ body {
 		
 		.content-left {
 			float: left;
+			margin-bottom: 20px;
 		}
 		.content-right {
 			float: right;
+			margin-bottom: 20px;
+			
+			li {
+				&:nth-child(2) {
+					margin-bottom: 20px;
+				}
+			}
 		}
 		
 		@media (min-width: @screen-lg-desktop) {
@@ -734,6 +742,16 @@ body {
 			margin-right: 20px;
 		}
 		
+		.social {
+			float: left;
+			width: 100%;
+			
+			li {
+				&.fa {
+					margin: 0 6px;
+				}
+			}
+		}
 	}
 	
 	&.footer3 {
@@ -744,17 +762,16 @@ body {
 				font-size: 12px;
 			}
 		}
+		//Server side
 		
-		.social {
-			li {
-				&.fa {
-					margin: 0 6px;
-				}
-			}
+		.input-group-addon-captchaimage {
+			padding: 0;
 		}
 		
-		.email {
-			margin-bottom: 20px;
+		.page-action-bar {
+			margin-bottom: 15px;
 		}
+		
+
 	}
 }
