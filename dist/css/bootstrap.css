@@ -7294,7 +7294,34 @@ body {
   font-weight: bold;
 }
 .info-footer.footer1 .padlock-pros {
+  float: left;
+}
+.info-footer.footer1 .padlock-pros .logo {
   width: 300px;
+}
+.info-footer.footer1 .contact {
+  float: left;
+}
+.info-footer.footer1 .contact h1 {
+  font-family: inherit;
+}
+.info-footer.footer1 .contact span {
+  font-family: inherit;
+}
+.info-footer.footer1 .logo-affiliates {
+  float: left;
+}
+.info-footer.footer1 .logo-affiliates .better-business {
+  margin-left: -20px;
+}
+.info-footer.footer1 .logo-affiliates .secure {
+  margin-left: 20px;
+}
+.info-footer.footer1 .logo-affiliates .credit-cards {
+  margin-left: -24px;
+}
+.info-footer.footer1 .copy {
+  float: left;
 }
 .info-footer.footer2 {
   margin-top: 13px;
@@ -7313,7 +7340,7 @@ body {
 }
 @media (min-width: 1200px) {
   .info-footer.footer2 {
-    margin-right: 135px;
+    margin-right: 80px;
   }
 }
 @media screen and (max-width: 800px) and (min-width: 780px) {

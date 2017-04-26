@@ -713,9 +713,42 @@ body {
 		
 	&.footer1 {
 		.padlock-pros {
-			width: 300px;
+			float: left;
+			
+			.logo {
+				width: 300px;
+			}
+		}
+		.contact {
+			float: left;
+			
+			h1 {
+				font-family: inherit;
+			}
+			
+			span {
+				font-family: inherit;
+			}
+		}
+		.logo-affiliates {
+			float: left;
+			
+			.better-business {
+				margin-left: -20px;
+			}
+			
+			.secure {
+				margin-left: 20px;
+			}
+			
+			.credit-cards {
+				margin-left: -24px;
+			}
 		}
 		
+		.copy {
+			float: left;
+		}
 	}
 	
 	&.footer2 {
@@ -738,7 +771,7 @@ body {
 		}
 		
 		@media (min-width: @screen-lg-desktop) {
-			margin-right: 135px;
+			margin-right: 80px;
 		}
 		
 		@media screen and (max-width: @screen-tablet-md-max) and (min-width: @screen-tablet-md-min) {
