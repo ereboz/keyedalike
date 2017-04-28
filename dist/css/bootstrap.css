@@ -7151,6 +7151,36 @@ body {
   color: #222;
   background: #eee;
 }
+/*
+The last 2 products in the product grid need to have even height. Need to have very specific targeting so we don't apply to
+the others as well. Find a good LES solution
+*/
+body > div.container > div:nth-child(7) > div > div:nth-child(3) > div > div.product-desc-wrapper > div > p.prod-models {
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  body > div.container > div:nth-child(7) > div > div:nth-child(3) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  body > div.container > div:nth-child(7) > div > div:nth-child(3) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 56px;
+  }
+}
+body > div.container > div:nth-child(7) > div > div:nth-child(4) > div > div.product-desc-wrapper > div > p.prod-models {
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  body > div.container > div:nth-child(7) > div > div:nth-child(4) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  body > div.container > div:nth-child(7) > div > div:nth-child(4) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 56px;
+  }
+}
 .product-footer-wrapper {
   position: relative;
   float: left;

@@ -572,6 +572,48 @@ body {
     }
 }
 
+/*
+The last 2 products in the product grid need to have even height. Need to have very specific targeting so we don't apply to
+the others as well. Find a good LES solution
+*/
+
+// Server target - Models: 5KA - 5KALF - 5KALJ
+body > div.container > div:nth-child(7) > div > div:nth-child(3) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 15px;
+    
+    @media (max-width: @screen-tablet) {
+        margin-bottom: 20px;
+    }
+    
+    @media (min-width: @screen-desktop) {
+        margin-bottom: 56px;
+    }
+}
+
+// Server Target - Models: 6KA - 6KALF - 6KALJ
+body > div.container > div:nth-child(7) > div > div:nth-child(4) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 15px;
+    
+    @media (max-width: @screen-tablet) {
+        margin-bottom: 20px;
+    }
+    
+    @media (min-width: @screen-desktop) {
+        margin-bottom: 56px;
+    }
+}
+
+// Local target
+//body > div:nth-child(11) > div > div:nth-child(3) > div > div.product-desc-wrapper > div > p.prod-models {
+//    margin-bottom: 56px;
+//}
+//
+//body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapper > div > p.prod-models {
+//    margin-bottom: 56px;
+//}
+
+
+
 .product-footer-wrapper {
     position: relative;
     float: left;
