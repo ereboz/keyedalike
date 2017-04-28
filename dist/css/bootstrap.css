@@ -7171,44 +7171,14 @@ body {
 .product-footer-wrapper .prices .retail-price {
   text-decoration: line-through;
 }
-.product-footer-wrapper .sort a {
-  position: relative;
-  float: left;
-  width: 20%;
-  height: 45px;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background-image: url("/skins/skin_10/dist/images/bg_obn.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-right: 1px solid #e0e0e0;
-}
-.product-footer-wrapper .favorite a {
-  position: relative;
-  float: left;
-  width: 20%;
-  height: 45px;
-  overflow: hidden;
-  text-indent: 100%;
-  white-space: nowrap;
-  background-image: url("/skins/skin_10/dist/images/bg_like.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  border-right: 1px solid #e0e0e0;
-}
 .product-footer-wrapper .cart a {
   position: relative;
   display: block;
   float: left;
-  width: 20%;
+  width: 60%;
   height: 45px;
   overflow: hidden;
-  text-indent: 100%;
   white-space: nowrap;
-  background-image: url("/skins/skin_10/dist/images/bg_bay.png");
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 .product-desc-wrapper,
 .product-footer-wrapper {
