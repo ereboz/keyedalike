@@ -7171,14 +7171,29 @@ body {
 .product-footer-wrapper .prices .retail-price {
   text-decoration: line-through;
 }
-.product-footer-wrapper .cart a {
+.product-footer-wrapper .details a.view-details {
   position: relative;
   display: block;
   float: left;
   width: 60%;
   height: 45px;
+  padding: 14px 5px 5px 10px;
   overflow: hidden;
-  white-space: nowrap;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 12px;
+  color: #000;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: .09em;
+  background-color: #f3f5f6;
+  -webkit-transition: all .2s ease-in-out;
+       -o-transition: all .2s ease-in-out;
+          transition: all .2s ease-in-out;
+}
+.product-footer-wrapper .details a.view-details:hover {
+  color: #fff;
+  background-color: #29abe2;
 }
 .product-desc-wrapper,
 .product-footer-wrapper {

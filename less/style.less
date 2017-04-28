@@ -63,28 +63,54 @@ Section comment block
   Mixins
 ========================================================================== */
 
+
 .btn-transparent() {
-	display: inline-block;
-	border: 2px solid #eee;
-	padding: 7px 15px 7px 10px;
-	height: 36px;
-	background: white;
-	font-family: @font-roboto;
-	font-size: 12px;
-	font-weight: 700;
-	text-decoration: none;
-	text-transform: uppercase;
-	letter-spacing: 0.05em;
-	color: #000;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-	
-	&:hover {
-		background: #eee;
-		color: #222;
-	}
+    display: inline-block;
+    border: 2px solid #eee;
+    padding: 7px 15px 7px 10px;
+    height: 36px;
+    background: white;
+    font-family: @font-roboto;
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #000;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    
+    &:hover {
+        background: #eee;
+        color: #222;
+    }
+}
+
+.btn-view-detais() {
+    display: block;
+    float: left;
+    width: 60%;
+    height: 45px;
+    padding: 14px 5px 5px 10px;
+    overflow: hidden;
+    font-family: "Roboto Condensed",sans-serif;
+    font-size: 12px;
+    color: @black;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .09em;
+    background-color: @light-gray3;
+    text-align: center;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    
+    &:hover {
+        background-color: @blue;
+        color: @white;
+    }
 }
 
 .opacity (@opacity: 0.5) {
@@ -555,6 +581,7 @@ body {
     }
 }
 
+
 .product-footer-wrapper {
     position: relative;
     float: left;
@@ -611,22 +638,17 @@ body {
     //    white-space:nowrap;
     //}
 
-    .cart a {
+    .details a.view-details {
+        .btn-view-detais();
         display: block;
         position: relative;
         float: left;
         width: 60%;
         height: 45px;
-
         //background-image: url("http://localhost:63342/keyedalike/dist/images/bg_bay.png");
         //background-repeat: no-repeat;
         //background-position: center center;
-
-        overflow:hidden;
-        //text-indent:100%;
-        white-space:nowrap;
     }
-
 }
 
 .product-desc-wrapper,.product-footer-wrapper {
