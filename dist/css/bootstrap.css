@@ -7409,36 +7409,56 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   margin-bottom: 15px;
 }
 /* Brian Start Custom Styles for Product Page */
-.product-page-header {
-  margin-bottom: 40px;
-  color: #188ebf;
-}
-.product-info-column {
-  padding: 20px;
-  background-color: #f7f4f4;
-  border: 1px solid #dcdbe0;
-}
-.variant-price .price-wrap .variant-price {
-  margin: 20px 0;
-  font-size: 20px;
-  font-weight: bold;
-  color: #29abe2;
-}
-.form-group label {
+.product-info-wrap .product-page-header {
   margin-bottom: 20px;
-  font-size: 16px !important;
+  border-bottom: 1px solid #ddd;
 }
-.form-control {
-  width: 50%;
+.variant-info-wrap .variant-price .price-wrap {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: normal;
+  color: #888;
 }
-.quantity-field {
-  margin-bottom: 25px;
+.add-to-cart-group .quantity-field {
+  float: left;
+  width: 15%;
+}
+.add-to-cart-group .size-select {
+  float: left;
+  width: 32%;
+}
+.add-to-cart-group .color-select {
+  float: left;
+  width: 20%;
+}
+.add-to-cart-group .form-control {
+  margin-right: 5px;
+}
+.add-to-cart-group .add-to-cart-quantity label {
+  display: block;
+  width: 100%;
 }
 .btn.add-to-cart {
+  color: #fff !important;
+  background-color: #337ab7 !important;
+}
+.btn.add-to-cart:hover {
+  background-color: #286090 !important;
+}
+.product-options.form-group #variantSelector {
+  width: 30%;
+}
+#viewOptionsLabelcolor {
   margin-bottom: 20px;
 }
-.email-a-friend-wrap {
-  margin-bottom: 10px;
+#viewControls .linkWrap {
+  float: left;
+  width: 50%;
+  margin-bottom: 30px;
 }
-/* Brian End Custom Styles for Product Page */
+.product-description-wrap {
+  margin-bottom: 50px;
+  font-size: 16px;
+  color: #4d4d4d;
+}
 /*# sourceMappingURL=bootstrap.css.map */

@@ -39,6 +39,8 @@ Section comment block
 // New Keyedalike vars
 
 @blue: #29ABE2;
+@blue1: #337ab7;
+@blue2: #286090;
 @cadetblue: #668bae;
 @light-gray-4: #f5f3f3;
 @gray-medium: #7b7a7a;
@@ -46,6 +48,7 @@ Section comment block
 @white-smoke: #f5f5f5;
 @med-gray: #616161;
 @dark-gray: #333;
+@gray-med1: #ddd;
 
 // Bootstrap LESS variables to reference
 // @screen-xs             480px;
@@ -848,48 +851,69 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 	}
 }
-
-
-
 /* Brian Start Custom Styles for Product Page */
 
-.product-page-header {
-	margin-bottom: 40px;
-	color: #188ebf;
+.product-info-wrap .product-page-header {
+    margin-bottom: 20px;
+    border-bottom: 1px solid @gray-med1;
 }
 
-.product-info-column {
-	padding: 20px;
-	border: 1px solid #dcdbe0;
-	background-color: #f7f4f4;
+.variant-info-wrap .variant-price .price-wrap {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #888;
+    font-weight: normal;
 }
 
-.variant-price .price-wrap .variant-price {
-	margin: 20px 0;
-	font-size:20px;
-	font-weight: bold;
-	color: @blue;
+.add-to-cart-group .quantity-field {
+    float: left;
+    width: 15%;
 }
 
-.form-group label {
-	font-size: 16px !important;
-	margin-bottom: 20px;
+.add-to-cart-group .size-select {
+    float: left;
+    width: 32%;
 }
 
-.form-control {
-	width: 50%;
+.add-to-cart-group .color-select {
+    float: left;
+    width: 20%;
 }
 
-.quantity-field {
-	margin-bottom: 25px;
+.add-to-cart-group .form-control {
+    margin-right: 5px;
+}
+
+.add-to-cart-group .add-to-cart-quantity label {
+    display: block;
+    width: 100%;
 }
 
 .btn.add-to-cart {
-	margin-bottom: 20px;
+    color: @white !important;
+    background-color: @blue1 !important;
 }
 
-.email-a-friend-wrap {
-	margin-bottom: 10px;
+.btn.add-to-cart:hover {
+    background-color: @blue2 !important;
 }
 
-/* Brian End Custom Styles for Product Page */
+.product-options.form-group #variantSelector {
+    width: 30%;
+}
+
+#viewOptionsLabelcolor {
+    margin-bottom: 20px;
+}
+
+#viewControls .linkWrap {
+    float: left;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.product-description-wrap {
+    margin-bottom: 50px;
+    font-size: 16px;
+    color: lighten(@black, 30%);
+}
