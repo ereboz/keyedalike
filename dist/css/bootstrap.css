@@ -7181,6 +7181,32 @@ body > div.container > div:nth-child(7) > div > div:nth-child(4) > div > div.pro
     margin-bottom: 56px;
   }
 }
+body > div:nth-child(11) > div > div:nth-child(3) > div > div.product-desc-wrapper > div > p.prod-models {
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  body > div:nth-child(11) > div > div:nth-child(3) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  body > div:nth-child(11) > div > div:nth-child(3) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 56px;
+  }
+}
+body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapper > div > p.prod-models {
+  margin-bottom: 15px;
+}
+@media (max-width: 768px) {
+  body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapper > div > p.prod-models {
+    margin-bottom: 56px;
+  }
+}
 .product-footer-wrapper {
   position: relative;
   float: left;
