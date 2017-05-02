@@ -7456,6 +7456,11 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   width: 50%;
   margin-bottom: 30px;
 }
+#viewControls .linkWrap img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 .product-description-wrap {
   margin-bottom: 50px;
   font-size: 16px;
