@@ -7410,6 +7410,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 /* Brian Start Custom Styles for Product Page */
 .product-info-wrap .product-page-header {
+  margin-top: -10px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
@@ -7418,12 +7419,12 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 @media (min-width: 768px) {
   .variant-info-wrap .add-to-cart-wrap {
-    margin-bottom: 45px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 992px) {
   .variant-info-wrap .add-to-cart-wrap {
-    margin-bottom: 145px;
+    margin-bottom: 40px;
   }
 }
 .variant-info-wrap .variant-price .price-wrap {
