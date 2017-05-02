@@ -7477,6 +7477,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 .add-to-cart-group .form-control {
   margin-right: 5px;
+  margin-bottom: 10px;
 }
 .add-to-cart-group .add-to-cart-quantity label {
   display: block;
