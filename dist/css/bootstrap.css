@@ -6999,6 +6999,7 @@ body {
 }
 #myCarousel .carousel-caption p {
   font-size: 12px;
+  text-align: left;
 }
 #myCarousel .carousel-caption p:nth-child(3) {
   color: #29abe2;
