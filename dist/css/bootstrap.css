@@ -7413,6 +7413,9 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
 }
+.variant-info-wrap .add-to-cart-wrap {
+  margin-bottom: 45px;
+}
 .variant-info-wrap .variant-price .price-wrap {
   margin-bottom: 10px;
   font-size: 16px;
@@ -7444,6 +7447,12 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 .btn.add-to-cart:hover {
   background-color: #286090 !important;
+}
+.add-to-cart-selectors .color-select {
+  margin-right: 100px;
+}
+.add-to-cart-selectors .color-select {
+  margin-bottom: 10px;
 }
 .product-options.form-group {
   display: none;

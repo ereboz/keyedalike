@@ -858,6 +858,11 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     border-bottom: 1px solid @gray-med1;
 }
 
+// margin at bottom of wrapper to bump down "Chose a Color" option.
+.variant-info-wrap .add-to-cart-wrap {
+    margin-bottom:45px;
+}
+
 .variant-info-wrap .variant-price .price-wrap {
     margin-bottom: 10px;
     font-size: 16px;
@@ -897,7 +902,14 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .btn.add-to-cart:hover {
     background-color: @blue2 !important;
 }
-
+// add ridiculous margin to bump Add to Cart button down to next line
+.add-to-cart-selectors .color-select {
+    margin-right: 100px;
+}
+// some space between options and add to cart button on line below
+.add-to-cart-selectors .color-select {
+    margin-bottom: 10px;
+}
 //.product-options.form-group #variantSelector {
 //    width: 30%;
 //}
