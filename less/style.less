@@ -860,7 +860,15 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 // margin at bottom of wrapper to bump down "Chose a Color" option
 .variant-info-wrap .add-to-cart-wrap {
-    margin-bottom:45px;
+    margin-bottom: 0;   // mobile
+    
+    @media (min-width: @screen-tablet) {
+        margin-bottom: 45px; // tablet
+    }
+    
+    @media (min-width: @screen-desktop) {
+        margin-bottom: 145px; // desktop
+    }
 }
 
 .variant-info-wrap .variant-price .price-wrap {
