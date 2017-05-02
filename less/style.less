@@ -880,17 +880,41 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 .add-to-cart-group .quantity-field {
     float: left;
-    width: 15%;
+    width: 100%;
+    
+    @media (min-width: @screen-tablet) {
+        width: 100%; // tablet
+    }
+    
+    @media (min-width: @screen-desktop) {
+        width: 10%; // desktop
+    }
 }
 
 .add-to-cart-group .size-select {
     float: left;
-    width: 32%;
+    width: 100%;
+    @media (min-width: @screen-tablet) {
+        width: 100%; // tablet
+    }
+    
+    @media (min-width: @screen-desktop) {
+        width: 25%; // desktop
+    }
 }
 
 .add-to-cart-group .color-select {
     float: left;
-    width: 20%;
+    width: 100%;
+    
+    @media (min-width: @screen-tablet) {
+        width: 100%; // tablet
+    }
+    
+    @media (min-width: @screen-desktop) {
+        width: 15%; // desktop
+        margin-right: 300px !important;
+    }
 }
 
 .add-to-cart-group .form-control {
@@ -911,9 +935,9 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     background-color: @blue2 !important;
 }
 // add ridiculous margin to bump Add to Cart button down to next line
-.add-to-cart-selectors .color-select {
-    margin-right: 100px;
-}
+//.add-to-cart-selectors .color-select {
+//    margin-right: 100px;
+//}
 // some space between options and add to cart button on line below
 .add-to-cart-selectors .color-select {
     margin-bottom: 10px;
