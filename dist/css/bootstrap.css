@@ -7409,7 +7409,9 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .info-footer.footer3 .page-action-bar {
   margin-bottom: 15px;
 }
-/* Brian Start Custom Styles for Product Page */
+/* ==========================================================================
+    Custom Styles for Product Description Page
+========================================================================== */
 .product-info-wrap .product-page-header {
   margin-top: -10px;
   margin-bottom: 20px;
@@ -7515,5 +7517,147 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   margin-bottom: 50px;
   font-size: 16px;
   color: #4d4d4d;
+}
+/* ==========================================================================
+    Custom Styles for Product Category Listings
+========================================================================== */
+/* sort by, products per page and paging arrows
+========================================================================== */
+.pagerArea.topPagerArea,
+.pagerArea.bottomPagerArea {
+  padding: 10px;
+  margin-bottom: 40px;
+  border: 1px solid lightgray;
+}
+/* entity and products per page wrap */
+.entityPageSortWrap {
+  float: left;
+  margin-top: 7px;
+}
+/* wraps viewing page 1 of 2 */
+.entityPagePagingWrap {
+  float: left;
+  margin-left: 10px;
+}
+@media (min-width: 992px) {
+  .entityPagePagingWrap {
+    float: right;
+  }
+}
+/* padding to the left of sort by */
+div#catSortByTop {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+select#SelectSortTop {
+  margin-left: 73px;
+}
+@media (min-width: 768px) {
+  select#SelectSortTop {
+    margin-left: 0 !important;
+  }
+}
+@media (min-width: 992px) {
+  select#SelectSortTop {
+    margin-left: 0 !important;
+  }
+}
+/* wrapper for sort by and relevance */
+.catSortBy {
+  float: left;
+}
+/* space between sort by and products per page */
+div#catSortByTop {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+/* space between product per page label and combo */
+span.pageSizeHeading.productcontrollabel {
+  margin-right: 5px;
+}
+/* wrapper for pagination */
+.pagesize {
+  float: left;
+  margin-left: 10px;
+}
+/* space between sort by and combo box */
+span.sortbylabel.productcontrollabel {
+  margin-right: 0;
+}
+@media (min-width: 992px) {
+  span.sortbylabel.productcontrollabel {
+    margin-right: 5px;
+  }
+}
+/* Pagination
+========================================================================== */
+.pagerArea.bottomPagerArea {
+  margin-top: 40px;
+}
+/* wraps viewing page 1/2 */
+.viewingPageHeading.productcontrollabel {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .viewingPageHeading.productcontrollabel {
+    margin-bottom: 0;
+  }
+}
+.pagerWrap {
+  float: right;
+  margin: 10px 0 10px 0;
+}
+/* wraps page: 123>>> */
+.pageLinksWrap {
+  float: left;
+  margin-right: 10px;
+}
+/* text for Page on right */
+.pageHeadingWrap {
+  margin-right: 5px;
+}
+span.pageHeadingWrap {
+  margin-right: 10px;
+}
+.pageLinksWrap a {
+  padding: 5px 10px 5px 10px;
+  margin-right: 5px;
+  color: #000;
+  text-decoration: none;
+  background-color: #fbfbfb !important;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+}
+.pageLinksWrap a.currentpage {
+  color: #fff;
+  background-color: #29abe2 !important;
+}
+.pageLinksWrap a:hover {
+  color: #fff;
+  background-color: #929292 !important;
+}
+/* Products
+========================================================================== */
+/* some space between the rows */
+td.guidedNavProductCell {
+  padding-top: 30px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  td.guidedNavProductCell {
+    padding-right: 0;
+  }
+}
+td.guidedNavProductCell:hover {
+  border-bottom: 1px solid #000;
+}
+.product-image {
+  padding: 3px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  border: 1px solid #ddd;
 }
 /*# sourceMappingURL=bootstrap.css.map */

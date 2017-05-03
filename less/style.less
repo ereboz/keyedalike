@@ -33,6 +33,7 @@ Section comment block
 @green: #47a9b4;
 @carousel-strip: #eff8fa;
 @light-gray1: #e0e0e0;
+@light-gray4: #dddddd;
 @light-gray2: #f8f8f8;
 @light-gray3: #f3f5f6;
 
@@ -49,6 +50,7 @@ Section comment block
 @med-gray: #616161;
 @dark-gray: #333;
 @gray-med1: #ddd;
+@gray-med2: #dcdcdc;
 
 // Bootstrap LESS variables to reference
 // @screen-xs             480px;
@@ -851,7 +853,11 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 	}
 }
-/* Brian Start Custom Styles for Product Page */
+
+/* ==========================================================================
+    Custom Styles for Product Description Page
+========================================================================== */
+
 
 .product-info-wrap .product-page-header {
     margin-bottom: 20px;
@@ -972,4 +978,175 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     margin-bottom: 50px;
     font-size: 16px;
     color: lighten(@black, 30%);
+}
+
+
+/* ==========================================================================
+    Custom Styles for Product Category Listings
+========================================================================== */
+
+
+
+/* sort by, products per page and paging arrows
+========================================================================== */
+.pagerArea.topPagerArea, .pagerArea.bottomPagerArea {
+    border: 1px solid lightgray;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+/* entity and products per page wrap */
+.entityPageSortWrap {
+    float: left;
+    margin-top: 7px;
+}
+
+/* wraps viewing page 1 of 2 */
+.entityPagePagingWrap {
+    float: left;
+    margin-left: 10px;
+    
+    @media (min-width: @screen-desktop) {
+        float: right;
+    }
+}
+
+/* padding to the left of sort by */
+div#catSortByTop {
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+//sort by combo box
+select#SelectSortTop {
+    margin-left: 73px;
+    
+    @media (min-width: @screen-tablet) {
+        margin-left: 0 !important;
+    }
+    
+    @media (min-width: @screen-desktop) {
+        margin-left: 0 !important;
+    }
+}
+/* wrapper for sort by and relevance */
+.catSortBy {
+    float: left;
+}
+
+/* space between sort by and products per page */
+div#catSortByTop {
+    margin-right: 20px;
+    margin-left: 10px;
+}
+
+/* space between product per page label and combo */
+span.pageSizeHeading.productcontrollabel {
+    margin-right: 5px;
+}
+
+/* wrapper for pagination */
+.pagesize {
+    float: left;
+    margin-left: 10px;
+}
+
+/* space between sort by and combo box */
+span.sortbylabel.productcontrollabel {
+    margin-right: 0;
+    
+    
+    @media (min-width: @screen-desktop) {
+        margin-right: 5px;
+    }
+}
+
+
+
+/* Pagination
+========================================================================== */
+
+.pagerArea.bottomPagerArea {
+    margin-top: 40px;
+}
+
+/* wraps viewing page 1/2 */
+.viewingPageHeading.productcontrollabel {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    
+    @media (min-width: @screen-tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.pagerWrap {
+    margin: 10px 0 10px 0;
+    float: right;
+}
+
+/* wraps page: 123>>> */
+.pageLinksWrap {
+    float: left;
+    margin-right: 10px;
+}
+
+/* text for Page on right */
+.pageHeadingWrap {
+    margin-right: 5px;
+}
+
+span.pageHeadingWrap {
+    margin-right: 10px;
+}
+
+.pageLinksWrap a {
+    margin-right: 5px;
+    border: 1px solid lightgray;
+    padding: 5px 10px 5px 10px;
+    color: #000;
+    background-color: #fbfbfb !important;
+    text-decoration: none;
+    
+    -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+             border-radius: 2px;
+
+    &.currentpage {
+        background-color: @blue !important;
+        color: @white;
+    }
+    
+    &:hover {
+        background-color: #929292 !important;
+        color: @white;
+    }
+}
+
+
+/* Products
+========================================================================== */
+
+/* some space between the rows */
+td.guidedNavProductCell {
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    
+    @media (min-width: @screen-sm) {
+        padding-right: 0;
+    }
+}
+
+td.guidedNavProductCell:hover {
+    border-bottom: 1px solid #000;
+    //background-color: #fbfbfb;
+}
+
+.product-image {
+    margin: 0 auto;
+    border: 1px solid @light-gray4;
+    margin-bottom: 5px;
+    padding: 3px;
 }
