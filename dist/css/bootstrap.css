@@ -7498,6 +7498,9 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .add-to-cart-selectors .color-select {
   margin-bottom: 10px;
 }
+#colorOptionsLabel {
+  width: 150px;
+}
 .product-options.form-group {
   display: none;
 }
