@@ -7665,4 +7665,87 @@ td.guidedNavProductCell:hover {
   margin-bottom: 5px;
   border: 1px solid #d3d3d3;
 }
+/* ==========================================================================
+    Custom Styles for Secure Checkout page
+    http://http://a2zhardware.com/checkout
+========================================================================== */
+/* globals affecting everything
+========================================================================== */
+/* checkout detail on left */
+.checkout-details {
+  padding-right: 10px;
+  border-right: 1px dashed #d3d3d3;
+}
+/* each section of checkout details - give it a margin and divide section with dotted bottom border */
+.checkout-details > div {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #e8e1e1;
+}
+/* order details on right */
+/* each section of order details - give it a margin and divide section with dotted bottom border  */
+.order-details > div {
+  margin-bottom: 20px;
+  border-bottom: 1px dashed #e8e1e1;
+}
+/* override above because shopping cart has same class as order details for some reason
+ we used jquery to move it from the bottom of page to the top and it got the border*/
+.order-details > div:nth-child(2) {
+  margin-bottom: 0 !important;
+  border-bottom: none;
+}
+/* the pencil can be hidden */
+h3.checkout-header i.checkout-status {
+  display: none;
+}
+/* Shopping Cart (left column)
+========================================================================== */
+.checkout-details {
+  /* Account
+    ========================================================================== */
+  /* Shipping To       Billing To
+    ========================================================================== */
+  /* Ship Via
+    ========================================================================== */
+  /* Pay With
+    ========================================================================== */
+}
+.checkout-details .cart-actions {
+  position: relative;
+  top: -35px;
+  display: inline-block;
+}
+.checkout-details .cart-details .cart-item-quantity .input-sm {
+  width: 70px;
+}
+.checkout-details .addresses-row {
+  padding-bottom: 20px;
+}
+.checkout-details .payment-method .payment-method-options {
+  margin-bottom: 15px;
+}
+.loading-overlay-wrap {
+  margin-bottom: 20px;
+}
+/* ========================================================================== */
+/* Order Details (right column)
+========================================================================== */
+.order-details {
+  /* Special Offers & Order Notes
+    ========================================================================== */
+}
+.order-details .optional-checkout-items .checkout-order-notes {
+  margin-bottom: 20px;
+}
+.order-details .checkout-content > div {
+  border-bottom: 1px solid #e8e1e1;
+}
+.order-details .checkout-content .left {
+  display: inline-block;
+}
+.order-details .checkout-content .right {
+  display: inline-block;
+  float: right;
+}
+/* Order Summary and Place Order
+========================================================================== */
 /*# sourceMappingURL=bootstrap.css.map */

@@ -27,7 +27,15 @@ $(document).ready(function(){
             $(this).find('.product-sale').addClass("sale-off");
         }
   })
-
+    
+    // Checkout Page - move the shopping cart section from the bottom of the page to the top
+    // above "Account"
+    
+    var cartDetails = $(".checkout-details .cart-details");         // Remove Shopping Cart Div (cart-details)
+    var checkoutAccount = $(".checkout-details .checkout-account"); // Insert Shopping Cart Div before Account Div (checkout-account)
+    $(cartDetails).remove();
+    $(cartDetails).insertBefore(checkoutAccount);
+    
 });
 
 
