@@ -20,6 +20,7 @@ Section comment block
 // LESS variables for this page: index.html
 @gray-background: #f5f7f9;
 @white: #fff;
+@white-off: fbfbfb;
 @font-subnav: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
 @font-nav: "Myriad Pro", Verdana, sans-serif;
 @font-roboto: "Roboto Condensed",sans-serif;
@@ -36,6 +37,8 @@ Section comment block
 @light-gray4: #dddddd;
 @light-gray2: #f8f8f8;
 @light-gray3: #f3f5f6;
+@light-gray4: #d3d3d3;
+@light-gray5: #e0dcdc;
 
 // New Keyedalike vars
 
@@ -51,6 +54,7 @@ Section comment block
 @dark-gray: #333;
 @gray-med1: #ddd;
 @gray-med2: #dcdcdc;
+@gray-med3: #929292;
 
 // Bootstrap LESS variables to reference
 // @screen-xs             480px;
@@ -71,7 +75,7 @@ Section comment block
 
 .btn-transparent() {
     display: inline-block;
-    border: 2px solid #eee;
+    border: 1px solid @light-gray5;
     padding: 7px 15px 7px 10px;
     height: 36px;
     background: white;
@@ -659,7 +663,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
         }
     }
     
-
     .details a.view-details {
         .btn-view-detais();
         display: block;
@@ -856,6 +859,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 /* ==========================================================================
     Custom Styles for Product Description Page
+    http://a2zhardware.com/product/186/7-laminated-steel-padlock
 ========================================================================== */
 
 
@@ -867,14 +871,14 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 // margin at bottom of wrapper to bump down "Chose a Color" option
 .variant-info-wrap .add-to-cart-wrap {
-    margin-bottom: 0;   // mobile
+    margin-bottom: 0;
     
     @media (min-width: @screen-tablet) {
-        margin-bottom: 20px; // tablet
+        margin-bottom: 20px;
     }
     
     @media (min-width: @screen-desktop) {
-        margin-bottom: 40px; // desktop
+        margin-bottom: 40px;
     }
 }
 
@@ -885,93 +889,118 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     font-weight: normal;
 }
 
-.add-to-cart-group .quantity-field {
-    float: left;
-    width: 100%;
+.add-to-cart-group {
+    .quantity-field {
+        float: left;
+        width: 100%;
     
-    @media (min-width: @screen-tablet) {
-        width: 100%; // tablet
-    }
-    
-    @media (min-width: @screen-desktop) {
-        width: 10%; // desktop
+        @media (min-width: @screen-tablet) {
+            width: 100%;
+        }
+        
+        @media (min-width: @screen-desktop) {
+            width: 10%;
+        }
     }
 }
 
-.add-to-cart-group .size-select {
-    float: left;
-    width: 100%;
-    @media (min-width: @screen-tablet) {
-        width: 100%; // tablet
-    }
-    
-    @media (min-width: @screen-desktop) {
-        width: 25%; // desktop
-    }
-}
-
-.add-to-cart-group .color-select {
-    float: left;
-    width: 100%;
-    
-    @media (min-width: @screen-tablet) {
-        width: 100%; // tablet
-    }
-    
-    @media (min-width: @screen-desktop) {
-        width: 15%; // desktop
-        margin-right: 300px !important;
+.add-to-cart-group {
+    .size-select {
+        float: left;
+        width: 100%;
+        @media (min-width: @screen-tablet) {
+            width: 100%; // tablet
+        }
+        
+        @media (min-width: @screen-desktop) {
+            width: 25%; // desktop
+        }
     }
 }
 
-.add-to-cart-group .form-control {
-    margin-right: 5px;
-    margin-bottom: 10px;
+
+.add-to-cart-group {
+    .color-select {
+        float: left;
+        width: 100%;
+        
+        @media (min-width: @screen-tablet) {
+            width: 100%; // tablet
+        }
+        
+        @media (min-width: @screen-desktop) {
+            width: 15%; // desktop
+            margin-right: 300px !important;
+        }
+    }
 }
 
-.add-to-cart-group .add-to-cart-quantity label {
-    display: block;
-    width: 100%;
+
+
+.add-to-cart-group {
+    .form-control {
+        margin-right: 5px;
+        margin-bottom: 10px;
+    }
 }
+
+
+
+.add-to-cart-group {
+    .add-to-cart-quantity {
+        label {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
 
 .btn.add-to-cart {
     color: @white !important;
     background-color: @blue1 !important;
 }
 
-.btn.add-to-cart:hover {
-    background-color: @blue2 !important;
+.btn.add-to-cart {
+    &:hover {
+        background-color: @blue2 !important;
+    }
 }
-// add ridiculous margin to bump Add to Cart button down to next line
-//.add-to-cart-selectors .color-select {
-//    margin-right: 100px;
-//}
-// some space between options and add to cart button on line below
-.add-to-cart-selectors .color-select {
-    margin-bottom: 10px;
-}
-//.product-options.form-group #variantSelector {
-//    width: 30%;
-//}
 
-.product-options.form-group {
-    display: none;
+
+// some space between options and add to cart button on line below
+.add-to-cart-selectors {
+    .color-select {
+        margin-bottom: 10px;
+    }
+}
+
+.product-options {
+    &.form-group {
+        display: none;
+    }
 }
 
 #viewOptionsLabelcolor {
     margin-bottom: 20px;
 }
 
-#viewControls .linkWrap {
-    float: left;
-    width: 50%;
-    margin-bottom: 30px;
+#viewControls {
+    .linkWrap {
+        float: left;
+        width: 50%;
+        margin-bottom: 30px;
+    }
 }
 
-#viewControls .linkWrap img {
-    display: block;
-    max-width: 100%;
-    height: auto;
+#viewControls {
+    .linkWrap {
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+    }
 }
 
 .product-description-wrap {
@@ -983,6 +1012,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 /* ==========================================================================
     Custom Styles for Product Category Listings
+    http://a2zhardware.com/category/2/laminated-steel-padlocks
 ========================================================================== */
 
 
@@ -990,7 +1020,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 /* sort by, products per page and paging arrows
 ========================================================================== */
 .pagerArea.topPagerArea, .pagerArea.bottomPagerArea {
-    border: 1px solid lightgray;
+    border: 1px solid @light-gray4;
     margin-bottom: 40px;
     padding: 10px;
 }
@@ -1041,8 +1071,10 @@ div#catSortByTop {
 }
 
 /* space between product per page label and combo */
-span.pageSizeHeading.productcontrollabel {
-    margin-right: 5px;
+span.pageSizeHeading {
+    &.productcontrollabel {
+        margin-right: 5px;
+    }
 }
 
 /* wrapper for pagination */
@@ -1052,32 +1084,35 @@ span.pageSizeHeading.productcontrollabel {
 }
 
 /* space between sort by and combo box */
-span.sortbylabel.productcontrollabel {
-    margin-right: 0;
+span.sortbylabel {
+    &.productcontrollabel {
+        margin-right: 0;
     
-    
-    @media (min-width: @screen-desktop) {
-        margin-right: 5px;
+        @media (min-width: @screen-desktop) {
+            margin-right: 5px;
+        }
     }
 }
-
-
 
 /* Pagination
 ========================================================================== */
 
-.pagerArea.bottomPagerArea {
-    margin-top: 40px;
+.pagerArea {
+    &.bottomPagerArea {
+        margin-top: 40px;
+    }
 }
 
 /* wraps viewing page 1/2 */
-.viewingPageHeading.productcontrollabel {
-    float: left;
-    margin-right: 20px;
-    margin-bottom: 10px;
+.viewingPageHeading {
+    &.productcontrollabel {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 10px;
     
-    @media (min-width: @screen-tablet) {
-        margin-bottom: 0;
+        @media (min-width: @screen-tablet) {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -1101,26 +1136,28 @@ span.pageHeadingWrap {
     margin-right: 10px;
 }
 
-.pageLinksWrap a {
-    margin-right: 5px;
-    border: 1px solid lightgray;
-    padding: 5px 10px 5px 10px;
-    color: #000;
-    background-color: #fbfbfb !important;
-    text-decoration: none;
-    
-    -webkit-border-radius: 2px;
+.pageLinksWrap {
+    a {
+        margin-right: 5px;
+        border: 1px solid lightgray;
+        padding: 5px 10px 5px 10px;
+        color: #000;
+        background-color: @white-off !important;
+        text-decoration: none;
+        
+        -webkit-border-radius: 2px;
         -moz-border-radius: 2px;
-             border-radius: 2px;
-
-    &.currentpage {
-        background-color: @blue !important;
-        color: @white;
-    }
-    
-    &:hover {
-        background-color: #929292 !important;
-        color: @white;
+        border-radius: 2px;
+        
+        &.currentpage {
+            background-color: @blue !important;
+            color: @white;
+        }
+        
+        &:hover {
+            background-color: @gray-med3 !important;
+            color: @white;
+        }
     }
 }
 
@@ -1140,12 +1177,15 @@ td.guidedNavProductCell {
 }
 
 td.guidedNavProductCell:hover {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid @black;
 }
 
-.product-image {
-    margin: 0 auto;
-    border: 1px solid @light-gray4;
-    margin-bottom: 5px;
-    padding: 3px;
+.guidedNavImageWrap {
+    .product-image {
+        margin: 0 auto;
+        border: 1px solid @light-gray4;
+        margin-bottom: 5px;
+        padding: 3px;
+    }
 }
+

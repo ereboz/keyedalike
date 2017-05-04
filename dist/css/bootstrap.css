@@ -7143,7 +7143,7 @@ body {
   text-transform: uppercase;
   letter-spacing: .05em;
   background: white;
-  border: 2px solid #eee;
+  border: 1px solid #e0dcdc;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
@@ -7411,6 +7411,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 /* ==========================================================================
     Custom Styles for Product Description Page
+    http://a2zhardware.com/product/186/7-laminated-steel-padlock
 ========================================================================== */
 .product-info-wrap .product-page-header {
   margin-top: -10px;
@@ -7520,6 +7521,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 /* ==========================================================================
     Custom Styles for Product Category Listings
+    http://a2zhardware.com/category/2/laminated-steel-padlocks
 ========================================================================== */
 /* sort by, products per page and paging arrows
 ========================================================================== */
@@ -7527,7 +7529,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .pagerArea.bottomPagerArea {
   padding: 10px;
   margin-bottom: 40px;
-  border: 1px solid lightgray;
+  border: 1px solid #d3d3d3;
 }
 /* entity and products per page wrap */
 .entityPageSortWrap {
@@ -7626,7 +7628,7 @@ span.pageHeadingWrap {
   margin-right: 5px;
   color: #000;
   text-decoration: none;
-  background-color: #fbfbfb !important;
+  background-color: fbfbfb !important;
   border: 1px solid lightgray;
   border-radius: 2px;
 }
@@ -7654,10 +7656,10 @@ td.guidedNavProductCell {
 td.guidedNavProductCell:hover {
   border-bottom: 2px solid #000;
 }
-.product-image {
+.guidedNavImageWrap .product-image {
   padding: 3px;
   margin: 0 auto;
   margin-bottom: 5px;
-  border: 1px solid #ddd;
+  border: 1px solid #d3d3d3;
 }
 /*# sourceMappingURL=bootstrap.css.map */
