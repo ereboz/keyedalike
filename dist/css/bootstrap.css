@@ -6781,22 +6781,23 @@ button.close {
   }
 }
 /* ==========================================================================
-Section comment block
+Section:
+// Bootstrap LESS variables to reference
+// @screen-xs             480px;
+// @screen-tablet         768px
+// @screen-desktop        992px
+// @screen-lg-desktop     1200px
+
+// Custom to fit footer better on Nexus 10 @800px
+// bootstrap default for tablet is 768px
 ========================================================================== */
-/* Sub-section comment block
+/* Sub-section: LESS variables for this page: index.html
 ========================================================================== */
-/**
-* Short description using Doxygen-style comment format
-*
-* Long description first sentence starts here and continues on this line for a
-* while finally concluding here at the end of this paragraph.
-*/
-/* Basic comment */
-/* ==========================================================================
-  Mixins
+/* DEFINE OUR GLOBAL VARIABLES FOR KEYEDALIKE
 ========================================================================== */
-/* ==========================================================================
-  Overrides
+/* MIXIN'S
+========================================================================== */
+/* PAGE OVERRIDES
 ========================================================================== */
 body {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif !important;
@@ -6841,6 +6842,37 @@ body {
   position: fixed !important;
   top: 0;
   width: 100%;
+}
+#topnavbar.affix {
+  position: fixed !important;
+  top: 19px;
+  -webkit-animation: affixFadeIn .24s;
+       -o-animation: affixFadeIn .24s ease-in;
+          animation: affixFadeIn .24s ease-in;
+}
+@-o-keyframes affixFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes affixFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes affixFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .wrapper-subnav {
   background-color: #fff;
@@ -7671,15 +7703,32 @@ td.guidedNavProductCell:hover {
 ========================================================================== */
 /* globals affecting everything
 ========================================================================== */
-/* checkout detail on left */
+.checkout-page .row .col-md-4 {
+  background-color: #f8f8f8;
+  border: 1px solid #dedada;
+}
+/* checkout detail on left*/
 .checkout-details {
   padding-right: 10px;
-  border-right: 1px dashed #d3d3d3;
+  border-bottom: 2px dotted #929292;
 }
-/* each section of checkout details - give it a margin and divide section with dotted bottom border */
+@media (min-width: 992px) {
+  .checkout-details {
+    border-right: 1px dashed #d3d3d3;
+    border-bottom: none;
+  }
+}
+/* each section of checkout details - give it a margin and divide section with dotted bottom border
+except for the last div.
+ */
 .checkout-details > div {
   margin-bottom: 20px;
   border-bottom: 1px dashed #e8e1e1;
+}
+@media (min-width: 768px) {
+  .checkout-details > div:last-child {
+    border-bottom: none;
+  }
 }
 /* order details on right */
 /* each section of order details - give it a margin and divide section with dotted bottom border  */
@@ -7709,16 +7758,48 @@ h3.checkout-header i.checkout-status {
   /* Pay With
     ========================================================================== */
 }
+.checkout-details .cart-item .media-body .row > div {
+  display: table-cell;
+}
 .checkout-details .cart-actions {
   position: relative;
-  top: -35px;
   display: inline-block;
+  margin: 5px 0 20px 0;
+}
+@media (min-width: 768px) {
+  .checkout-details .cart-actions {
+    position: relative;
+    top: -35px;
+    display: inline-block;
+    margin-bottom: 0;
+  }
+}
+.checkout-details .cart-details {
+  padding-left: 15px;
+  background-color: #f8f8f8;
+  border: 1px solid #dedada;
 }
 .checkout-details .cart-details .cart-item-quantity .input-sm {
   width: 70px;
 }
 .checkout-details .addresses-row {
   padding-bottom: 20px;
+}
+.checkout-details .addresses-row .shipping-address-column {
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .checkout-details .addresses-row .shipping-address-column {
+    display: block;
+  }
+}
+.checkout-details .addresses-row .billing-address-column {
+  display: inline-block;
+}
+@media (min-width: 480px) {
+  .checkout-details .addresses-row .billing-address-column {
+    display: block;
+  }
 }
 .checkout-details .payment-method .payment-method-options {
   margin-bottom: 15px;
@@ -7737,7 +7818,7 @@ h3.checkout-header i.checkout-status {
   margin-bottom: 20px;
 }
 .order-details .checkout-content > div {
-  border-bottom: 1px solid #e8e1e1;
+  border-bottom: 1px dotted #e8e1e1;
 }
 .order-details .checkout-content .left {
   display: inline-block;
@@ -7745,6 +7826,9 @@ h3.checkout-header i.checkout-status {
 .order-details .checkout-content .right {
   display: inline-block;
   float: right;
+}
+.order-details .btn-success {
+  margin-bottom: 20px;
 }
 /* Order Summary and Place Order
 ========================================================================== */
