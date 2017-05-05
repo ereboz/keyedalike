@@ -7832,4 +7832,15 @@ h3.checkout-header i.checkout-status {
 }
 /* Order Summary and Place Order
 ========================================================================== */
+/* ========================================================================== */
+/* NEW SHIPPING ADDRESS (from checkout page)
+========================================================================== */
+.addressDesktopWidth {
+  width: 50%;
+  margin-bottom: 20px;
+}
+.addressMobileWidth {
+  width: 100%;
+  margin-bottom: 20px;
+}
 /*# sourceMappingURL=bootstrap.css.map */

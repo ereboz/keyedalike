@@ -38,4 +38,58 @@ $(document).ready(function(){
     
 });
 
+// *************** BILL TO/ SHIP TO ADDRESS FORM (from checkout page) ***************
 
+// NEED TO MAKE THE ADD NEW SHIPPING, ADD NEW BILLING ADDRESS .container CLASS 50% WIDTH TO REDUCE THE SIZE AND CENTER IT ON SCREEN.
+// IT DOES NOT HAVE A UNIQUE CLASS AND SETTING WIDTH ON .container AFFECTS EVERY PAGE ON THE SITE.
+// READ IN THE URL AND APPLY STYLING ONLY TO THE ADDRESS PAGE (address/detail)
+// APPLIES TO:
+// http://a2zhardware.com/address/detail?makePrimary=True&addressType=Shipping&returnurl=%2Fcheckout
+// http://a2zhardware.com/address/detail?makePrimary=True&addressType=Billing&returnurl=%2Fcheckout
+
+$(window).load(function() {
+    var loc = window.location.href.toLowerCase();
+    var container = $(".container");
+    
+    if (loc.indexOf('/address/detail') > -1) {
+        var viewportWidth = $(window).width();
+        
+        if (viewportWidth > 768) {
+            $(container).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
+        }
+    
+        $(window).resize(function () {
+            var container = $(".container");
+            var viewportWidth = $(window).width();
+            if (viewportWidth < 768) {
+                $(container).removeClass("addressDesktopWidth").addClass("addressMobileWidth");
+            }
+            if (viewportWidth > 768) {
+                $(container).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
+            }
+        });
+        
+        
+    }
+    
+    
+});
+
+
+
+
+// $(window).load(function() {
+//     var container = $(".container");
+//     var viewportWidth = $(window).width();
+//     if (viewportWidth > 768) {
+//         $(container).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
+//     }
+// });
+//
+// $(window).resize(function () {
+//     var container = $(".container");
+//     var viewportWidth = $(window).width();
+//     if (viewportWidth < 768) {
+//         $(container).removeClass("addressDesktopWidth").addClass("addressMobileWidth");
+//     }
+// });
