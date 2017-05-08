@@ -54,16 +54,15 @@ $(document).ready(function(){
 $(window).load(function() {
     var loc = window.location.href.toLowerCase();
     var container = $(".container");
+    var viewportWidth = $(window).width();
     
     if (loc.indexOf('/address/detail') > -1) {
-        var viewportWidth = $(window).width();
         
         if (viewportWidth > 800) {
             $(container).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
         }
     
         $(window).resize(function () {
-            var container = $(".container");
             var viewportWidth = $(window).width();
             if (viewportWidth < 800) {
                 $(container).removeClass("addressDesktopWidth").addClass("addressMobileWidth");
@@ -78,14 +77,12 @@ $(window).load(function() {
     // Center the page with a left margin class when in Desktop view > 800px
     
     if (loc.indexOf('/contactus') > -1) {
-        var viewportWidth = $(window).width();
         
         if (viewportWidth > 800) {
             $(container).removeClass("contactMobileWidth").addClass("contactDesktopWidth");
         }
         
         $(window).resize(function () {
-            var container = $(".container");
             var viewportWidth = $(window).width();
             if (viewportWidth < 800) {
                 $(container).removeClass("contactDesktopWidth").addClass("contactMobileWidth");

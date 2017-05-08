@@ -1431,9 +1431,17 @@ h3.checkout-header i.checkout-status{
     margin-left: 0;
 }
 
+// give Message wrapper a bottom margin to produce even spacing
+
+
 .contact-us-page {
     .contact-form {
         margin-bottom: 20px;
+    
+        & :nth-child(5){
+            margin-bottom: 40px;
+        }
+        
     }
     
     h1 {
@@ -1456,6 +1464,7 @@ h3.checkout-header i.checkout-status{
         @media (min-width: @screen-desktop) {
             width: 35%;
             margin-right: 20px;
+            margin-top: 10px;
         }
         
     }

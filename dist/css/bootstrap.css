@@ -7857,6 +7857,9 @@ h3.checkout-header i.checkout-status {
 .contact-us-page .contact-form {
   margin-bottom: 20px;
 }
+.contact-us-page .contact-form :nth-child(5) {
+  margin-bottom: 40px;
+}
 .contact-us-page h1 {
   margin-bottom: 30px;
 }
@@ -7876,6 +7879,7 @@ h3.checkout-header i.checkout-status {
 @media (min-width: 992px) {
   .contact-us-page .form-label {
     width: 35%;
+    margin-top: 10px;
     margin-right: 20px;
   }
 }
