@@ -7843,4 +7843,57 @@ h3.checkout-header i.checkout-status {
   width: 100%;
   margin-bottom: 20px;
 }
+/* ========================================================================== */
+/* CONTACT US PAGE
+========================================================================== */
+/* Global styling
+========================================================================== */
+.contactDesktopWidth {
+  margin-left: 30%;
+}
+.contactMobileWidth {
+  margin-left: 0;
+}
+.contact-us-page .contact-form {
+  margin-bottom: 20px;
+}
+.contact-us-page h1 {
+  margin-bottom: 30px;
+}
+.contact-us-page .form-group {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contact-us-page .form-label {
+  width: 45%;
+}
+@media (min-width: 768px) {
+  .contact-us-page .form-label {
+    width: 35%;
+    margin-right: 0;
+  }
+}
+@media (min-width: 992px) {
+  .contact-us-page .form-label {
+    width: 35%;
+    margin-right: 20px;
+  }
+}
+.contact-us-page .entry-feedback-wrapper {
+  float: right;
+  width: 55%;
+}
+@media (min-width: 768px) {
+  .contact-us-page .entry-feedback-wrapper {
+    width: 65%;
+  }
+}
+@media (min-width: 992px) {
+  .contact-us-page .entry-feedback-wrapper {
+    width: 60%;
+  }
+}
+.contact-us-page .input-group-addon-captchaimage {
+  padding: 0;
+}
 /*# sourceMappingURL=bootstrap.css.map */

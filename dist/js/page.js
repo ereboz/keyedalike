@@ -43,7 +43,8 @@ $(document).ready(function(){
  */
 // *************** BILL TO/SHIP TO ADDRESS FORM (from checkout page) ***************
 
-// NEED TO MAKE THE ADD NEW SHIPPING, ADD NEW BILLING ADDRESS .container CLASS 50% WIDTH TO REDUCE THE SIZE AND CENTER IT ON SCREEN.
+// NEED TO MAKE THE ADD NEW SHIPPING, ADD NEW BILLING ADDRESS .container CLASS 50% WIDTH TO REDUCE THE SIZE AND CENTER IT ON SCREEN
+// FOR DESKTOP > 800PX.
 // IT DOES NOT HAVE A UNIQUE CLASS AND SETTING WIDTH ON .container AFFECTS EVERY PAGE ON THE SITE.
 // READ IN THE URL AND APPLY STYLING ONLY TO THE ADDRESS PAGE for SHIPPING/BILLING(address/detail)
 // APPLIES TO:
@@ -57,19 +58,43 @@ $(window).load(function() {
     if (loc.indexOf('/address/detail') > -1) {
         var viewportWidth = $(window).width();
         
-        if (viewportWidth > 768) {
+        if (viewportWidth > 800) {
             $(container).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
         }
     
         $(window).resize(function () {
             var container = $(".container");
             var viewportWidth = $(window).width();
-            if (viewportWidth < 768) {
+            if (viewportWidth < 800) {
                 $(container).removeClass("addressDesktopWidth").addClass("addressMobileWidth");
             }
-            if (viewportWidth > 768) {
+            if (viewportWidth > 800) {
                 $(container).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
             }
         });
     }
+    
+    // *************** CONTACT US PAGE ***************
+    // Center the page with a left margin class when in Desktop view > 800px
+    
+    if (loc.indexOf('/contactus') > -1) {
+        var viewportWidth = $(window).width();
+        
+        if (viewportWidth > 800) {
+            $(container).removeClass("contactMobileWidth").addClass("contactDesktopWidth");
+        }
+        
+        $(window).resize(function () {
+            var container = $(".container");
+            var viewportWidth = $(window).width();
+            if (viewportWidth < 800) {
+                $(container).removeClass("contactDesktopWidth").addClass("contactMobileWidth");
+            }
+            if (viewportWidth > 800) {
+                $(container).removeClass("contactMobileWidth").addClass("contactDesktopWidth");
+            }
+        });
+    }
+    
 });
+

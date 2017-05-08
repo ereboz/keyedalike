@@ -1280,8 +1280,6 @@ h3.checkout-header i.checkout-status{
         }
     }
     
-    
-    
     .cart-actions {
         display: inline-block;
         position: relative;
@@ -1415,4 +1413,69 @@ h3.checkout-header i.checkout-status{
 .addressMobileWidth {
     width: 100%;
     margin-bottom: 20px;
+}
+
+/* ========================================================================== */
+/* CONTACT US PAGE
+========================================================================== */
+
+/* Global styling
+========================================================================== */
+
+// Desktop: center the form with a left margin. See dist/js/page.js for logic and class toggle.
+.contactDesktopWidth {
+    margin-left: 30%;
+}
+
+.contactMobileWidth {
+    margin-left: 0;
+}
+
+.contact-us-page {
+    .contact-form {
+        margin-bottom: 20px;
+    }
+    
+    h1 {
+        margin-bottom: 30px;
+    }
+    
+    .form-group {
+        width: 100%;
+        margin-bottom: 20px
+    }
+    
+    .form-label {
+        width: 45%;
+        
+        @media (min-width: @screen-tablet) {
+            width: 35%;
+            margin-right: 0;
+        }
+        
+        @media (min-width: @screen-desktop) {
+            width: 35%;
+            margin-right: 20px;
+        }
+        
+    }
+    
+    .entry-feedback-wrapper {
+        float: right;
+        width: 55%;
+    
+        @media (min-width: @screen-tablet) {
+            width: 65%;
+        }
+    
+        @media (min-width: @screen-desktop) {
+            width: 60%;
+        }
+        
+    }
+    
+    .input-group-addon-captchaimage {
+        padding: 0;
+    }
+    
 }
