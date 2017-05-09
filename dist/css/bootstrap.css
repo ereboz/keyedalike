@@ -6843,37 +6843,6 @@ body {
   top: 0;
   width: 100%;
 }
-#topnavbar.affix {
-  position: fixed !important;
-  top: 19px;
-  -webkit-animation: affixFadeIn .24s;
-       -o-animation: affixFadeIn .24s ease-in;
-          animation: affixFadeIn .24s ease-in;
-}
-@-o-keyframes affixFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@keyframes affixFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes affixFadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
 .wrapper-subnav {
   background-color: #fff;
 }
@@ -7836,12 +7805,13 @@ h3.checkout-header i.checkout-status {
 /* NEW SHIPPING ADDRESS (from checkout page)
 ========================================================================== */
 .addressDesktopWidth {
-  width: 50%;
-  margin-bottom: 20px;
+  width: 70%;
+  padding-bottom: 20px;
+  margin: 0 auto;
 }
 .addressMobileWidth {
   width: 100%;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 /* ========================================================================== */
 /* CONTACT US PAGE
@@ -7850,6 +7820,9 @@ h3.checkout-header i.checkout-status {
 ========================================================================== */
 .contactDesktopWidth {
   margin-left: 30%;
+}
+.contactDesktopWidth .col-md-6 {
+  width: 75%;
 }
 .contactMobileWidth {
   margin-left: 0;

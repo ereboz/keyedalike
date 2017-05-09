@@ -186,22 +186,22 @@ body {
 // TODO-BH: try TBS animation to override hard scroll. can keep #topnavbar above if needed
 // Start TBS affix patch for mobile
 
-#topnavbar.affix {
-    position: fixed !important;
-    top: 19px;
-    animation: affixFadeIn 0.24s  ease-in;
-    -webkit-animation: affixFadeIn 0.24s;
-}
-
-@keyframes affixFadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
-
-@-webkit-keyframes affixFadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
-}
+//#topnavbar.affix {
+//    position: fixed !important;
+//    top: 19px;
+//    animation: affixFadeIn 0.24s  ease-in;
+//    -webkit-animation: affixFadeIn 0.24s;
+//}
+//
+//@keyframes affixFadeIn {
+//    from {opacity: 0;}
+//    to {opacity: 1;}
+//}
+//
+//@-webkit-keyframes affixFadeIn {
+//    from {opacity: 0;}
+//    to {opacity: 1;}
+//}
 
 // End TBS affix patch for mobile
 
@@ -1406,13 +1406,14 @@ h3.checkout-header i.checkout-status{
 ========================================================================== */
 
 .addressDesktopWidth {
-    width: 50%;
-    margin-bottom: 20px;
+    width: 70%;
+    padding-bottom: 20px;
+    margin: 0 auto;
 }
 
 .addressMobileWidth {
     width: 100%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 /* ========================================================================== */
@@ -1425,6 +1426,10 @@ h3.checkout-header i.checkout-status{
 // Desktop: center the form with a left margin. See dist/js/page.js for logic and class toggle.
 .contactDesktopWidth {
     margin-left: 30%;
+    
+    .col-md-6 {
+        width: 75%;
+    }
 }
 
 .contactMobileWidth {

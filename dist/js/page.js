@@ -53,22 +53,24 @@ $(document).ready(function(){
 
 $(window).load(function() {
     var loc = window.location.href.toLowerCase();
-    var container = $(".container");
     var viewportWidth = $(window).width();
+    var pageWrapper = "";
     
     if (loc.indexOf('/address/detail') > -1) {
-        $(container).addClass("addressMobileWidth");
+        pageWrapper = $(".create-account-page");
+        $(pageWrapper).addClass("addressMobileWidth");
+        
         if (viewportWidth > 800) {
-            $(container).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
+            $(pageWrapper).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
         }
     
         $(window).resize(function () {
             var viewportWidth = $(window).width();
             if (viewportWidth < 800) {
-                $(container).removeClass("addressDesktopWidth").addClass("addressMobileWidth");
+                $(pageWrapper).removeClass("addressDesktopWidth").addClass("addressMobileWidth");
             }
             if (viewportWidth > 800) {
-                $(container).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
+                $(pageWrapper).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
             }
         });
     }
@@ -77,20 +79,30 @@ $(window).load(function() {
     // Center the page with a left margin class when in Desktop view > 800px
     
     if (loc.indexOf('/contactus') > -1) {
-        
+        pageWrapper = $(".contact-us-page");
+        $(pageWrapper).addClass("contactMobileWidth");
         if (viewportWidth > 800) {
-            $(container).removeClass("contactMobileWidth").addClass("contactDesktopWidth");
+            $(pageWrapper).removeClass("contactMobileWidth").addClass("contactDesktopWidth");
         }
         
         $(window).resize(function () {
             var viewportWidth = $(window).width();
             if (viewportWidth < 800) {
-                $(container).removeClass("contactDesktopWidth").addClass("contactMobileWidth");
+                $(pageWrapper).removeClass("contactDesktopWidth").addClass("contactMobileWidth");
             }
             if (viewportWidth > 800) {
-                $(container).removeClass("contactMobileWidth").addClass("contactDesktopWidth");
+                $(pageWrapper).removeClass("contactMobileWidth").addClass("contactDesktopWidth");
             }
         });
+        
+        // Replace all occurrences of (required) to *
+    
+        $('.form-label-suffix-required').each(function() {
+            var txt = $(this).html();
+            txt = txt.replace('(required)','*');
+            $(this).html(txt);
+        });
+        
     }
     
 });
