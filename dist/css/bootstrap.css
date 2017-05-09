@@ -7873,4 +7873,79 @@ h3.checkout-header i.checkout-status {
 .contact-us-page .input-group-addon-captchaimage {
   padding: 0;
 }
+/* ========================================================================== */
+/* SUB PAGES FOUND IN FOOTER
+========================================================================== */
+/* GLOBALS FOR ALL SUB PAGES
+========================================================================== */
+.page-wrap.topic-page {
+  margin-bottom: 50px;
+}
+/* Privacy Policy
+========================================================================== */
+.topic-page .formtext {
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+}
+.topic-page .formtext span {
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+}
+.formtext p > strong {
+  display: inline-block;
+  padding-bottom: 10px !important;
+}
+.formtext ol,
+.formtext ul {
+  margin-bottom: 20px !important;
+}
+/* About Us
+========================================================================== */
+/* Shipping Information
+========================================================================== */
+.topic-page {
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 16px;
+}
+.topic-page > strong {
+  display: inline-block;
+  padding-bottom: 10px !important;
+}
+/* Return Policy
+========================================================================== */
+.topic-page .letter {
+  padding-bottom: 10px !important;
+}
+/* Terms and Conditions
+========================================================================== */
+/* Order History
+========================================================================== */
+/* Account information
+========================================================================== */
+.account-page .account-actions {
+  margin-bottom: 10px;
+}
+.account-form .account-text {
+  margin-bottom: 20px;
+}
+.account-form .phone .entry-feedback-wrapper {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .account-form .phone .entry-feedback-wrapper {
+    width: 66%;
+  }
+}
+#PageContent_pnlAddress {
+  margin-bottom: 10px;
+}
+#PageContent_pnlAddress .address-text {
+  margin-bottom: 10px;
+}
+#PageContent_pnlAddress .address-row {
+  margin-bottom: 15px;
+}
+#PageContent_pnlAddress .address-view {
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=bootstrap.css.map */
