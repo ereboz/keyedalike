@@ -57,7 +57,7 @@ $(window).load(function() {
     var viewportWidth = $(window).width();
     
     if (loc.indexOf('/address/detail') > -1) {
-        
+        $(container).addClass("addressMobileWidth");
         if (viewportWidth > 800) {
             $(container).removeClass("addressMobileWidth").addClass("addressDesktopWidth");
         }
