@@ -31,8 +31,8 @@ $(document).ready(function(){
     // Checkout Page - move the shopping cart section from the bottom of the page to the top
     // above "Account"
     
-    var cartDetails = $(".checkout-details .cart-details");         // Remove Shopping Cart Div (cart-details)
-    var checkoutAccount = $(".checkout-details .checkout-account"); // Insert Shopping Cart Div before Account Div (checkout-account)
+    var cartDetails = $(".checkout-details .cart-details");
+    var checkoutAccount = $(".checkout-details .checkout-account");
     $(cartDetails).remove();
     $(cartDetails).insertBefore(checkoutAccount);
     
@@ -81,6 +81,7 @@ $(window).load(function() {
     if (loc.indexOf('/contactus') > -1) {
         pageWrapper = $(".contact-us-page");
         $(pageWrapper).addClass("contactMobileWidth");
+        
         if (viewportWidth > 800) {
             $(pageWrapper).removeClass("contactMobileWidth").addClass("contactDesktopWidth");
         }

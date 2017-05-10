@@ -1425,7 +1425,7 @@ h3.checkout-header i.checkout-status{
 
 // Desktop: center the form with a left margin. See dist/js/page.js for logic and class toggle.
 .contactDesktopWidth {
-    margin-left: 30%;
+    margin-left: 10%;
     
     .col-md-6 {
         width: 75%;
@@ -1573,12 +1573,23 @@ h3.checkout-header i.checkout-status{
 
 
 
-/* Account information
+/* Account information / Order Details
 ========================================================================== */
 
 .account-page {
+    
+    .account-form:nth-child(2) {
+        background-color: @light-gray2;
+        border: 1px solid @light-gray6;
+        padding:10px;
+        margin-bottom: 20px;
+    }
+    
     .account-actions {
         margin-bottom: 10px;
+    }
+    .page-links {
+        margin-bottom: 5px;
     }
 }
 
@@ -1591,7 +1602,7 @@ h3.checkout-header i.checkout-status{
         .entry-feedback-wrapper {
             width: 100%;
             @media (min-width: @screen-desktop) {
-                width: 66%;
+                width: 31%;
             }
         }
     }
@@ -1600,19 +1611,34 @@ h3.checkout-header i.checkout-status{
 
 // todo compile and upload and commit
 #PageContent_pnlAddress {
-    margin-bottom: 10px;
+    border: 1px solid @light-gray6;
+    padding:10px;
+    margin-bottom: 20px;
     
     .address-text {
         margin-bottom: 10px;
     }
     .address-row {
         margin-bottom: 15px;
+        
+        .address-edit {
+            margin-bottom: 10px;
+        }
     }
     .address-view {
         margin-bottom: 10px;
+        margin-left: 15px;
+    }
+    .address-header {
+        margin-bottom: 5px;
     }
 }
 
+#order-history-wrap {
+    border: 1px solid @light-gray6;
+    padding:10px;
+    margin-bottom: 20px;
+}
 
 
 

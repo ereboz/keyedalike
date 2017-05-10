@@ -7819,7 +7819,7 @@ h3.checkout-header i.checkout-status {
 /* Global styling
 ========================================================================== */
 .contactDesktopWidth {
-  margin-left: 30%;
+  margin-left: 10%;
 }
 .contactDesktopWidth .col-md-6 {
   width: 75%;
@@ -7920,10 +7920,19 @@ h3.checkout-header i.checkout-status {
 ========================================================================== */
 /* Order History
 ========================================================================== */
-/* Account information
+/* Account information / Order Details
 ========================================================================== */
+.account-page .account-form:nth-child(2) {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #f8f8f8;
+  border: 1px solid #dedada;
+}
 .account-page .account-actions {
   margin-bottom: 10px;
+}
+.account-page .page-links {
+  margin-bottom: 5px;
 }
 .account-form .account-text {
   margin-bottom: 20px;
@@ -7933,11 +7942,13 @@ h3.checkout-header i.checkout-status {
 }
 @media (min-width: 992px) {
   .account-form .phone .entry-feedback-wrapper {
-    width: 66%;
+    width: 31%;
   }
 }
 #PageContent_pnlAddress {
-  margin-bottom: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dedada;
 }
 #PageContent_pnlAddress .address-text {
   margin-bottom: 10px;
@@ -7945,7 +7956,19 @@ h3.checkout-header i.checkout-status {
 #PageContent_pnlAddress .address-row {
   margin-bottom: 15px;
 }
+#PageContent_pnlAddress .address-row .address-edit {
+  margin-bottom: 10px;
+}
 #PageContent_pnlAddress .address-view {
   margin-bottom: 10px;
+  margin-left: 15px;
+}
+#PageContent_pnlAddress .address-header {
+  margin-bottom: 5px;
+}
+#order-history-wrap {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #dedada;
 }
 /*# sourceMappingURL=bootstrap.css.map */
