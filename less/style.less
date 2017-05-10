@@ -281,9 +281,8 @@ body {
 }
 
 .sub-nav {
-
     font-size: 12px;
-	//margin-top: 15px; // TODO-bh: SERVER uncomment to display local
+
 	li {
 		font-family: @font-subnav;
 		a {
@@ -447,7 +446,6 @@ body {
 }
 
 //Start Product Slider overrides in slider.css
-
 
 .product-grid {
     padding: 0;
@@ -628,8 +626,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     }
 }
 
-
-
 .product-footer-wrapper {
     position: relative;
     float: left;
@@ -667,8 +663,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     font-family: @font-subnav;
     font-size: 13px;
 }
-
-
 //End Product Slider
 
 .prod-plp {
@@ -920,7 +914,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 
 
-
 .add-to-cart-group {
     .form-control {
         margin-right: 5px;
@@ -937,7 +930,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     }
 }
 
-
 .btn.add-to-cart {
     color: @white !important;
     background-color: @blue1 !important;
@@ -948,7 +940,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
         background-color: @blue2 !important;
     }
 }
-
 
 // some space between options and add to cart button on line below
 .add-to-cart-selectors {
@@ -995,7 +986,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     font-size: 16px;
     color: lighten(@black, 30%);
 }
-
 
 /* ==========================================================================
     Custom Styles for Product Category Listings
@@ -1148,7 +1138,6 @@ span.pageHeadingWrap {
     }
 }
 
-
 /* Products
 ========================================================================== */
 
@@ -1177,8 +1166,6 @@ td.guidedNavProductCell:hover {
         padding: 3px;
     }
 }
-
-
 
 /* ==========================================================================
     Custom Styles for Secure Checkout page
@@ -1234,7 +1221,6 @@ except for the last div.
         }
     }
 }
-
 
 /* order details on right */
 // MAIN COLUMN SELECTOR ON RIGHT
@@ -1390,7 +1376,6 @@ h3.checkout-header i.checkout-status{
 }
 
 
-
 /* Order Summary and Place Order
 ========================================================================== */
 .order-block {
@@ -1528,15 +1513,6 @@ p {
     }
 }
 
-//.formtext {
-//    p {
-//        &> strong {
-//            display:inline-block;
-//            padding-bottom: 10px !important;
-//        }
-//    }
-//}
-
 .formtext {
     ol, ul {
         margin-bottom: 20px !important;
@@ -1605,6 +1581,10 @@ p {
 }
 
 .account-form {
+    .account-header {
+        font-size: 24px;
+    }
+    
     .account-text {
         margin-bottom: 20px;
     }
@@ -1620,15 +1600,25 @@ p {
 
 }
 
-// todo compile and upload and commit
 #PageContent_pnlAddress {
     border: 1px solid @light-gray6;
     padding:10px;
     margin-bottom: 20px;
     
+    .address-header {
+        font-size: 20px;
+    }
+    
+    .account-header {
+        &.address-header {
+            font-size: 24px;
+        }
+    }
+    
     .address-text {
         margin-bottom: 10px;
     }
+    
     .address-row {
         margin-bottom: 15px;
         
@@ -1636,10 +1626,12 @@ p {
             margin-bottom: 10px;
         }
     }
+    
     .address-view {
         margin-bottom: 10px;
         margin-left: 15px;
     }
+    
     .address-header {
         margin-bottom: 5px;
     }
@@ -1649,6 +1641,10 @@ p {
     border: 1px solid @light-gray6;
     padding:10px;
     margin-bottom: 20px;
+    
+    .order-history-header {
+        font-size: 24px;
+    }
 }
 
 

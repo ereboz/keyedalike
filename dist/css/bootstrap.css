@@ -7939,6 +7939,9 @@ p.formtext > strong {
 .account-page .page-links {
   margin-bottom: 5px;
 }
+.account-form .account-header {
+  font-size: 24px;
+}
 .account-form .account-text {
   margin-bottom: 20px;
 }
@@ -7954,6 +7957,12 @@ p.formtext > strong {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #dedada;
+}
+#PageContent_pnlAddress .address-header {
+  font-size: 20px;
+}
+#PageContent_pnlAddress .account-header.address-header {
+  font-size: 24px;
 }
 #PageContent_pnlAddress .address-text {
   margin-bottom: 10px;
@@ -7975,5 +7984,8 @@ p.formtext > strong {
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #dedada;
+}
+#order-history-wrap .order-history-header {
+  font-size: 24px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
