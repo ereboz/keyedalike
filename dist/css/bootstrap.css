@@ -7913,6 +7913,9 @@ p.formtext > strong {
   padding-bottom: 10px !important;
   font-size: 24px;
 }
+.topic-page strong ~ ol :nth-of-type(1) {
+  margin-bottom: 20px;
+}
 /* Return Policy
 ========================================================================== */
 .topic-page .letter {
