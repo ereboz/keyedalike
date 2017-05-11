@@ -16,6 +16,7 @@ $(document).ready(function(){
     });
 
     $('.product-wrapper').each(function () {
+        var salePrice = $(this).find('.sale-price');        // target to center price vertically if no retail price
         var retailValue = $(this).find('.retail-price');
         var retailValueText = $(retailValue).text();
 
@@ -25,6 +26,7 @@ $(document).ready(function(){
 
         else {
             $(this).find('.product-sale').addClass("sale-off");
+            $(this).find(salePrice).addClass("saleOnly");       // no retail price, so center price vertically
         }
   })
     

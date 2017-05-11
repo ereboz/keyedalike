@@ -7253,6 +7253,10 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   color: #fff;
   background-color: #29abe2;
 }
+.product-footer-wrapper .saleOnly {
+  display: inline-block;
+  margin-top: 8px;
+}
 .product-desc-wrapper,
 .product-footer-wrapper {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
