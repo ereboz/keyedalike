@@ -7645,7 +7645,7 @@ span.pageHeadingWrap {
   color: #fff;
   background-color: #929292 !important;
 }
-/* Products
+/* Products (category page)
 ========================================================================== */
 /* some space between the rows */
 td.guidedNavProductCell {
@@ -7666,6 +7666,39 @@ td.guidedNavProductCell:hover {
   margin: 0 auto;
   margin-bottom: 5px;
   border: 1px solid #d3d3d3;
+}
+/* ==========================================================================
+    Custom Styles for Search Results
+    http://www.a2zhardware.com/search?searchterm=laminated
+========================================================================== */
+.search-page .search-page-product-header {
+  font-size: 22px;
+}
+.search-page .search-page-product-header:nth-child(3) {
+  margin-bottom: 30px;
+}
+.search-page .product-grid-item {
+  height: 230px;
+  min-height: 230px;
+  padding-right: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+.search-page .product-grid-item:hover {
+  border-bottom: 2px solid #000;
+}
+.search-page .product-grid-item .grid-item-image-wrap {
+  padding: 5px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-bottom: 5px;
+  margin-left: auto;
+}
+.search-page .product-grid-item .grid-item-image-wrap img {
+  border: 1px solid #d3d3d3;
+}
+.search-page .product-grid-item .grid-item-promotions-wrap {
+  margin-bottom: 10px;
 }
 /* ==========================================================================
     Custom Styles for Secure Checkout page
