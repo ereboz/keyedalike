@@ -1030,8 +1030,13 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 /* entity and products per page wrap */
 .entityPageSortWrap {
-    float: left;
-    margin-top: 7px;
+    .col-md-6 {
+        float: left;
+        margin-top: 7px;
+    }
+    .paging {
+        float: right;
+    }
 }
 
 /* wraps viewing page 1 of 2 */
@@ -1103,7 +1108,14 @@ span.sortbylabel {
 .pagerArea {
     &.bottomPagerArea {
         margin-top: 40px;
+    
+        .paging {
+            &.col-md-6 {
+                width: 100%;
+            }
+        }
     }
+
 }
 
 /* wraps viewing page 1/2 */
@@ -1112,7 +1124,7 @@ span.sortbylabel {
         float: left;
         margin-right: 20px;
         margin-bottom: 10px;
-    
+
         @media (min-width: @screen-tablet) {
             margin-bottom: 0;
         }
@@ -1126,7 +1138,7 @@ span.sortbylabel {
 
 /* wraps page: 123>>> */
 .pageLinksWrap {
-    float: left;
+    float: right;
     margin-right: 10px;
 }
 

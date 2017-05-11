@@ -7555,9 +7555,12 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   border: 1px solid #d3d3d3;
 }
 /* entity and products per page wrap */
-.entityPageSortWrap {
+.entityPageSortWrap .col-md-6 {
   float: left;
   margin-top: 7px;
+}
+.entityPageSortWrap .paging {
+  float: right;
 }
 /* wraps viewing page 1 of 2 */
 .entityPagePagingWrap {
@@ -7619,6 +7622,9 @@ span.sortbylabel.productcontrollabel {
 .pagerArea.bottomPagerArea {
   margin-top: 40px;
 }
+.pagerArea.bottomPagerArea .paging.col-md-6 {
+  width: 100%;
+}
 /* wraps viewing page 1/2 */
 .viewingPageHeading.productcontrollabel {
   float: left;
@@ -7636,7 +7642,7 @@ span.sortbylabel.productcontrollabel {
 }
 /* wraps page: 123>>> */
 .pageLinksWrap {
-  float: left;
+  float: right;
   margin-right: 10px;
 }
 /* text for Page on right */
