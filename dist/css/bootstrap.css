@@ -6966,8 +6966,19 @@ body {
   background-color: #f5f5f5;
   border: 1px dotted #7b7a7a;
 }
-#myCarousel a {
-  display: block;
+#myCarousel .carousel-indicators {
+  display: none;
+}
+@media (min-width: 768px) {
+  #myCarousel .carousel-indicators {
+    display: block;
+  }
+  #myCarousel .carousel-indicators .active {
+    background-color: #7b7a7a;
+  }
+  #myCarousel .carousel-indicators li {
+    border: 1px solid #7b7a7a;
+  }
 }
 #myCarousel .carousel-inner {
   background-image: url("/skins/skin_10/dist/images/bg-slide.jpg");
@@ -6984,11 +6995,21 @@ body {
   }
 }
 #myCarousel .carousel-caption {
-  top: 10%;
+  top: -20%;
   left: 50%;
-  width: 50%;
+  width: 48%;
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
   color: #000;
+}
+@media (min-width: 768px) {
+  #myCarousel .carousel-caption {
+    top: -8%;
+  }
+}
+@media (min-width: 992px) {
+  #myCarousel .carousel-caption {
+    top: 10%;
+  }
 }
 #myCarousel .carousel-caption h1 {
   font-size: 16px;
@@ -6999,7 +7020,7 @@ body {
   }
 }
 #myCarousel .carousel-caption p {
-  font-size: 12px;
+  font-size: 9px;
   text-align: left;
 }
 #myCarousel .carousel-caption p:nth-child(3) {
@@ -7014,15 +7035,17 @@ body {
 .carousel-control.right {
   background-image: none;
 }
-.carousel-indicators .active {
-  background-color: #7b7a7a;
+span.glyphicon.glyphicon-chevron-right,
+span.glyphicon.glyphicon-chevron-left {
+  display: none;
 }
-.carousel-indicators li {
-  border: 1px solid #7b7a7a;
-}
-.glyphicon-chevron-right,
-.glyphicon-chevron-left {
-  color: #000;
+@media (min-width: 768px) {
+  span.glyphicon.glyphicon-chevron-right,
+  span.glyphicon.glyphicon-chevron-left {
+    display: block;
+    margin-top: 100%;
+    color: #000;
+  }
 }
 .wrapper-category {
   margin-bottom: 40px;

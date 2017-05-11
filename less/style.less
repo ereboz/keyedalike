@@ -359,9 +359,20 @@ body {
     margin-bottom: 25px;
     border: 1px dotted @gray-medium;
     background-color: @white-smoke;
-
-    a {
-        display: block;
+    
+    .carousel-indicators {
+        display: none;
+        
+        @media (min-width: @screen-tablet) {
+            display: block;
+        
+            .active {
+                background-color: @gray-medium;
+            }
+            li {
+                border: 1px solid @gray-medium;
+            }
+        }
     }
 
   .carousel-inner {
@@ -382,11 +393,19 @@ body {
   }
 
   .carousel-caption {
-      width: 50%;
-      top: 10%;
+      width: 48%;
+      top: -20%;
       left: 50%;
       color: @black;
       font-family: @font-subnav;
+      
+      @media (min-width: @screen-tablet) {
+          top: -8%;
+      }
+    
+      @media (min-width: @screen-desktop) {
+          top: 10%;
+      }
 
       h1 {
           font-size: 16px;
@@ -397,7 +416,7 @@ body {
       }
 
       p {
-          font-size: 12px;
+          font-size: 9px;
           text-align: left;
           &:nth-child(3){
               color: @blue;
@@ -416,18 +435,25 @@ body {
     background-image: none
 }
 
-.carousel-indicators .active {
-    background-color: @gray-medium;
-}
-.carousel-indicators li {
-    border: 1px solid @gray-medium;
+
+
+
+
+
+
+span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {
+    display: none;
+    
+    @media (min-width: @screen-tablet) {
+        display: block;
+        color: @black;
+        margin-top: 100%;
+    }
+
 }
 
 
 
-.glyphicon-chevron-right, .glyphicon-chevron-left {
-    color: @black;
-}
 // End Carousel
 
 
