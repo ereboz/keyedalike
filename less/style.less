@@ -150,6 +150,7 @@ body {
 }
 
 .banner-phone {
+    margin-top: -12px;
     .phone-icon {
         margin: 0 10px 0 0;
     }
@@ -157,6 +158,15 @@ body {
 		font-size: 14px;
 		font-weight: bold;
 	}
+    .free-shipping {
+        text-transform: lowercase;
+    }
+}
+
+.banner-message {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
 }
 
 .chat-message {
@@ -1019,6 +1029,30 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     http://a2zhardware.com/category/2/laminated-steel-padlocks
 ========================================================================== */
 
+/* filter results section
+========================================================================== */
+
+// Hide filter results from mobile but display on > tablet
+.guidedNavWrapper {
+    display: none;
+    
+    @media (min-width: @screen-tablet) {
+        display: block;
+    }
+}
+
+.guidedNavigationBody {
+    
+    .guidedSearchBlock {
+        float: left;
+        margin-right: 30px;
+    }
+    
+    .filterOptions {
+        float: left;
+    }
+}
+
 
 /* sort by, products per page and paging arrows
 ========================================================================== */
@@ -1035,7 +1069,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
         margin-top: 7px;
     }
     .paging {
-        float: right;
+        float: left;
     }
 }
 
@@ -1057,7 +1091,7 @@ div#catSortByTop {
 
 //sort by combo box
 select#SelectSortTop {
-    margin-left: 73px;
+    margin-left: 5px;
     
     @media (min-width: @screen-tablet) {
         margin-left: 0 !important;
@@ -1086,9 +1120,15 @@ span.pageSizeHeading {
 }
 
 /* wrapper for pagination */
+// hide Products per page text and dropdown from mobile
 .pagesize {
-    float: left;
-    margin-left: 10px;
+    display: none;
+    
+    @media (min-width: @screen-tablet) {
+        display: block;
+        float: left;
+        margin-left: 10px;
+    }
 }
 
 /* space between sort by and combo box */
@@ -1121,15 +1161,17 @@ span.sortbylabel {
 /* wraps viewing page 1/2 */
 .viewingPageHeading {
     &.productcontrollabel {
-        float: left;
-        margin-right: 20px;
-        margin-bottom: 10px;
-
+        display: none;
+        
         @media (min-width: @screen-tablet) {
+            float: left;
+            margin-right: 20px;
             margin-bottom: 0;
+            
         }
     }
 }
+
 
 .pagerWrap {
     margin: 10px 0 10px 0;
@@ -1153,7 +1195,7 @@ span.pageHeadingWrap {
 
 // give the page links (1, 2, 3) a button look and feel
 .pageLinksWrap {
-    a {
+    .btn-default {
         margin-right: 5px;
         border: 1px solid lightgray;
         padding: 5px 10px 5px 10px;

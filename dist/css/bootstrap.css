@@ -6822,12 +6822,23 @@ body {
     display: none;
   }
 }
+.banner-phone {
+  margin-top: -12px;
+}
 .banner-phone .phone-icon {
   margin: 0 10px 0 0;
 }
 .banner-phone .banner-phone-text {
   font-size: 14px;
   font-weight: bold;
+}
+.banner-phone .free-shipping {
+  text-transform: lowercase;
+}
+.banner-message {
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
 }
 .chat-message {
   margin-top: -9px;
@@ -7546,6 +7557,23 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     Custom Styles for Product Category Listings
     http://a2zhardware.com/category/2/laminated-steel-padlocks
 ========================================================================== */
+/* filter results section
+========================================================================== */
+.guidedNavWrapper {
+  display: none;
+}
+@media (min-width: 768px) {
+  .guidedNavWrapper {
+    display: block;
+  }
+}
+.guidedNavigationBody .guidedSearchBlock {
+  float: left;
+  margin-right: 30px;
+}
+.guidedNavigationBody .filterOptions {
+  float: left;
+}
 /* sort by, products per page and paging arrows
 ========================================================================== */
 .pagerArea.topPagerArea,
@@ -7560,7 +7588,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   margin-top: 7px;
 }
 .entityPageSortWrap .paging {
-  float: right;
+  float: left;
 }
 /* wraps viewing page 1 of 2 */
 .entityPagePagingWrap {
@@ -7578,7 +7606,7 @@ div#catSortByTop {
   margin-left: 10px;
 }
 select#SelectSortTop {
-  margin-left: 73px;
+  margin-left: 5px;
 }
 @media (min-width: 768px) {
   select#SelectSortTop {
@@ -7605,8 +7633,14 @@ span.pageSizeHeading.productcontrollabel {
 }
 /* wrapper for pagination */
 .pagesize {
-  float: left;
-  margin-left: 10px;
+  display: none;
+}
+@media (min-width: 768px) {
+  .pagesize {
+    display: block;
+    float: left;
+    margin-left: 10px;
+  }
 }
 /* space between sort by and combo box */
 span.sortbylabel.productcontrollabel {
@@ -7627,12 +7661,12 @@ span.sortbylabel.productcontrollabel {
 }
 /* wraps viewing page 1/2 */
 .viewingPageHeading.productcontrollabel {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 10px;
+  display: none;
 }
 @media (min-width: 768px) {
   .viewingPageHeading.productcontrollabel {
+    float: left;
+    margin-right: 20px;
     margin-bottom: 0;
   }
 }
@@ -7652,7 +7686,7 @@ span.sortbylabel.productcontrollabel {
 span.pageHeadingWrap {
   margin-right: 10px;
 }
-.pageLinksWrap a {
+.pageLinksWrap .btn-default {
   padding: 5px 10px 5px 10px;
   margin-right: 5px;
   color: #000;
@@ -7661,11 +7695,11 @@ span.pageHeadingWrap {
   border: 1px solid lightgray;
   border-radius: 2px;
 }
-.pageLinksWrap a.currentpage {
+.pageLinksWrap .btn-default.currentpage {
   color: #fff;
   background-color: #29abe2 !important;
 }
-.pageLinksWrap a:hover {
+.pageLinksWrap .btn-default:hover {
   color: #fff;
   background-color: #929292 !important;
 }
