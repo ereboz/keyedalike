@@ -7613,11 +7613,6 @@ select#SelectSortTop {
     margin-left: 0 !important;
   }
 }
-@media (min-width: 992px) {
-  select#SelectSortTop {
-    margin-left: 0 !important;
-  }
-}
 /* wrapper for sort by and relevance */
 .catSortBy {
   float: left;
