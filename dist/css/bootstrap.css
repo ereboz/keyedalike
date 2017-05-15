@@ -7818,6 +7818,35 @@ h3.checkout-header i.checkout-status {
   /* Pay With
     ========================================================================== */
 }
+@media (max-width: 480px) {
+  .checkout-details .cart-item.media {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+    border-bottom: 1px dashed #e8e1e1;
+
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .checkout-details .media-body {
+    width: 268px;
+    margin-right: 20px;
+  }
+  .checkout-details .media-body .row {
+    margin-bottom: 20px;
+  }
+}
 .checkout-details .cart-item .media-body .row > div {
   display: table-cell;
 }

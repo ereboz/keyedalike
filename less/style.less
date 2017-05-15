@@ -1384,6 +1384,34 @@ h3.checkout-header i.checkout-status{
 /* Shopping Cart (left column)
 ========================================================================== */
 .checkout-details {
+
+    // ****** START XS SCREEN ******
+    // image was added after build and this is the work-around for xx devices.
+    // sorry to break mobile first approach :(
+    @media (max-width: @screen-xs) {
+        .cart-item {
+            &.media {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                flex-wrap: wrap;
+                border-bottom: 1px dashed @gray-superlight;
+            }
+        }
+    
+        .media-body {
+            width: 268px;
+            margin-right: 20px;
+        }
+    
+        .media-body {
+            .row {
+                margin-bottom:20px;
+            }
+        }
+}
+    // ****** End XS SCREEN ******
+    
     
     .cart-item {
         .media-body {
