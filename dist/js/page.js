@@ -9,7 +9,7 @@ $(document).ready(function(){
     
     $(".wrapper-subnav").affix({
         offset: {
-            top: $('#banner').height()
+            top: $('.bg-banner').height()
         }
     });
     
