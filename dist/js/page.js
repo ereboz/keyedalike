@@ -13,7 +13,7 @@ $(document).ready(function(){
         }
     });
     
-    $("#topnavbar").height($(".wrapper-subnav").height());
+    $("#topnavbar").height($(".wrapper-subnav").height() + $(".bg-banner").height());
     
     // $('#topnavbar').affix({
     //     offset: {
