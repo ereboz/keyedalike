@@ -6849,12 +6849,12 @@ body {
   font-size: 12px;
   color: #fff;
 }
-#topnavbar.affix {
-  position: fixed !important;
+.affix {
   top: 0;
   width: 100%;
 }
 .wrapper-subnav {
+  height: 153px;
   background-color: #fff;
 }
 .wrapper-subnav .subnavall {
