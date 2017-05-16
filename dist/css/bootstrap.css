@@ -7846,7 +7846,6 @@ h3.checkout-header i.checkout-status {
     display: -webkit-flex;
     display: -ms-flexbox;
     display:         flex;
-    margin-bottom: 10px;
             flex-direction: row;
     border-bottom: 1px dashed #e8e1e1;
 
@@ -7861,6 +7860,9 @@ h3.checkout-header i.checkout-status {
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+  }
+  .checkout-details .cart-item .media-left {
+    margin-bottom: 10px;
   }
   .checkout-details .media-body {
     width: 268px;
