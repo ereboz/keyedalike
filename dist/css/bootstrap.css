@@ -6940,6 +6940,19 @@ body {
     float: right;
   }
 }
+.navbar {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .navbar {
+    margin-bottom: 45px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar {
+    margin-bottom: 20px;
+  }
+}
 .main-nav {
   margin-right: -15px;
   margin-bottom: 0;
@@ -7445,9 +7458,14 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     http://a2zhardware.com/product/186/7-laminated-steel-padlock
 ========================================================================== */
 .product-info-wrap .product-page-header {
-  margin-top: -10px;
+  margin-top: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid #ddd;
+}
+@media (min-width: 768px) {
+  .product-info-wrap .product-page-header {
+    margin-top: -10px;
+  }
 }
 .variant-info-wrap .add-to-cart-wrap {
   margin-bottom: 0;
