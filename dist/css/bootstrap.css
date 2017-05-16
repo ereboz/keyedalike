@@ -7460,11 +7460,15 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .product-info-wrap .product-page-header {
   margin-top: 10px;
   margin-bottom: 20px;
+  font-size: 17px;
+  font-weight: bold;
   border-bottom: 1px solid #ddd;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   .product-info-wrap .product-page-header {
     margin-top: -10px;
+    font-size: 36px;
+    font-weight: 500;
   }
 }
 .variant-info-wrap .add-to-cart-wrap {
