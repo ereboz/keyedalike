@@ -7783,7 +7783,6 @@ td.guidedNavProductCell:hover {
 /* globals affecting everything
 ========================================================================== */
 .checkout-page .row .col-md-4 {
-  background-color: #f8f8f8;
   border: 1px solid #dedada;
 }
 .continue-shopping-text {
@@ -7890,7 +7889,6 @@ h3.checkout-header i.checkout-status {
 }
 .checkout-details .cart-details {
   padding-left: 15px;
-  background-color: #f8f8f8;
   border: 1px solid #dedada;
 }
 .checkout-details .cart-details .cart-item-quantity .input-sm {
@@ -7914,6 +7912,9 @@ h3.checkout-header i.checkout-status {
   .checkout-details .addresses-row .billing-address-column {
     display: block;
   }
+}
+.checkout-details .shipping-method .checkout-content {
+  margin-bottom: 20px;
 }
 .checkout-details .payment-method .payment-method-options {
   margin-bottom: 15px;
