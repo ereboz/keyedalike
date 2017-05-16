@@ -7791,7 +7791,6 @@ td.guidedNavProductCell:hover {
 /* checkout detail on left*/
 .checkout-details {
   padding-right: 10px;
-  border-bottom: 2px dotted #929292;
 }
 @media (min-width: 992px) {
   .checkout-details {
