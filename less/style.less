@@ -19,6 +19,8 @@ Section:
 /* Sub-section: LESS variables for this page: index.html
 ========================================================================== */
 
+
+
 /* DEFINE OUR GLOBAL VARIABLES FOR KEYEDALIKE
 ========================================================================== */
 @font-subnav: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
@@ -115,7 +117,7 @@ Section:
 .opacity (@opacity: 0.5) {
     -webkit-opacity: 	@opacity;
     -moz-opacity: 		@opacity;
-    opacity: 		      @opacity;
+    opacity: 		    @opacity;
 }
 
 /* PAGE OVERRIDES
@@ -1040,6 +1042,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 .product-description-wrap {
     margin-bottom: 50px;
+    padding: 0 15px;
     font-size: 16px;
     color: lighten(@black, 30%);
 }
@@ -1084,7 +1087,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 ========================================================================== */
 .pagerArea.topPagerArea, .pagerArea.bottomPagerArea {
     border: 1px solid @light-gray4;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     padding: 10px;
     min-height: 45px;
     
@@ -1249,6 +1252,33 @@ span.pageHeadingWrap {
 /* Products (category page)
 ========================================================================== */
 
+//region Product Category Grid Layout: Mobile flex to override default table with 4 items per row
+// Phone - need to break out of table and display flex to display 2 items across instead of a table
+// Phone will work kinda backwards by inheriting table defaults from larger views instead of
+// mobile first. Due to a template change after pushed to production.
+
+@media (max-width: @screen-phone) {
+    #ProductTable tr {
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: stretch;
+        align-content: stretch;
+    }
+    
+    #ProductTable td.guidedNavProductCell {
+        width: 45% !important;
+        flex-shrink: 1;
+        flex-basis: auto;
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+}
+
+// Tablet and Desktop get default table view
+
 /* some space between the rows */
 td.guidedNavProductCell {
     padding-right: 5px;
@@ -1274,6 +1304,7 @@ td.guidedNavProductCell:hover {
         padding: 3px;
     }
 }
+//endregion
 
 /* ==========================================================================
     Custom Styles for Search Results
