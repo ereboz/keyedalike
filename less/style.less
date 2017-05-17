@@ -1426,6 +1426,12 @@ except for the last div.
     }
 }
 
+.order-details {
+    &>div:last-child {
+        border-bottom: none;
+    }
+}
+
 /* override above because shopping cart has same class as order details for some reason
  we used jquery to move it from the bottom of page to the top and it got the border*/
 .order-details {
@@ -1475,6 +1481,16 @@ h3.checkout-header i.checkout-status{
 }
     // ****** End XS SCREEN ******
     
+    .cart-item {
+        &.media {
+            border-bottom: 1px dashed @gray-superlight;
+            padding-bottom: 10px;
+        
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+    }
     
     .cart-item {
         .media-body {
@@ -1668,7 +1684,15 @@ h3.checkout-header i.checkout-status{
     }
     
     h1 {
+        font-size: 24px;
         margin-bottom: 30px;
+        
+        @media (min-width: @screen-tablet) {
+            font-size: 30px;
+        }
+        @media (min-width: @screen-desktop) {
+            font-size: 36px;
+        }
     }
     
     .form-group {

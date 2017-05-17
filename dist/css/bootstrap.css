@@ -7865,6 +7865,9 @@ except for the last div.
   margin-bottom: 20px;
   border-bottom: 1px dashed #e8e1e1;
 }
+.order-details > div:last-child {
+  border-bottom: none;
+}
 /* override above because shopping cart has same class as order details for some reason
  we used jquery to move it from the bottom of page to the top and it got the border*/
 .order-details > div:nth-child(2) {
@@ -7918,6 +7921,13 @@ h3.checkout-header i.checkout-status {
   .checkout-details .media-body .row {
     margin-bottom: 20px;
   }
+}
+.checkout-details .cart-item.media {
+  padding-bottom: 10px;
+  border-bottom: 1px dashed #e8e1e1;
+}
+.checkout-details .cart-item.media:last-child {
+  border-bottom: none;
 }
 .checkout-details .cart-item .media-body .row > div {
   display: table-cell;
@@ -8042,6 +8052,17 @@ h3.checkout-header i.checkout-status {
 }
 .contact-us-page h1 {
   margin-bottom: 30px;
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .contact-us-page h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .contact-us-page h1 {
+    font-size: 36px;
+  }
 }
 .contact-us-page .form-group {
   width: 100%;
