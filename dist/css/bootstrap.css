@@ -7998,6 +7998,19 @@ h3.checkout-header i.checkout-status {
 /* ========================================================================== */
 /* NEW SHIPPING ADDRESS (from checkout page)
 ========================================================================== */
+.create-account-page h1 {
+  font-size: 24px;
+}
+@media (min-width: 768px) {
+  .create-account-page h1 {
+    font-size: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .create-account-page h1 {
+    font-size: 36px;
+  }
+}
 .addressDesktopWidth {
   width: 70%;
   padding-bottom: 20px;
