@@ -8109,6 +8109,20 @@ h3.checkout-header i.checkout-status {
 .page-wrap.topic-page {
   margin-bottom: 50px;
 }
+/* Log In
+========================================================================== */
+.signin-page .signin-text {
+  margin-bottom: 10px;
+}
+.signin-page .sign-in-actions {
+  margin-bottom: 20px;
+}
+.signin-page .forgot-password-instructions {
+  margin-bottom: 10px;
+}
+.signin-page .password-recovery-form > div:last-child {
+  margin-bottom: 20px;
+}
 /* Privacy Policy
 ========================================================================== */
 .topic-page .formtext {
