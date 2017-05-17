@@ -7122,7 +7122,7 @@ span.glyphicon.glyphicon-chevron-left {
 .product-image-bg {
   width: 90%;
   margin: 10px auto;
-  background-color: #f3f5f6;
+  background-color: #f8fafb;
 }
 .product-image-bg .product-image {
   width: 166px;
@@ -7286,7 +7286,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: .09em;
-  background-color: #f3f5f6;
+  background-color: #f8fafb;
   -webkit-transition: all .2s ease-in-out;
        -o-transition: all .2s ease-in-out;
           transition: all .2s ease-in-out;
