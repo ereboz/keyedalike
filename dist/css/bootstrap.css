@@ -7484,6 +7484,12 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     margin-bottom: 40px;
   }
 }
+.variant-info-wrap .add-to-cart-wrap .text-option {
+  width: 25%;
+}
+.variant-info-wrap .add-to-cart-wrap .text-box {
+  width: 25%;
+}
 .variant-info-wrap .variant-price .price-wrap {
   margin-bottom: 10px;
   font-size: 16px;
