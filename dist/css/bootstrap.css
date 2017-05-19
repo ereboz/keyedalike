@@ -7585,29 +7585,37 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 ========================================================================== */
 /* filter results section
 ========================================================================== */
-.guidedNavWrapper {
-  display: none;
+.guidedNavTwoCol .guidedNavWrapper {
+  width: 100% !important;
 }
-@media (min-width: 768px) {
-  .guidedNavWrapper {
-    display: block;
+@media (min-width: 992px) {
+  .guidedNavTwoCol .guidedNavWrapper {
+    width: 23% !important;
   }
 }
-.guidedNavigationBody .guidedSearchBlock {
-  float: left;
-  margin-right: 30px;
+.guidedNavTwoCol .guidedNavGroup {
+  padding: 10px 0;
 }
-.guidedNavigationBody .filterOptions {
-  float: left;
+/* Main page wrapper, wrapping h1, pagination and product
+========================================================================== */
+.guidedNavTwoCol .guidedNavContents {
+  width: 100% !important;
 }
-/* sort by, products per page and paging arrows
+@media (min-width: 992px) {
+  .guidedNavTwoCol .guidedNavContents {
+    width: 75% !important;
+  }
+  .guidedNavTwoCol .guidedNavContents h1 {
+    margin-top: 0;
+  }
+}
+/*  sort by, products per page, paging arrows
 ========================================================================== */
 .pagerArea.topPagerArea,
 .pagerArea.bottomPagerArea {
   min-height: 45px;
-  padding: 10px;
+  padding: 0;
   margin-bottom: 20px;
-  border: 1px solid #d3d3d3;
 }
 @media (min-width: 992px) {
   .pagerArea.topPagerArea,
@@ -7615,15 +7623,32 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     margin-bottom: 20px;
   }
 }
-/* entity and products per page wrap */
+/* Wrapper - entity and products per page */
 .entityPageSortWrap .col-md-6 {
   float: left;
   margin-top: 7px;
 }
+.entityPageSortWrap .col-md-6:first-child {
+  width: 40% !important;
+}
+@media (min-width: 768px) {
+  .entityPageSortWrap .col-md-6:first-child {
+    width: 60% !important;
+    margin-top: 10px !important;
+  }
+}
+.entityPageSortWrap .col-md-6:last-child {
+  width: 60% !important;
+}
+@media (min-width: 768px) {
+  .entityPageSortWrap .col-md-6:last-child {
+    width: 40% !important;
+  }
+}
 .entityPageSortWrap .paging {
   float: left;
 }
-/* wraps viewing page 1 of 2 */
+/* Wrapper -  viewing page 1 of 2 */
 .entityPagePagingWrap {
   float: left;
   margin-left: 10px;
@@ -7632,11 +7657,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   .entityPagePagingWrap {
     float: right;
   }
-}
-/* padding to the left of sort by */
-div#catSortByTop {
-  margin-bottom: 10px;
-  margin-left: 10px;
 }
 select#SelectSortTop {
   margin-left: 5px;
@@ -7652,6 +7672,7 @@ select#SelectSortTop {
 }
 /* space between sort by and products per page */
 div#catSortByTop {
+  width: 40%;
   margin-right: 20px;
   margin-left: 10px;
 }
@@ -7659,7 +7680,6 @@ div#catSortByTop {
 span.pageSizeHeading.productcontrollabel {
   margin-right: 5px;
 }
-/* wrapper for pagination */
 .pagesize {
   display: none;
 }
@@ -7667,6 +7687,7 @@ span.pageSizeHeading.productcontrollabel {
   .pagesize {
     display: block;
     float: left;
+    width: 50% !important;
     margin-left: 10px;
   }
 }
@@ -7686,6 +7707,7 @@ span.sortbylabel.productcontrollabel {
 }
 .pagerArea.bottomPagerArea .paging.col-md-6 {
   width: 100%;
+  margin-top: 5px;
 }
 /* wraps viewing page 1/2 */
 .viewingPageHeading.productcontrollabel {
@@ -7703,8 +7725,9 @@ span.sortbylabel.productcontrollabel {
   margin: 10px 0 10px 0;
 }
 /* wraps page: 123>>> */
-.pageLinksWrap {
+.paging .pageLinksWrap {
   float: right;
+  width: auto;
   margin-right: 10px;
 }
 /* text for Page on right */

@@ -1058,37 +1058,50 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     http://a2zhardware.com/category/2/laminated-steel-padlocks
 ========================================================================== */
 
+
 /* filter results section
 ========================================================================== */
 
-// Hide filter results from mobile but display on > tablet
-.guidedNavWrapper {
-    display: none;
-    
-    @media (min-width: @screen-tablet) {
-        display: block;
-    }
-}
-
-.guidedNavigationBody {
-    
-    .guidedSearchBlock {
-        float: left;
-        margin-right: 30px;
+// Filter wrapper
+.guidedNavTwoCol {
+    .guidedNavWrapper {
+        width: 100% !important;
+        
+        @media (min-width: @screen-desktop) {
+            width: 23% !important;
+        }
     }
     
-    .filterOptions {
-        float: left;
+    .guidedNavGroup {
+        padding: 10px 0;
     }
 }
 
 
-/* sort by, products per page and paging arrows
+/* Main page wrapper, wrapping h1, pagination and product
+========================================================================== */
+
+.guidedNavTwoCol {
+    .guidedNavContents {
+        width: 100% !important;
+        
+        @media (min-width: @screen-desktop) {
+            width: 75% !important;
+            
+            h1 {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+
+/*  sort by, products per page, paging arrows
 ========================================================================== */
 .pagerArea.topPagerArea, .pagerArea.bottomPagerArea {
-    border: 1px solid @light-gray4;
+    //border: 1px solid @light-gray4;
     margin-bottom: 20px;
-    padding: 10px;
+    padding: 0;
     min-height: 45px;
     
     @media (min-width: @screen-desktop) {
@@ -1096,18 +1109,36 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     }
 }
 
-/* entity and products per page wrap */
+/* Wrapper - entity and products per page */
 .entityPageSortWrap {
     .col-md-6 {
         float: left;
         margin-top: 7px;
+        
+        &:first-child {
+            width: 40% !important;
+            
+            @media (min-width: @screen-tablet) {
+                width: 60% !important;
+                margin-top: 10px !important;
+            }
+        }
+        
+        &:last-child {
+            width: 60% !important;
+            
+            @media (min-width: @screen-tablet) {
+                width: 40% !important;
+            }
+        }
     }
+    
     .paging {
         float: left;
     }
 }
 
-/* wraps viewing page 1 of 2 */
+/* Wrapper -  viewing page 1 of 2 */
 .entityPagePagingWrap {
     float: left;
     margin-left: 10px;
@@ -1117,11 +1148,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     }
 }
 
-/* padding to the left of sort by */
-div#catSortByTop {
-    margin-left: 10px;
-    margin-bottom: 10px;
-}
 
 //sort by combo box
 select#SelectSortTop {
@@ -1140,6 +1166,7 @@ select#SelectSortTop {
 div#catSortByTop {
     margin-right: 20px;
     margin-left: 10px;
+    width: 40%;
 }
 
 /* space between product per page label and combo */
@@ -1149,7 +1176,7 @@ span.pageSizeHeading {
     }
 }
 
-/* wrapper for pagination */
+
 // hide Products per page text and dropdown from mobile
 .pagesize {
     display: none;
@@ -1158,6 +1185,7 @@ span.pageSizeHeading {
         display: block;
         float: left;
         margin-left: 10px;
+        width: 50% !important;
     }
 }
 
@@ -1182,6 +1210,7 @@ span.sortbylabel {
         .paging {
             &.col-md-6 {
                 width: 100%;
+                margin-top: 5px;
             }
         }
     }
@@ -1209,9 +1238,10 @@ span.sortbylabel {
 }
 
 /* wraps page: 123>>> */
-.pageLinksWrap {
+.paging .pageLinksWrap {
     float: right;
     margin-right: 10px;
+    width: auto;
 }
 
 /* text for Page on right */
