@@ -736,21 +736,16 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    
-    //@media (max-width: @screen-tablet) {
-    //    justify-content: flex-start;
-    //}
+    margin: 20px;
 }
 
 .info-footer {
     flex-basis: auto;
-    width: 360px;
+    width: 500px;
     background: @dark-gray;
 	color: @white;
-    padding: 20px;
     font-family: @font-subnav;
-    margin-bottom: 15px;
-
+    
     @media (min-width: @screen-desktop) {
         width: 400px;
     }
@@ -799,6 +794,12 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 	}
 		
 	&.footer1 {
+        margin-bottom: 30px;
+        
+        @media (min-width: @screen-desktop) {
+            margin-bottom: 0;
+        }
+        
 		.padlock-pros {
 			float: left;
 			
@@ -819,6 +820,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 		}
 		.logo-affiliates {
 			float: left;
+            width: 280px;
 			
 			.better-business {
 				margin-left: -20px;
@@ -840,7 +842,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 	
 	&.footer2 {
 		margin-right: 0;
-		margin-top: 13px;
+		margin-top: 0;
 		
 		.content-left {
 			float: left;
@@ -851,6 +853,10 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 			margin-bottom: 20px;
 		}
 		
+        @media (min-width: @screen-desktop) {
+            margin-top: 13px;
+        }
+        
 		@media (min-width: @screen-lg-desktop) {
 			margin-right: 80px;
 		}
@@ -872,7 +878,11 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 	}
 	
 	&.footer3 {
-		margin-top: 13px;
+		margin-top: 0;
+        
+        @media (min-width: @screen-desktop) {
+            margin-top: 13px;
+        }
 		
 		.email-wrapper {
 			p {

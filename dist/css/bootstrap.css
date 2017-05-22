@@ -7318,6 +7318,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   display: -webkit-box;
   display: -ms-flexbox;
   display:         flex;
+  margin: 20px;
           flex-direction: row;
 
   -webkit-box-orient: horizontal;
@@ -7337,9 +7338,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
           align-items: stretch;
 }
 .info-footer {
-  width: 360px;
-  padding: 20px;
-  margin-bottom: 15px;
+  width: 500px;
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
   color: #fff;
   background: #333;
@@ -7387,6 +7386,14 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   font-size: 35px;
   font-weight: bold;
 }
+.info-footer.footer1 {
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .info-footer.footer1 {
+    margin-bottom: 0;
+  }
+}
 .info-footer.footer1 .padlock-pros {
   float: left;
 }
@@ -7404,6 +7411,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 .info-footer.footer1 .logo-affiliates {
   float: left;
+  width: 280px;
 }
 .info-footer.footer1 .logo-affiliates .better-business {
   margin-left: -20px;
@@ -7418,7 +7426,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   float: left;
 }
 .info-footer.footer2 {
-  margin-top: 13px;
+  margin-top: 0;
   margin-right: 0;
 }
 .info-footer.footer2 .content-left {
@@ -7428,6 +7436,11 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .info-footer.footer2 .content-right {
   float: right;
   margin-bottom: 20px;
+}
+@media (min-width: 992px) {
+  .info-footer.footer2 {
+    margin-top: 13px;
+  }
 }
 @media (min-width: 1200px) {
   .info-footer.footer2 {
@@ -7447,7 +7460,12 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   margin: 0 6px;
 }
 .info-footer.footer3 {
-  margin-top: 13px;
+  margin-top: 0;
+}
+@media (min-width: 992px) {
+  .info-footer.footer3 {
+    margin-top: 13px;
+  }
 }
 .info-footer.footer3 .email-wrapper p {
   font-size: 12px;
