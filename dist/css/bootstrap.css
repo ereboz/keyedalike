@@ -8007,6 +8007,10 @@ h3.checkout-header i.checkout-status {
   padding: 15px;
   border: 1px solid #dedada !important;
 }
+.checkout-details .alternative-payment-methods .alternative-payment-button {
+  width: 175px;
+  cursor: pointer;
+}
 .checkout-details .alternative-payment-methods > div:nth-child(2) {
   display: none;
 }
