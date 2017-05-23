@@ -7356,6 +7356,19 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   margin-top: 0;
   font-size: 18px;
 }
+.info-footer a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.info-footer a:hover {
+  color: #7b7a7a;
+}
+.info-footer a:visited {
+  color: #fff;
+}
+.info-footer a:active {
+  color: #fff;
+}
 .info-footer ul {
   padding-left: 5px;
   margin-bottom: 25px;
@@ -7399,6 +7412,9 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 .info-footer.footer1 .padlock-pros .logo {
   width: 300px;
+}
+.info-footer.footer1 .padlock-pros .logo-link-text {
+  text-align: center;
 }
 .info-footer.footer1 .contact {
   float: left;
