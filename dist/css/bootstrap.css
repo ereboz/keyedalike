@@ -7031,10 +7031,12 @@ body {
   width: 48%;
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
   color: #000;
+  text-shadow: none;
 }
 @media (min-width: 768px) {
   #myCarousel .carousel-caption {
     top: -8%;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   }
 }
 @media (min-width: 992px) {
@@ -7419,9 +7421,11 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 }
 .info-footer.footer1 .padlock-pros .logo {
   width: 300px;
+  margin-bottom: 5px;
 }
 .info-footer.footer1 .padlock-pros .logo-link-text {
   text-align: center;
+  letter-spacing: 11px;
 }
 .info-footer.footer1 .contact {
   float: left;
