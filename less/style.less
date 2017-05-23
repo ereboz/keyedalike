@@ -1120,9 +1120,10 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 // Filter wrapper
 .guidedNavTwoCol {
     .guidedNavWrapper {
-        width: 100% !important;
+        display: none;
         
-        @media (min-width: @screen-desktop) {
+        @media (min-width: @screen-tablet) {
+            display: block;
             width: 23% !important;
         }
     }
@@ -1140,7 +1141,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     .guidedNavContents {
         width: 100% !important;
         
-        @media (min-width: @screen-desktop) {
+        @media (min-width: @screen-tablet) {
             width: 75% !important;
             
             h1 {

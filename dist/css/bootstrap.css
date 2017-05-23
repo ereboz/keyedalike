@@ -7637,10 +7637,11 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 /* filter results section
 ========================================================================== */
 .guidedNavTwoCol .guidedNavWrapper {
-  width: 100% !important;
+  display: none;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .guidedNavTwoCol .guidedNavWrapper {
+    display: block;
     width: 23% !important;
   }
 }
@@ -7652,7 +7653,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .guidedNavTwoCol .guidedNavContents {
   width: 100% !important;
 }
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .guidedNavTwoCol .guidedNavContents {
     width: 75% !important;
   }
