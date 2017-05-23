@@ -1445,9 +1445,6 @@ td.guidedNavProductCell:hover {
 }
 
 
-
-
-
 /* ==========================================================================
     Custom Styles for Secure Checkout page
     http://http://a2zhardware.com/checkout
@@ -1571,6 +1568,20 @@ h3.checkout-header i.checkout-status{
 }
     // ****** End XS SCREEN ******
     
+    /* PayPal
+========================================================================== */
+    .alternative-payment-methods {
+        padding: 15px;
+        border: 1px solid #dedada !important;
+    }
+    // hide the second paypal button (credit) - Sprint2 KA-99
+    .alternative-payment-methods {
+        > div:nth-child(2) {
+            display: none;
+        }
+    }
+    
+
     .cart-item {
         &.media {
             border-bottom: 1px dashed @gray-superlight;

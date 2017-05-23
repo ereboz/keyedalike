@@ -7960,6 +7960,8 @@ h3.checkout-header i.checkout-status {
 /* Shopping Cart (left column)
 ========================================================================== */
 .checkout-details {
+  /* PayPal
+========================================================================== */
   /* Account
     ========================================================================== */
   /* Shipping To       Billing To
@@ -8000,6 +8002,13 @@ h3.checkout-header i.checkout-status {
   .checkout-details .media-body .row {
     margin-bottom: 20px;
   }
+}
+.checkout-details .alternative-payment-methods {
+  padding: 15px;
+  border: 1px solid #dedada !important;
+}
+.checkout-details .alternative-payment-methods > div:nth-child(2) {
+  display: none;
 }
 .checkout-details .cart-item.media {
   padding-bottom: 10px;
