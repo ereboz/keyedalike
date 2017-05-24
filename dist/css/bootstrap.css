@@ -7682,7 +7682,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 /* Wrapper - entity and products per page */
 .entityPageSortWrap .col-md-6 {
   float: left;
-  margin-top: 7px;
 }
 .entityPageSortWrap .col-md-6:first-child {
   width: 40% !important;
@@ -7690,7 +7689,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 @media (min-width: 768px) {
   .entityPageSortWrap .col-md-6:first-child {
     width: 60% !important;
-    margin-top: 10px !important;
   }
 }
 .entityPageSortWrap .col-md-6:last-child {
@@ -7714,9 +7712,6 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     float: right;
   }
 }
-select#SelectSortTop {
-  margin-left: 5px;
-}
 @media (min-width: 768px) {
   select#SelectSortTop {
     margin-left: 0 !important;
@@ -7728,9 +7723,15 @@ select#SelectSortTop {
 }
 /* space between sort by and products per page */
 div#catSortByTop {
-  width: 40%;
+  width: 100%;
+  margin-top: 10px;
   margin-right: 20px;
   margin-left: 10px;
+}
+@media (min-width: 768px) {
+  div#catSortByTop {
+    width: 40%;
+  }
 }
 /* space between product per page label and combo */
 span.pageSizeHeading.productcontrollabel {
@@ -7743,8 +7744,13 @@ span.pageSizeHeading.productcontrollabel {
   .pagesize {
     display: block;
     float: left;
-    width: 50% !important;
-    margin-left: 10px;
+    width: 38% !important;
+    margin: 10px 10px 0 10px;
+  }
+}
+@media (min-width: 992px) {
+  .pagesize {
+    width: 48% !important;
   }
 }
 /* space between sort by and combo box */
@@ -7784,7 +7790,13 @@ span.sortbylabel.productcontrollabel {
 .paging .pageLinksWrap {
   float: right;
   width: auto;
+  margin-top: 0;
   margin-right: 10px;
+}
+@media (min-width: 992px) {
+  .paging .pageLinksWrap {
+    margin-top: 6px;
+  }
 }
 /* text for Page on right */
 .pageHeadingWrap {

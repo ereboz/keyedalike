@@ -1173,14 +1173,14 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .entityPageSortWrap {
     .col-md-6 {
         float: left;
-        margin-top: 7px;
+        //margin-top: 7px;
         
         &:first-child {
             width: 40% !important;
             
             @media (min-width: @screen-tablet) {
                 width: 60% !important;
-                margin-top: 10px !important;
+                //margin-top: 10px !important;
             }
         }
         
@@ -1211,7 +1211,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 
 //sort by combo box
 select#SelectSortTop {
-    margin-left: 5px;
+    //margin-left: 5px;
     
     @media (min-width: @screen-tablet) {
         margin-left: 0 !important;
@@ -1226,7 +1226,12 @@ select#SelectSortTop {
 div#catSortByTop {
     margin-right: 20px;
     margin-left: 10px;
-    width: 40%;
+    width: 100%;
+    margin-top: 10px;
+    
+    @media (min-width: @screen-tablet) {
+        width: 40%;
+    }
 }
 
 /* space between product per page label and combo */
@@ -1244,8 +1249,12 @@ span.pageSizeHeading {
     @media (min-width: @screen-tablet) {
         display: block;
         float: left;
-        margin-left: 10px;
-        width: 50% !important;
+        margin: 10px 10px 0 10px;
+        width: 38% !important;
+    }
+    
+    @media (min-width: @screen-desktop) {
+        width: 48% !important;
     }
 }
 
@@ -1302,6 +1311,11 @@ span.sortbylabel {
     float: right;
     margin-right: 10px;
     width: auto;
+    margin-top: 0;
+    
+    @media (min-width: @screen-desktop) {
+        margin-top: 6px;
+    }
 }
 
 /* text for Page on right */
