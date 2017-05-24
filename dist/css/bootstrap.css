@@ -7769,7 +7769,10 @@ span.sortbylabel.productcontrollabel {
 }
 .pagerArea.bottomPagerArea .paging.col-md-6 {
   width: 100%;
-  margin-top: 5px;
+  margin-top: 0;
+}
+.pagerArea.bottomPagerArea .pageLinksWrap {
+  margin-top: 6px;
 }
 /* wraps viewing page 1/2 */
 .viewingPageHeading.productcontrollabel {
@@ -7790,13 +7793,8 @@ span.sortbylabel.productcontrollabel {
 .paging .pageLinksWrap {
   float: right;
   width: auto;
-  margin-top: 0;
+  margin-top: 6px;
   margin-right: 10px;
-}
-@media (min-width: 992px) {
-  .paging .pageLinksWrap {
-    margin-top: 6px;
-  }
 }
 /* text for Page on right */
 .pageHeadingWrap {
