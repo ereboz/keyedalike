@@ -1938,6 +1938,11 @@ p {
         float: left;
     }
     
+    // give the 4th row a bottom margin between text and images
+    .row:nth-child(4) {
+        margin-bottom: 20px
+    }
+    
     .trademarks {
         float: left;
         
@@ -1951,7 +1956,11 @@ p {
     }
     
     .trade-logos {
-        margin-bottom: 70px;
+        margin-bottom: 20px;
+        
+        @media (min-width: @screen-sm) {
+            margin-bottom: 70px;
+        }
     }
     
     .first-word {
@@ -1987,6 +1996,7 @@ p {
     
     div:nth-child(2) > div:nth-child(3) {
         margin-top: 0;
+        margin-bottom: 0;
         
         @media (min-width: @screen-sm) {
             margin-top: 36px;

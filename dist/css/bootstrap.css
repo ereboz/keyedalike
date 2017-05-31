@@ -8257,6 +8257,9 @@ p.formtext > strong {
 .wrapper-about .body-text {
   float: left;
 }
+.wrapper-about .row:nth-child(4) {
+  margin-bottom: 20px;
+}
 .wrapper-about .trademarks {
   float: left;
 }
@@ -8267,7 +8270,12 @@ p.formtext > strong {
   margin-bottom: 20px;
 }
 .wrapper-about .trade-logos {
-  margin-bottom: 70px;
+  margin-bottom: 20px;
+}
+@media (min-width: 768px) {
+  .wrapper-about .trade-logos {
+    margin-bottom: 70px;
+  }
 }
 .wrapper-about .first-word {
   font-size: 24px;
@@ -8297,6 +8305,7 @@ p.formtext > strong {
 }
 .container-vendor-logos div:nth-child(2) > div:nth-child(3) {
   margin-top: 0;
+  margin-bottom: 0;
 }
 @media (min-width: 768px) {
   .container-vendor-logos div:nth-child(2) > div:nth-child(3) {
