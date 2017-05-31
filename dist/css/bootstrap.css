@@ -7657,6 +7657,14 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .guidedNavTwoCol .guidedNavGroup {
   padding: 10px 0;
 }
+.guidedNavTwoCol .guidedNavGroup input#GuidedNavigationSearchBox {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .guidedNavTwoCol .guidedNavGroup input#GuidedNavigationSearchBox {
+    margin-bottom: 5px;
+  }
+}
 /* Main page wrapper, wrapping h1, pagination and product
 ========================================================================== */
 .guidedNavTwoCol .guidedNavContents {
