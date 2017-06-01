@@ -8432,8 +8432,8 @@ p.formtext > strong {
 /* Andrew changes to bootstrap.min.css to integrate
 ========================================================================== */
 /*Category Page*/
-.guidedNavPriceWrap > .price-wrap {
-  display: none;
+.guidedNavPriceWrap .price-wrap {
+  display: block;
 }
 /*Product Page*/
 .specs-list {
