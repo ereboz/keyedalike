@@ -7334,6 +7334,9 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 .item-image-wrapper .item-title .construction-type {
   font-size: 24px;
 }
+.item-image-wrapper .item-images {
+  margin-bottom: 5px;
+}
 .item-image-wrapper .item-images img {
   display: inline-block;
 }
