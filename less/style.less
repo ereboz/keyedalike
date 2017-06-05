@@ -128,11 +128,11 @@ body {
     //font-family: @font-src-sans !important;
 }
 // Define width of container for keyedalike specific wrapper
-@media (min-width: 1200px) {
-    .container {
-        width: 1012px;
-    }
-}
+//@media (min-width: 1200px) {
+//    .container {
+//        width: 1012px;
+//    }
+//}
 
 .btn {
     color: @black;
@@ -194,7 +194,7 @@ body {
 }
 
 
-// TODO-BH: try TBS animation to override hard scroll. can keep #topnavbar above if needed
+// TODO-BH: try TBS animation smooth scroll
 // Start TBS affix patch for mobile
 
 //#topnavbar.affix {
@@ -554,6 +554,9 @@ span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {
     margin-top: 1px;
 }
 
+/* Best Seller Section
+========================================================================== */
+
 .product-image-bg {
     width: 90%;
     background-color: lighten(@gray-background, 1%);
@@ -735,6 +738,124 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
     }
 }
 
+/* Popular Model Section - Homepage
+========================================================================== */
+//<editor-fold desc="Popular Model Section - Homepage">
+popular-items {
+
+}
+
+.item-wrapper {
+    .item {
+        border: 1px dotted @gray-superlight;
+        margin-bottom: 50px;
+        
+        &:hover {
+            border-bottom: 1px solid @black;
+        }
+    }
+}
+
+// 1st wrapper inside popular model
+.item-image-wrapper {
+    text-align: center;
+    // hide default hover behavior for images
+    a:hover {
+        text-decoration: none;
+    }
+    
+    .item-title {
+        .construction-type {
+            font-size: 24px;
+        }
+    }
+    
+    .item-images {
+        
+        img {
+            display: inline-block;
+        
+            @media (min-width: @screen-tablet) {
+                max-width: 35px;
+            }
+        
+            @media (min-width: @screen-desktop) {
+                max-width: 60px;
+            }
+        }
+    }
+    
+}
+
+// 2nd wrapper inside popular model
+.item-desc-wrapper {
+    text-align: center;
+    
+    .item-models {
+        word-spacing: 14px;
+        
+        @media (min-width: @screen-tablet) {
+            word-spacing: 0;
+        }
+        
+        @media (min-width: @screen-desktop) {
+            word-spacing: 9px;
+        }
+    }
+    
+    .item-desc {
+        
+        .price-hpi {
+            margin-bottom: 20px;
+            word-spacing: 34px;
+            font-weight: bold;
+            
+            @media (min-width: @screen-tablet) {
+                word-spacing: 3px;
+            }
+    
+            @media (min-width: @screen-desktop) {
+                word-spacing: 24px;
+            }
+        }
+        
+        .price-msrp {
+            margin-bottom: 10px;
+            font-size: 12px;
+            color: @gray-med3;
+    
+            .price {
+                word-spacing: 40px;
+                @media (min-width: @screen-tablet) {
+                    word-spacing: 4px;
+                }
+        
+                @media (min-width: @screen-desktop) {
+                    word-spacing: 30px;
+                }
+            }
+            
+        }
+        
+        .btn-view-details {
+            margin-bottom: 10px;
+    
+            .view-details {
+                .btn-transparent();
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+                width: 125px;
+            }
+        }
+    }
+}
+
+//</editor-fold>
+
+/* ==========================================================================
+FOOTER SECTION
+========================================================================== */
 .container-footer {
 	background-color: @dark-gray;
 }
