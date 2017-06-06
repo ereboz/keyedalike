@@ -390,7 +390,7 @@ body {
 #myCarousel {
     margin-bottom: 25px;
     border: 1px dotted @gray-medium;
-    background-color: @white-smoke;
+    background-color: #d3d3d3;
     
     .carousel-indicators {
         display: none;
@@ -408,7 +408,8 @@ body {
     }
 
   .carousel-inner {
-      background-image: url("/dist/images/bg-slide.jpg");
+      // default plain background in case individual images dont load
+      background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
 
       .item {
           img {
@@ -421,13 +422,29 @@ body {
                   height: auto;
               }
           }
+          // individual backgrounds per slide
+          &.bg1 {
+              background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
+          }
+          
+          &.bg2 {
+              background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide2.jpg");
+          }
+          
+          &.bg3 {
+              background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide3.jpg");
+          }
+          
+          &.bg4 {
+              background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide4.jpg");
+          }
       }
   }
 
   .carousel-caption {
       width: 48%;
       top: -20%;
-      left: 50%;
+      left: 45%;
       color: @black;
       font-family: @font-subnav;
       text-shadow: none;
@@ -438,11 +455,15 @@ body {
       }
     
       @media (min-width: @screen-desktop) {
-          top: 10%;
+          top: 0;
+          left: 35%;
       }
 
       h1 {
+          color: @blue;
           font-size: 16px;
+          text-align: left;
+          margin-bottom: 20px;
 
           @media (min-width: @screen-tablet) {
 			  font-size: 35px;
@@ -452,9 +473,6 @@ body {
       p {
           font-size: 9px;
           text-align: left;
-          &:nth-child(3){
-              color: @blue;
-          }
 
           @media (min-width: @screen-tablet) {
               font-size: 20px;
@@ -470,11 +488,6 @@ body {
 }
 
 
-
-
-
-
-
 span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {
     display: none;
     
@@ -483,13 +496,15 @@ span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {
         color: @black;
         margin-top: 100%;
     }
+    
+    @media (min-width: @screen-desktop) {
+        margin-top: 80%;
+    }
 
 }
 
 
-
 // End Carousel
-
 
 .wrapper-category {
     margin-bottom: 40px;

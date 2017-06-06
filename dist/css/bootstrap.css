@@ -6989,7 +6989,7 @@ body {
 }
 #myCarousel {
   margin-bottom: 25px;
-  background-color: #f5f5f5;
+  background-color: #d3d3d3;
   border: 1px dotted #7b7a7a;
 }
 #myCarousel .carousel-indicators {
@@ -7007,7 +7007,7 @@ body {
   }
 }
 #myCarousel .carousel-inner {
-  background-image: url("/dist/images/bg-slide.jpg");
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
 }
 #myCarousel .carousel-inner .item img {
   display: block;
@@ -7020,9 +7020,21 @@ body {
     height: auto;
   }
 }
+#myCarousel .carousel-inner .item.bg1 {
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
+}
+#myCarousel .carousel-inner .item.bg2 {
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide2.jpg");
+}
+#myCarousel .carousel-inner .item.bg3 {
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide3.jpg");
+}
+#myCarousel .carousel-inner .item.bg4 {
+  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide4.jpg");
+}
 #myCarousel .carousel-caption {
   top: -20%;
-  left: 50%;
+  left: 45%;
   width: 48%;
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
   color: #000;
@@ -7036,11 +7048,15 @@ body {
 }
 @media (min-width: 992px) {
   #myCarousel .carousel-caption {
-    top: 10%;
+    top: 0;
+    left: 35%;
   }
 }
 #myCarousel .carousel-caption h1 {
+  margin-bottom: 20px;
   font-size: 16px;
+  color: #29abe2;
+  text-align: left;
 }
 @media (min-width: 768px) {
   #myCarousel .carousel-caption h1 {
@@ -7050,9 +7066,6 @@ body {
 #myCarousel .carousel-caption p {
   font-size: 9px;
   text-align: left;
-}
-#myCarousel .carousel-caption p:nth-child(3) {
-  color: #29abe2;
 }
 @media (min-width: 768px) {
   #myCarousel .carousel-caption p {
@@ -7073,6 +7086,12 @@ span.glyphicon.glyphicon-chevron-left {
     display: block;
     margin-top: 100%;
     color: #000;
+  }
+}
+@media (min-width: 992px) {
+  span.glyphicon.glyphicon-chevron-right,
+  span.glyphicon.glyphicon-chevron-left {
+    margin-top: 80%;
   }
 }
 .wrapper-category {
