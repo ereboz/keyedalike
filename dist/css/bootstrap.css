@@ -7007,7 +7007,7 @@ body {
   }
 }
 #myCarousel .carousel-inner {
-  background-image: url("/skins/skin_10/dist/images/bg-slide.jpg");
+  background-image: url("/dist/images/bg-slide.jpg");
 }
 #myCarousel .carousel-inner .item img {
   display: block;
