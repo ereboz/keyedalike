@@ -7360,7 +7360,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
 ========================================================================== */
 .item-wrapper .item {
   margin-bottom: 50px;
-  border: 1px dotted #e8e1e1;
+  border: 1px dotted #e0e0e0;
 }
 .item-wrapper .item:hover {
   border-bottom: 1px solid #000;
