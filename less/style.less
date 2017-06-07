@@ -1,8 +1,6 @@
 //* Created by javaBoxer on 3/23/2017.
 // TODO: Brian - redo image paths to match that of the server when deployed
 
-
-
 /* ==========================================================================
 Section:
 // Bootstrap LESS variables to reference
@@ -11,14 +9,14 @@ Section:
 // @screen-desktop        992px
 // @screen-lg-desktop     1200px
 
-// Custom to fit footer better on Nexus 10 @800px
-// bootstrap default for tablet is 768px
+Custom iphone widths if needed:
+// @screen-xxxs          320px
+// @screen-xxs           375px
 ========================================================================== */
 
 
 /* Sub-section: LESS variables for this page: index.html
 ========================================================================== */
-
 
 
 /* DEFINE OUR GLOBAL VARIABLES FOR KEYEDALIKE
@@ -59,8 +57,11 @@ Section:
 @gray-med1: #ddd;
 @gray-med2: #dcdcdc;
 @gray-med3: #929292;
-@screen-tablet-md-max: 800px;
+
+@screen-xxxs: 320px;
+@screen-xxs: 375px;
 @screen-tablet-md-min: 780px;
+@screen-tablet-md-max: 800px;
 
 /* MIXIN'S
 ========================================================================== */
@@ -388,6 +389,12 @@ body {
 // Carousel
 
 #myCarousel {
+    
+    // custom setting for iphone 5 to hide
+    @media (max-width: @screen-xxxs) {
+        display: none;
+    }
+    
     margin-bottom: 25px;
     border: 1px dotted @gray-medium;
     background-color: #d3d3d3;
@@ -408,36 +415,41 @@ body {
     }
 
   .carousel-inner {
-      // default plain background in case individual images dont load
-      background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
 
       .item {
+          // default background for all but desktop large. desktop large has individual images.
+          background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
+          
+          // individual backgrounds per slide (large desktop only)
+          @media (min-width: @screen-lg-desktop) {
+              
+              &.slide1 {
+                  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
+              }
+    
+              &.slide2 {
+                  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide2.jpg");
+              }
+    
+              &.slide3 {
+                  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide3.jpg");
+              }
+    
+              &.slide4 {
+                  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide4.jpg");
+              }
+          }
+    
           img {
               display: block;
               max-width: 100%;
               height: auto;
-
+        
               @media (max-width: @screen-tablet) {
                   max-width: 50%;
-                  height: auto;
               }
           }
-          // individual backgrounds per slide
-          &.bg1 {
-              background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
-          }
-          
-          &.bg2 {
-              background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide2.jpg");
-          }
-          
-          &.bg3 {
-              background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide3.jpg");
-          }
-          
-          &.bg4 {
-              background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide4.jpg");
-          }
+
       }
   }
 
@@ -449,14 +461,17 @@ body {
       font-family: @font-subnav;
       text-shadow: none;
       
-      @media (min-width: @screen-tablet) {
+      @media (min-width: @screen-xs) {  // was @screen-tablet
           top: -8%;
-          text-shadow: 0 1px 2px rgba(0,0,0,.6);
       }
     
       @media (min-width: @screen-desktop) {
           top: 0;
           left: 35%;
+      }
+      // just display text shadow for large desktop. doesnt look good at lower levels.
+      @media (min-width: @screen-lg-desktop) {
+          text-shadow: 0 1px 2px rgba(0,0,0,.6);
       }
 
       h1 {
@@ -465,7 +480,7 @@ body {
           text-align: left;
           margin-bottom: 20px;
 
-          @media (min-width: @screen-tablet) {
+          @media (min-width: @screen-xs) {  // was @screen-tablet
 			  font-size: 35px;
           }
       }
@@ -474,8 +489,9 @@ body {
           font-size: 9px;
           text-align: left;
 
-          @media (min-width: @screen-tablet) {
+          @media (min-width: @screen-xs) {  // was @screen-tablet
               font-size: 20px;
+              line-height: 30px;
           }
 
       }
@@ -489,7 +505,11 @@ body {
 
 
 span.glyphicon.glyphicon-chevron-right, span.glyphicon.glyphicon-chevron-left {
-    display: none;
+    //display: none;
+    
+    display: block;
+    color: @black;
+    margin-top: 115%;
     
     @media (min-width: @screen-tablet) {
         display: block;

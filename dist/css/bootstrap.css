@@ -6788,8 +6788,9 @@ Section:
 // @screen-desktop        992px
 // @screen-lg-desktop     1200px
 
-// Custom to fit footer better on Nexus 10 @800px
-// bootstrap default for tablet is 768px
+Custom iphone widths if needed:
+// @screen-xxxs          320px
+// @screen-xxs           375px
 ========================================================================== */
 /* Sub-section: LESS variables for this page: index.html
 ========================================================================== */
@@ -6992,6 +6993,11 @@ body {
   background-color: #d3d3d3;
   border: 1px dotted #7b7a7a;
 }
+@media (max-width: 320px) {
+  #myCarousel {
+    display: none;
+  }
+}
 #myCarousel .carousel-indicators {
   display: none;
 }
@@ -7006,8 +7012,22 @@ body {
     border: 1px solid #7b7a7a;
   }
 }
-#myCarousel .carousel-inner {
+#myCarousel .carousel-inner .item {
   background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
+}
+@media (min-width: 1200px) {
+  #myCarousel .carousel-inner .item.slide1 {
+    background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
+  }
+  #myCarousel .carousel-inner .item.slide2 {
+    background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide2.jpg");
+  }
+  #myCarousel .carousel-inner .item.slide3 {
+    background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide3.jpg");
+  }
+  #myCarousel .carousel-inner .item.slide4 {
+    background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide4.jpg");
+  }
 }
 #myCarousel .carousel-inner .item img {
   display: block;
@@ -7017,20 +7037,7 @@ body {
 @media (max-width: 768px) {
   #myCarousel .carousel-inner .item img {
     max-width: 50%;
-    height: auto;
   }
-}
-#myCarousel .carousel-inner .item.bg1 {
-  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide1.jpg");
-}
-#myCarousel .carousel-inner .item.bg2 {
-  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide2.jpg");
-}
-#myCarousel .carousel-inner .item.bg3 {
-  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide3.jpg");
-}
-#myCarousel .carousel-inner .item.bg4 {
-  background-image: url("http://localhost:63342/keyedalike/dist/images/bg-slide4.jpg");
 }
 #myCarousel .carousel-caption {
   top: -20%;
@@ -7040,10 +7047,9 @@ body {
   color: #000;
   text-shadow: none;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   #myCarousel .carousel-caption {
     top: -8%;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
   }
 }
 @media (min-width: 992px) {
@@ -7052,13 +7058,18 @@ body {
     left: 35%;
   }
 }
+@media (min-width: 1200px) {
+  #myCarousel .carousel-caption {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+  }
+}
 #myCarousel .carousel-caption h1 {
   margin-bottom: 20px;
   font-size: 16px;
   color: #29abe2;
   text-align: left;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   #myCarousel .carousel-caption h1 {
     font-size: 35px;
   }
@@ -7067,9 +7078,10 @@ body {
   font-size: 9px;
   text-align: left;
 }
-@media (min-width: 768px) {
+@media (min-width: 480px) {
   #myCarousel .carousel-caption p {
     font-size: 20px;
+    line-height: 30px;
   }
 }
 .carousel-control.left,
@@ -7078,7 +7090,9 @@ body {
 }
 span.glyphicon.glyphicon-chevron-right,
 span.glyphicon.glyphicon-chevron-left {
-  display: none;
+  display: block;
+  margin-top: 115%;
+  color: #000;
 }
 @media (min-width: 768px) {
   span.glyphicon.glyphicon-chevron-right,
