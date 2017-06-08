@@ -6818,6 +6818,12 @@ body {
     display: none;
   }
 }
+.wrapper-banner {
+  margin: 20px 0;
+  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+  font-size: 12px;
+  color: #fff;
+}
 .banner-phone {
   margin-top: -12px;
 }
@@ -6836,14 +6842,20 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
-.chat-message {
+.banner-right {
   margin-top: -9px;
 }
-.wrapper-banner {
-  margin: 20px 0;
-  font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
-  font-size: 12px;
-  color: #fff;
+.banner-right .chat {
+  float: left;
+}
+.banner-right .spanish-message {
+  float: left;
+  margin: 10px 0 0 20px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  font-weight: bold;
+  color: #e22f2f;
 }
 .affix {
   top: 0;

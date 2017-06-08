@@ -57,6 +57,7 @@ Custom iphone widths if needed:
 @gray-med1: #ddd;
 @gray-med2: #dcdcdc;
 @gray-med3: #929292;
+@red: #e22f2f;
 
 @screen-xxxs: 320px;
 @screen-xxs: 375px;
@@ -152,6 +153,13 @@ body {
     }
 }
 
+.wrapper-banner {
+    margin: 20px 0;
+    font-family: @font-subnav;
+    font-size: 12px;
+    color: @white;
+}
+
 .banner-phone {
     margin-top: -12px;
     .phone-icon {
@@ -171,16 +179,23 @@ body {
     text-align: center;
     font-size: 16px;
 }
-
-.chat-message {
+// todo banner
+.banner-right {
     margin-top: -9px;
-}
-
-.wrapper-banner {
-    margin: 20px 0;
-    font-family: @font-subnav;
-    font-size: 12px;
-    color: @white;
+    
+    .chat {
+        float: left;
+    }
+    
+    .spanish-message {
+        float: left;
+        margin: 10px 0 0 20px;
+        font-family: @font-roboto;
+        font-size: 14px;
+        color: @red;
+        font-weight: bold;
+        font-style: italic;
+    }
 }
 
 //@media (max-width: @container-sm) {
