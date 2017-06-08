@@ -7394,16 +7394,19 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   text-align: center;
 }
 .item-desc-wrapper .item-models {
-  word-spacing: 14px;
+  letter-spacing: 1px;
+  word-spacing: 12px;
 }
 @media (min-width: 768px) {
   .item-desc-wrapper .item-models {
+    letter-spacing: 1px;
     word-spacing: 0;
   }
 }
 @media (min-width: 992px) {
   .item-desc-wrapper .item-models {
-    word-spacing: 9px;
+    letter-spacing: 1px;
+    word-spacing: 6px;
   }
 }
 .item-desc-wrapper .item-desc .price-hpi {
