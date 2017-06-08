@@ -106,12 +106,11 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#">Laminated Steel</a></li>
                             <li><a href="#">Laminated Brass</a></li>
-                            <li><a href="#">Solid Brass</a></li>
-                            <li><a href="#">Solid Steel</a></li>
-                            <li><a href="#">Solid Aluminum</a></li>
-                            <li><a href="#">Weather Resistant</a></li>
+                            <li><a href="#">Solid Brass Body</a></li>
+                            <li><a href="#">Solid Aluminum Body</a></li>
+                            <li><a href="#">Weather Proof</a></li>
                             <li><a href="#">Warded Padlocks</a></li>
-                            
+                            <li><a href="@Url.BuildEntityLink("Category", 13, "Standard Combination Padlocks")">Combination Locks</a></li>
                         </ul>
                         <ul class="nav navbar-nav navbar-right hidden-sm hidden-md hidden-lg">
                             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>

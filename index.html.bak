@@ -36,14 +36,14 @@
             <div class="row">
                 <div class="col-md-3 col-sm-3 banner-phone">
                     <span class="glyphicon glyphicon-phone-alt phone-icon"></span>
-                    <span class="banner-phone-text">Call us 1.800.778.2217</span>
+                    <span class="banner-phone-text">Call us 1.800.778.2217</span><br>
+                    <span class="free-shipping">FREE shipping on orders over $30.00</span>
                 </div>
                 <div class="col-md-6 col-sm-9 banner-message">
-                    <span>FREE SHIPPING ON ALL ORDERS OVER $30!</span>
+                    <span>Serving people and businesses since 1971</span>
                 </div>
                 <div class="col-md-3 hidden-sm chat-message">
                     <a id="LivechatButtonx" href="https://chat.livechatinc.net/licence/1032405/open_chat.cgi?lang=en&amp;groups=0" target="chat_1032405_chat.livechatinc.net" onclick="window.open('https://chat.livechatinc.net/licence/1032405/open_chat.cgi?lang=en&amp;groups=0&amp;'+'dc='+escape(document.cookie+';l='+document.location+';r='+document.referer+';s='+typeof lc_session),'Czat_1032405','width=530,height=520,resizable=yes,scrollbars=no,status=1');return false;"><img src="https://chat.livechatinc.net/licence/1032405/button.cgi?lang=en&amp;groups=0&amp;d=1475094635553" style="border: 0px;"></a>
-                    <!--<img src="https://chat.livechatinc.net/licence/1032405/button.cgi?lang=en&groups=0&d=1475094635553">-->
                 </div>
             </div>
         </div>
@@ -105,9 +105,10 @@
                         <ul class="nav navbar-nav">
                             <li><a href="#">Laminated Steel</a></li>
                             <li><a href="#">Laminated Brass</a></li>
-                            <li><a href="#">Solid Brass Body</a></li>
-                            <li><a href="#">Solid Aluminum Body</a></li>
-                            <li><a href="#">Weather Proof</a></li>
+                            <li><a href="#">Solid Brass</a></li>
+                            <li><a href="#">Solid Steel</a></li>
+                            <li><a href="#">Solid Aluminum</a></li>
+                            <li><a href="#">Weather Resistant</a></li>
                             <li><a href="#">Warded Padlocks</a></li>
                             <li><a href="@Url.BuildEntityLink("Category", 13, "Standard Combination Padlocks")">Combination Locks</a></li>
                         </ul>
@@ -146,7 +147,7 @@
         <div class="carousel-inner" role="listbox">
             <div class="item slide1 active">
                 <!--<a href="/">-->
-                <img alt="" class="img-responsive" src="/skins/skin_10/dist/images/hp-slide1.png" />
+                <img alt="" class="img-responsive" src="http://keyedalike.com/skins/skin_10/dist/images/hp-slide1.png" />
                 <div class="carousel-caption">
                     <h1>Keyed Alike</h1>
                     <p>Provides "same key" convenience and eliminates the need for multiple keys</p>
@@ -156,7 +157,7 @@
             </div>
             <div class="item slide2">
                 <a href="/category/4/solid-aluminum-padlocks">
-                    <img alt="" class="img-responsive" src="/skins/skin_10/dist/images/1361.png" />
+                    <img alt="" class="img-responsive" src="http://keyedalike.com/skins/skin_10/dist/images/1361.png" />
                     <div class="carousel-caption">
                         <h1>Solid Body Aluminum</h1>
                         <p>Model No. A1105KA</p>
@@ -168,7 +169,7 @@
             </div>
             <div class="item slide3">
                 <a href="/category/14/solid-brass-padlocks">
-                    <img alt="" class="img-responsive" src="/skins/skin_10/dist/images/293.png" />
+                    <img alt="" class="img-responsive" src="http://keyedalike.com/skins/skin_10/dist/images/293.png" />
                     <div class="carousel-caption">
                         <h1>Keyed Alike <br>Solid Brass Padlocks</h1>
                         <p>Model No. 4120KA</p>
@@ -180,7 +181,7 @@
             </div>
             <div class="item slide4">
                 <a href="/category/9/weather-resistant-padlocks">
-                    <img alt="" class="img-responsive" src="/skins/skin_10/dist/images/563.png" />
+                    <img alt="" class="img-responsive" src="http://keyedalike.com/skins/skin_10/dist/images/563.png" />
                     <div class="carousel-caption">
                         <h1>ProSeries Shrouded Shackle Padlock</h1>
                         <p>Model No. 6321KA</p>
@@ -533,16 +534,16 @@
                     <div class="item-desc">
                         <div class="item-price">
                             <div class="price-hpi">
-                                <span>$8.42</span>
-                                <span>$9.59</span>
-                                <span>$9.85</span>
+                                <span>$8.59</span>
+                                <span>$9.75</span>
+                                <span>$10.04</span>
                             </div>
                             <div class="price-msrp">
                                 <div class="msrp">--------- MSRP ---------</div>
                                 <div class="price">
-                                    <span>$13.89</span>
-                                    <span>$13.89</span>
-                                    <span>$14.29</span>
+                                    <span>$11.77</span>
+                                    <span>$13.37</span>
+                                    <span>$13.77</span>
                                 </div>
                             </div>
                         </div>
@@ -643,16 +644,16 @@
                     <div class="item-desc">
                         <div class="item-price">
                             <div class="price-hpi">
-                                <span>$10.26</span>
-                                <span>$11.41</span>
-                                <span>$12.23</span>
+                                <span>$10.45</span>
+                                <span>$11.62</span>
+                                <span>$12.46</span>
                             </div>
                             <div class="price-msrp">
                                 <div class="msrp">--------- MSRP ---------</div>
                                 <div class="price">
-                                    <span>$14.84</span>
-                                    <span>$16.54</span>
-                                    <span>$17.74</span>
+                                    <span>$14.34</span>
+                                    <span>$15.94</span>
+                                    <span>$17.09</span>
                                 </div>
                             </div>
                         </div>
@@ -709,10 +710,10 @@
                     <div class="item-desc">
                         <div class="item-price">
                             <div class="price-hpi">
-                                <span>$7.81</span>
-                                <span>$8.84</span>
-                                <span>$9.08</span>
-                                <span>$13.06</span>
+                                <span>$7.69</span>
+                                <span>$8.70</span>
+                                <span>$8.94</span>
+                                <span>$11.28</span>
                             </div>
                             <div class="price-msrp">
                                 <div class="msrp">--------- MSRP ---------</div>
@@ -770,17 +771,17 @@
                     <div class="item-desc">
                         <div class="item-price">
                             <div class="price-hpi">
-                                <span>$11.89</span>
-                                <span>$13.04</span>
-                                <span>$13.32</span>
-                                <span>$13.57</span>
+                                <span>$10.29</span>
+                                <span>$13.28</span>
+                                <span>$13.58</span>
+                                <span>$13.89</span>
                             </div>
                             <div class="price-msrp">
                                 <div class="msrp">--------- MSRP ---------</div>
                                 <div class="price">
                                     <span>$17.19</span>
-                                    <span>$18.89</span>
-                                    <span>$19.29</span>
+                                    <span>$18.22</span>
+                                    <span>$18.62</span>
                                     <span>$23.19</span>
                                 </div>
                             </div>
@@ -827,9 +828,9 @@
                     <div class="item-desc">
                         <div class="item-price">
                             <div class="price-hpi">
-                                <span>$11.08</span>
-                                <span>$12.23</span>
-                                <span>$12.51</span>
+                                <span>$9.59</span>
+                                <span>$10.37</span>
+                                <span>$10.85</span>
                             </div>
                             <div class="price-msrp">
                                 <div class="msrp">--------- MSRP ---------</div>
@@ -882,16 +883,16 @@
                     <div class="item-desc">
                         <div class="item-price">
                             <div class="price-hpi">
-                                <span>$14.61</span>
-                                <span>$15.76</span>
-                                <span>$16.04</span>
+                                <span>$14.89</span>
+                                <span>$16.05</span>
+                                <span>$16.35</span>
                             </div>
                             <div class="price-msrp">
                                 <div class="msrp">--------- MSRP ---------</div>
                                 <div class="price">
-                                    <span>$21.10</span>
-                                    <span>$22.80</span>
-                                    <span>$23.20</span>
+                                    <span>$20.42</span>
+                                    <span>$22.02</span>
+                                    <span>$22.42</span>
                                 </div>
                             </div>
                         </div>
