@@ -6895,12 +6895,12 @@ body {
 .subnav-left a:active {
   color: #fff;
 }
-.subnav-left .logo-masterlock {
+.subnav-left .logo-vendors {
   float: right;
   margin-left: 30px;
 }
-.subnav-left .logo-masterlock img {
-  float: right;
+.subnav-left .logo-vendors img {
+  float: left;
 }
 .search-wrapper {
   margin-top: 7px;
