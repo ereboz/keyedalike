@@ -7134,20 +7134,16 @@ span.glyphicon.glyphicon-chevron-left {
     height: auto;
   }
 }
-.product-grid {
-  padding: 0;
-}
-.product-slider {
+.product-slider-wrapper {
   margin-bottom: 50px;
 }
-.product-slider h3 {
-  margin-bottom: 30px;
+.product-slider-head {
+  margin-bottom: 20px;
+}
+.product-slider-head .product-slider-title {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
 }
-.product-slider {
-  margin-bottom: 50px;
-}
-.product-slider .controls {
+.product-slider-head .product-slider-chevrons .controls {
   margin: 30px 13px 0 0;
 }
 .product-wrapper {
@@ -7366,7 +7362,7 @@ body > div:nth-child(11) > div > div:nth-child(4) > div > div.product-desc-wrapp
   }
 }
 .prod-plp h3 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 /* Popular Model Section - Homepage
 ========================================================================== */
