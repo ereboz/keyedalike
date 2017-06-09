@@ -57,6 +57,7 @@ Custom iphone widths if needed:
 @gray-med1: #ddd;
 @gray-med2: #dcdcdc;
 @gray-med3: #929292;
+@gray-med4: #e6e8ea;
 
 @screen-xxxs: 320px;
 @screen-xxs: 375px;
@@ -2407,6 +2408,94 @@ p {
 }
 
 
+/* ==========================================================================
+Section:
+Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
+========================================================================== */
 
 
+/* Globals
+========================================================================== */
+
+.policy {
+    
+    p {
+        color: @gray-med3;
+    }
+    
+    .container {
+        border: 1px dotted @gray-med4;
+        float: left;
+        margin-bottom: 50px;
+    }
+    
+    .content-wrapper {
+        padding: 10px 20px;
+        
+        .main-content {
+            float: left;
+            
+            .title {
+                text-align: center;
+            }
+            
+            .page-separator {
+                border-bottom: 1px solid @light-gray1;
+                width: 70%;
+                margin: 30px auto;
+            }
+        }
+        
+    }
+    
+    .helper-content {
+        float: left;
+        border-left: 1px dotted @gray-med4;
+        margin-top: 20px;
+        
+        .call-us-wrapper {
+            margin-bottom: 50px;
+            padding-bottom: 20px;
+            border-bottom: 2px dashed @gray-med4;
+            text-align: center;
+            
+            .fa-phone {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            
+            .phone-text {
+                font-weight: normal;
+                
+                p {
+                    color: @black;
+                }
+            }
+            
+            .phone-phone-number {
+                font-size: 20px;
+                font-weight: bold;
+            }
+            
+        }
+        
+        .chat-wrapper {
+            text-align: center;
+            
+            .glyphicon-user {
+                font-size: 30px;
+                margin-bottom: 15px;
+            }
+            
+            .chat-text {
+                font-weight: normal;
+                margin-bottom: 10px;
+            }
+            
+            .chat-link {
+            
+            }
+        }
+    }
+}
 

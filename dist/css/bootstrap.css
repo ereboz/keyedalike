@@ -8653,4 +8653,68 @@ p.formtext > strong {
 .clearable {
   clear: both;
 }
+/* ==========================================================================
+Section:
+Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
+========================================================================== */
+/* Globals
+========================================================================== */
+.policy p {
+  color: #929292;
+}
+.policy .container {
+  float: left;
+  margin-bottom: 50px;
+  border: 1px dotted #e6e8ea;
+}
+.policy .content-wrapper {
+  padding: 10px 20px;
+}
+.policy .content-wrapper .main-content {
+  float: left;
+}
+.policy .content-wrapper .main-content .title {
+  text-align: center;
+}
+.policy .content-wrapper .main-content .page-separator {
+  width: 70%;
+  margin: 30px auto;
+  border-bottom: 1px solid #e0e0e0;
+}
+.policy .helper-content {
+  float: left;
+  margin-top: 20px;
+  border-left: 1px dotted #e6e8ea;
+}
+.policy .helper-content .call-us-wrapper {
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  border-bottom: 2px dashed #e6e8ea;
+}
+.policy .helper-content .call-us-wrapper .fa-phone {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.policy .helper-content .call-us-wrapper .phone-text {
+  font-weight: normal;
+}
+.policy .helper-content .call-us-wrapper .phone-text p {
+  color: #000;
+}
+.policy .helper-content .call-us-wrapper .phone-phone-number {
+  font-size: 20px;
+  font-weight: bold;
+}
+.policy .helper-content .chat-wrapper {
+  text-align: center;
+}
+.policy .helper-content .chat-wrapper .glyphicon-user {
+  margin-bottom: 15px;
+  font-size: 30px;
+}
+.policy .helper-content .chat-wrapper .chat-text {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
 /*# sourceMappingURL=bootstrap.css.map */
