@@ -8659,45 +8659,57 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
 ========================================================================== */
 /* Globals
 ========================================================================== */
-.policy p {
+.policy p,
+.topic p {
   color: #929292;
 }
-.policy .container {
+.policy .container,
+.topic .container {
   float: left;
   margin-bottom: 50px;
   border: 1px dotted #e6e8ea;
 }
-.policy .content-wrapper {
+.policy .content-wrapper,
+.topic .content-wrapper {
   padding: 10px 20px;
 }
-.policy .content-wrapper .main-content {
+.policy .content-wrapper .main-content,
+.topic .content-wrapper .main-content {
   float: left;
   margin-bottom: 50px;
 }
-.policy .content-wrapper .main-content .title {
+.policy .content-wrapper .main-content .title,
+.topic .content-wrapper .main-content .title {
   text-align: center;
 }
-.policy .content-wrapper .main-content .page-separator {
+.policy .content-wrapper .main-content .page-separator,
+.topic .content-wrapper .main-content .page-separator {
   width: 70%;
   margin: 30px auto;
   border-bottom: 1px solid #e0e0e0;
 }
 .policy .content-wrapper h3,
+.topic .content-wrapper h3,
 .policy .content-wrapper h4,
-.policy .content-wrapper h5 {
+.topic .content-wrapper h4,
+.policy .content-wrapper h5,
+.topic .content-wrapper h5 {
   margin: 40px 0 10px 0;
 }
-.policy .content-wrapper ol > li {
+.policy .content-wrapper ol > li,
+.topic .content-wrapper ol > li {
   margin-bottom: 10px;
 }
-.policy .helper-content {
+.policy .helper-content,
+.topic .helper-content {
   float: none;
   padding-top: 30px;
   clear: left;
   border-top: 1px solid #e0e0e0;
 }
 @media (min-width: 768px) {
-  .policy .helper-content {
+  .policy .helper-content,
+  .topic .helper-content {
     float: left;
     margin-top: 20px;
     clear: none;
@@ -8705,34 +8717,42 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
     border-left: 1px dotted #e6e8ea;
   }
 }
-.policy .helper-content .call-us-wrapper {
+.policy .helper-content .call-us-wrapper,
+.topic .helper-content .call-us-wrapper {
   padding-bottom: 20px;
   margin-bottom: 50px;
   text-align: center;
   border-bottom: 2px dashed #e6e8ea;
 }
-.policy .helper-content .call-us-wrapper .fa-phone {
+.policy .helper-content .call-us-wrapper .fa-phone,
+.topic .helper-content .call-us-wrapper .fa-phone {
   margin-bottom: 15px;
   font-size: 30px;
 }
-.policy .helper-content .call-us-wrapper .phone-text {
+.policy .helper-content .call-us-wrapper .phone-text,
+.topic .helper-content .call-us-wrapper .phone-text {
   font-weight: normal;
 }
-.policy .helper-content .call-us-wrapper .phone-text p {
+.policy .helper-content .call-us-wrapper .phone-text p,
+.topic .helper-content .call-us-wrapper .phone-text p {
   color: #000;
 }
-.policy .helper-content .call-us-wrapper .phone-phone-number {
+.policy .helper-content .call-us-wrapper .phone-phone-number,
+.topic .helper-content .call-us-wrapper .phone-phone-number {
   font-size: 20px;
   font-weight: bold;
 }
-.policy .helper-content .chat-wrapper {
+.policy .helper-content .chat-wrapper,
+.topic .helper-content .chat-wrapper {
   text-align: center;
 }
-.policy .helper-content .chat-wrapper .glyphicon-user {
+.policy .helper-content .chat-wrapper .glyphicon-user,
+.topic .helper-content .chat-wrapper .glyphicon-user {
   margin-bottom: 15px;
   font-size: 30px;
 }
-.policy .helper-content .chat-wrapper .chat-text {
+.policy .helper-content .chat-wrapper .chat-text,
+.topic .helper-content .chat-wrapper .chat-text {
   margin-bottom: 10px;
   font-weight: normal;
 }
