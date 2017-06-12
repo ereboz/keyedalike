@@ -8672,6 +8672,7 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
 }
 .policy .content-wrapper .main-content {
   float: left;
+  margin-bottom: 50px;
 }
 .policy .content-wrapper .main-content .title {
   text-align: center;
@@ -8681,10 +8682,28 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
   margin: 30px auto;
   border-bottom: 1px solid #e0e0e0;
 }
+.policy .content-wrapper h3,
+.policy .content-wrapper h4,
+.policy .content-wrapper h5 {
+  margin: 40px 0 10px 0;
+}
+.policy .content-wrapper ol > li {
+  margin-bottom: 10px;
+}
 .policy .helper-content {
-  float: left;
-  margin-top: 20px;
-  border-left: 1px dotted #e6e8ea;
+  float: none;
+  padding-top: 30px;
+  clear: left;
+  border-top: 1px solid #e0e0e0;
+}
+@media (min-width: 768px) {
+  .policy .helper-content {
+    float: left;
+    margin-top: 20px;
+    clear: none;
+    border-top: none;
+    border-left: 1px dotted #e6e8ea;
+  }
 }
 .policy .helper-content .call-us-wrapper {
   padding-bottom: 20px;

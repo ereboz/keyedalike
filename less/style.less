@@ -2434,6 +2434,7 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
         
         .main-content {
             float: left;
+            margin-bottom: 50px;
             
             .title {
                 text-align: center;
@@ -2446,12 +2447,32 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
             }
         }
         
+        h3, h4, h5 {
+            margin: 40px 0 10px 0;
+        }
+        
+        ol {
+            > li {
+                margin-bottom: 10px;
+            }
+        }
+        
     }
     
     .helper-content {
-        float: left;
-        border-left: 1px dotted @gray-med4;
-        margin-top: 20px;
+        float: none;
+        clear: left;
+        border-top: 1px solid @light-gray1;
+        padding-top: 30px;
+
+        @media (min-width: @screen-tablet) {
+            float: left;
+            clear: none;
+            border-left: 1px dotted @gray-med4;
+            border-top: none;
+            margin-top: 20px;
+        }
+        
         
         .call-us-wrapper {
             margin-bottom: 50px;
