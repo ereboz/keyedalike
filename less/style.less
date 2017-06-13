@@ -2420,7 +2420,7 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
 .policy, .topic {
     
     p {
-        color: @gray-med3;
+        color: @black;
     }
     
     .container {
@@ -2432,21 +2432,6 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
     .content-wrapper {
         padding: 10px 20px;
         
-        .main-content {
-            float: left;
-            margin-bottom: 50px;
-            
-            .title {
-                text-align: center;
-            }
-            
-            .page-separator {
-                border-bottom: 1px solid @light-gray1;
-                width: 70%;
-                margin: 30px auto;
-            }
-        }
-        
         h3, h4, h5 {
             margin: 40px 0 10px 0;
         }
@@ -2456,10 +2441,43 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
                 margin-bottom: 10px;
             }
         }
+    }
+    
+    .main-content {
+        .make-md-column(9);
+        float: left;
+        margin-bottom: 50px;
         
+        .title {
+            text-align: center;
+        }
+        
+        .page-separator {
+            border-bottom: 1px solid @light-gray1;
+            width: 70%;
+            margin: 30px auto;
+        }
+        
+        // keying definition page
+        
+        .keying-def-wrapper {
+            dl {
+        
+            }
+    
+            dt {
+        
+            }
+    
+            dd {
+        
+            }
+        }
+
     }
     
     .helper-content {
+        .make-md-column(3);
         float: none;
         clear: left;
         border-top: 1px solid @light-gray1;
@@ -2517,6 +2535,7 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
             
             }
         }
+        
     }
 }
 

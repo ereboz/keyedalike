@@ -8661,7 +8661,7 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
 ========================================================================== */
 .policy p,
 .topic p {
-  color: #929292;
+  color: #000;
 }
 .policy .container,
 .topic .container {
@@ -8672,21 +8672,6 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
 .policy .content-wrapper,
 .topic .content-wrapper {
   padding: 10px 20px;
-}
-.policy .content-wrapper .main-content,
-.topic .content-wrapper .main-content {
-  float: left;
-  margin-bottom: 50px;
-}
-.policy .content-wrapper .main-content .title,
-.topic .content-wrapper .main-content .title {
-  text-align: center;
-}
-.policy .content-wrapper .main-content .page-separator,
-.topic .content-wrapper .main-content .page-separator {
-  width: 70%;
-  margin: 30px auto;
-  border-bottom: 1px solid #e0e0e0;
 }
 .policy .content-wrapper h3,
 .topic .content-wrapper h3,
@@ -8700,12 +8685,49 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
 .topic .content-wrapper ol > li {
   margin-bottom: 10px;
 }
+.policy .main-content,
+.topic .main-content {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-bottom: 50px;
+}
+@media (min-width: 992px) {
+  .policy .main-content,
+  .topic .main-content {
+    float: left;
+    width: 75%;
+  }
+}
+.policy .main-content .title,
+.topic .main-content .title {
+  text-align: center;
+}
+.policy .main-content .page-separator,
+.topic .main-content .page-separator {
+  width: 70%;
+  margin: 30px auto;
+  border-bottom: 1px solid #e0e0e0;
+}
 .policy .helper-content,
 .topic .helper-content {
+  position: relative;
   float: none;
+  min-height: 1px;
   padding-top: 30px;
+  padding-right: 15px;
+  padding-left: 15px;
   clear: left;
   border-top: 1px solid #e0e0e0;
+}
+@media (min-width: 992px) {
+  .policy .helper-content,
+  .topic .helper-content {
+    float: left;
+    width: 25%;
+  }
 }
 @media (min-width: 768px) {
   .policy .helper-content,
