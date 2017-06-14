@@ -8711,6 +8711,14 @@ Topic pages for Shipping, Return Policy, Privacy, Terms and Conditions, etc.
   margin: 30px auto;
   border-bottom: 1px solid #e0e0e0;
 }
+.policy .main-content .keying-def-wrapper dd,
+.topic .main-content .keying-def-wrapper dd {
+  margin-bottom: 20px;
+}
+.policy .main-content .keying-def-wrapper dd > dl,
+.topic .main-content .keying-def-wrapper dd > dl {
+  margin: 10px 0 0 30px;
+}
 .policy .helper-content,
 .topic .helper-content {
   position: relative;
