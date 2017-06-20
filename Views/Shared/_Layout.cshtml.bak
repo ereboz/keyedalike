@@ -49,7 +49,7 @@
                 </div>
             </div>
             <!--<div class="col-md-2 hidden-sm hidden-xs" style="text-align:center; line-height:50px;"><img src="/skins/skin_10/images/ML_logo_wht.jpg" /></div>-->
-            <div class="col-md-3 col-sm-6 hidden-xs search-wrapper">
+            <div class="col-md-4 col-sm-6 hidden-xs search-wrapper">
                 <div class="search">
                     <div class="search">
                         <!--ASP.NET inserts this div. made a class in style.less to handle it-->
@@ -62,7 +62,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 hidden-sm hidden-xs subnav-wrapper">
+            <div class="col-md-2 hidden-sm hidden-xs subnav-wrapper">
                 <div class="sub-nav">
                     <ul class="nav navbar-nav">
                         <li>
