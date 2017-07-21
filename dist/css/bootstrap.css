@@ -6825,7 +6825,7 @@ body {
   color: #fff;
 }
 .banner-phone {
-  margin-top: -12px;
+  margin-top: 2px;
 }
 .banner-phone .phone-icon {
   margin: 0 10px 0 0;
@@ -6833,9 +6833,6 @@ body {
 .banner-phone .banner-phone-text {
   font-size: 14px;
   font-weight: bold;
-}
-.banner-phone .free-shipping {
-  text-transform: none;
 }
 .banner-message {
   font-size: 16px;
