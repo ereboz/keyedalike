@@ -7022,7 +7022,7 @@ body {
   }
 }
 #myCarousel .carousel-inner .item {
-  background-image: url("/skins/skin_10/dist/images/bg-slide1.jpg");
+  background-image: url("/skins/skin_10/dist/images/bg-slide0.jpg");
 }
 @media (min-width: 1200px) {
   #myCarousel .carousel-inner .item.slide1 {
@@ -7064,7 +7064,7 @@ body {
 @media (min-width: 992px) {
   #myCarousel .carousel-caption {
     top: 0;
-    left: 35%;
+    left: 30%;
   }
 }
 @media (min-width: 1200px) {
